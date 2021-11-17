@@ -7,10 +7,13 @@ export default function StandaloneToggleButton() {
 
   return (
     <ToggleButton
-        value="check"
-        selected={selected}
-        onChange={() => {
-            setSelected(!selected);
+
+      color="success"
+      size="large"
+      value="check"
+      selected={selected}
+      onChange={() => {
+        setSelected(!selected);
         }}
     >
       <a>Order Now</a>
