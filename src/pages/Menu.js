@@ -12,22 +12,22 @@ function Menu() {
         <Header/>
         <Grid container spacing={4} maxWidth={ 600 } margin="auto">
             <Grid item xs={4}>
-                <ProductCard title="Calzone (Folded)" description="Chesse, Ham"/>
+                <ProductCard title="Vesuvio" description="Chesse, Ham"/>
             </Grid>
             <Grid item xs={4}>
-                <ProductCard title="Vesuvio" description="Cheese, Ham"/>
+                <ProductCard title="Hawaii" description="Cheese, Ham, Pineapple"/>
             </Grid>
             <Grid item xs={4}>
                 <ProductCard title="Capricciosa" description="Cheese, Ham, Mushroom"/>
             </Grid>
             <Grid item xs={4}>
-                <ProductCard title="Mexicana" description="Cheese, Meat Sauce, Onion, Pepper, Chili"/>
+                <ProductCard title="Mexicana" description="Cheese, Meat Sauce, Onion, Pepper"/>
             </Grid>
             <Grid item xs={4}>
                 <ProductCard title="Kebab Pizza" description="Cheese, Kebab Meat, Onion, Kebab Sauce"/>
             </Grid>
             <Grid item xs={4}>
-                <ProductCard title="Jason Special" description="Cheese, Salami, Mushroom, Tomato, Olive"/>
+                <ProductCard title="Jason Special" description="Cheese, Salami, Mushroom, Chili"/>
             </Grid>
             <Grid item xs={4}>
                 <ProductCard title="Pasta Carbonara" description="Spaghetti, Bacon, Cream, Parmesan Black Pepper"/>

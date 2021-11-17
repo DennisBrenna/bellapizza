@@ -5,7 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea, CardActions } from '@mui/material';
-import pizza1 from '../images/pizza1.jpeg';
+import pizza1 from '../images/pizza1.png';
 import Fab from '@mui/material/Fab';
 import AddIcon from '@mui/icons-material/Add';
 import Divider from '@mui/material/Divider';
@@ -14,7 +14,7 @@ import Divider from '@mui/material/Divider';
 export default function ProductCard({ title, description }) {
   return (
     
-    <Card sx={{ maxWidth: 400, height: 350, border: 2, borderRadius: '20px', backgroundColor: 'black', borderColor: "yellow", color: "white"}}>
+    <Card sx={{ maxWidth: 400, height: 350, border: 2, borderRadius: '20px', backgroundColor: 'black', borderColor: "white", color: "white"}}>
       <CardActionArea>
         <CardMedia
           style={{ height: "100%" }}
