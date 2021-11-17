@@ -5,6 +5,7 @@ import logo from'./images/bellalogo_final.svg';
 import './App.css';
 import Footer from './components/FooterCard';
 import Home from './pages/Home'
+import Menu from './pages/Menu'
 
 //import { createTheme } from '@mui/material'
 //import { amber, teal } from '@mui/material/colors';
@@ -16,8 +17,10 @@ function App() {
   return (
     
     <div className="App">
-    <Footer/>
-      </div>
+      <Menu/>
+      <Footer/>
+    
+    </div>
       
   );
 }
