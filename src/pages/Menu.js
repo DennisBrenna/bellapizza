@@ -10,7 +10,7 @@ function Menu() {
         <>
         <Grid container spacing={4} maxWidth={ 600 } margin="auto">
             <Grid item xs={4}>
-                <ProductCard title="Calzone" description="(Folded) Cheese, Ham"/>
+                <ProductCard title="Calzone (Folded)" description="Chesse, Ham"/>
             </Grid>
             <Grid item xs={4}>
                 <ProductCard title="Vesuvio" description="Cheese, Ham"/>

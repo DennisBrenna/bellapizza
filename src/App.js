@@ -13,12 +13,10 @@ import Menu from './pages/Menu';
 //import { useEffect, useState } from 'react';
 //import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import ProductCard from './components/ProductCard';
-import Menu from './pages/Menu';
 
 function App() {
   return (
     <div className="App">
-      <Home/>
       <Menu/>
       </div>
       
