@@ -95,9 +95,9 @@ function FormRow() {
                                 justifyContent="center"
                                 fontSize="60px"
                                 >
-                                    <a style={{color: "green"}}>Pizza</a>
+                                    <a style={{color: "green", paddingRight:'20px'}}>Pizza</a>
                                     <a> & </a>
-                                    <a style={{color: "red"}}>Pasta</a>
+                                    <a style={{color: "red", paddingLeft:'20px'}}>Pasta</a>
                                     
                                 </Grid>
                                 
