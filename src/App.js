@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
+import logo from'./images/bellalogo_final.svg';
+//import mainimage from './images/main.jpeg';
+//import warmpizza from './images/warmpizza.jpeg';
 import './App.css';
+import Footer from './components/FooterCard';
+import Home from './pages/Home'
+
+//import { createTheme } from '@mui/material'
+//import { amber, teal } from '@mui/material/colors';
+//import { ThemeProvider } from '@mui/system';
+//import { useEffect, useState } from 'react';
+//import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <Footer/>
+      </div>
+      
   );
 }
 
