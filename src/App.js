@@ -4,7 +4,10 @@ import logo from'./images/bellalogo_final.svg';
 //import warmpizza from './images/warmpizza.jpeg';
 import './App.css';
 import Footer from './components/FooterCard';
-import Home from './pages/Home'
+
+import Home from './pages/Home';
+import ProductCard from './components/ProductCard';
+
 import Menu from './pages/Menu'
 
 //import { createTheme } from '@mui/material'
@@ -19,8 +22,7 @@ function App() {
     <div className="App">
       <Menu/>
       <Footer/>
-    
-    </div>
+      </div>
       
   );
 }
