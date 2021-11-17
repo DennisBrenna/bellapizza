@@ -14,11 +14,14 @@ import warmpizza from '../images/warmpizza.jpeg'
 const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body1,
     padding: theme.spacing(1),
-    backgroundColor: "pink",
+    backgroundColor: "black",
     color: "white",
     boxShadow: "white",
     textAlign: "center",
-    size: 56,
+    size: 90,
+    justifyContent: "center",
+    alignContent: "center",
+    boxShadow: "none",
 
   }));
 
@@ -26,13 +29,13 @@ const Item = styled(Paper)(({ theme }) => ({
 function FormRow() {
     return (
       <React.Fragment>
-          
+        <Item>
         <Box sx={{width: 1}}>
             <Box sx={{
                 display:"grid",
                 gridTemplateColumns:"repeat(2, 1fr)",
                 gridTemplateRows:"repeat(1, 1fr)",
-                gap:2
+                gap:1
                 }}>
 
                 <Box gridColumn="Span 12">
@@ -46,7 +49,7 @@ function FormRow() {
                     gridColumn: 1,
                     }}>
                
-
+                    
                         <Item>
                                 <img src={warmpizza} width="738px" height="580px"/>
                         </Item>
@@ -55,34 +58,28 @@ function FormRow() {
                 <Box sx={{
                     gridRow: 2,
                     gridColumn:2,
-                    gridTemplateRows:"repeat(2, 1fr)",
-                    gridTemplateColumns:"repeat(1, 1fr)"
                 }}>
                 
-                <Box sx={{
-                    gridTemplateRows:"repeat(2, 1fr)",
-                    gridTemplateColumns:"repeat(1, 1fr)"
-                }}>
+               
                         <Item>
-                        <Box sx={{
-                        gridRow: 1,
-                        gridColumns: 1,
-                        }}>
+
                                     <a>Real Italian</a><br/>
                                     <a style={{color: "green"}}>Pizza</a>
                                     <a> & </a>
                                     <a style={{color: "red"}}>Pasta</a><br/>
-                        </Box>
-
-                        <Box sx={{
-                        gridRow: 2,
-                        gridColumns: 2,
-                        }}>
-                            <Button/>
-                        </Box>
                         </Item>
+                                    </Box>
+
+                <Box sx={{
+                    gridRow: 3,
+                    gridColumn:2,
+                }}>
+                    <Item>
+                    <Button/>
+                    </Item>
                 </Box>
-                </Box>
+                        
+           
 
 
 
@@ -93,6 +90,7 @@ function FormRow() {
                 </Box>
             </Box>
         </Box>
+        </Item>
       </React.Fragment>
     );
   }
