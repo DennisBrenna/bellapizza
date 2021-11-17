@@ -6,7 +6,6 @@ import logo from '../images/bellalogo_final.svg'
 import { styled } from '@mui/material/styles';
 import { backdropClasses, Paper } from "@mui/material";
 
-
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';

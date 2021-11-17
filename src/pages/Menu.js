@@ -8,7 +8,9 @@ function Menu() {
     return(
 
         <>
-        <Grid container spacing={4} maxWidth={ 600 } margin="auto">
+        <Grid container spacing={4} maxWidth={ 600 } margin="auto" style={{
+        textAlign:'center' // this does the magic
+    }}>
             <Grid item xs={4}>
                 <ProductCard title="Calzone" description="Inbakad med skinka"/>
             </Grid>
