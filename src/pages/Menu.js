@@ -31,7 +31,7 @@ function Menu() {
                 <ProductCard title="Pasta Carbonara" description="Spaghetti, Bacon, Cream, Parmesan Black Pepper"/>
             </Grid>
             <Grid item xs={4}>
-                <ProductCard title="Spicy Pasta Seafood" description="Speghetti, Squid, Mushroom, Cream, Spinach, Basil, Chili"/>
+                <ProductCard title="Pasta Spicy Seafood" description="Speghetti, Squid, Mushroom, Cream, Spinach, Basil, Chili"/>
             </Grid>
             <Grid item xs={4}>
                 <ProductCard title="Pasta Meatballs" description="Pasta, Swedish Meatballs, Tomato Sauce"/>
