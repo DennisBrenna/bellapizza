@@ -1,36 +1,38 @@
 import * as React from 'react';
 
-/*import Card from '@mui/material/Card';
+import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import { CardActionArea, CardActions } from '@mui/material';
+import pizza1 from '../images/pizza1.jpeg';
+import Fab from '@mui/material/Fab';
+import AddIcon from '@mui/icons-material/Add';
 
-export default function MultiActionAreaCard() {
+export default function ProductCard({ title, description }) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    
+    <Card sx={{ maxWidth: 335, maxHeight: 300, border: 2, borderRadius: '20px'}}>
+      
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
-          image="/images/cards/logo.png"
-          alt="green iguana"
-        />
+          image={ pizza1 } alt="Inside" width="82px" height="140px"/>
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Calzone
+          <Typography gutterBottom variant="h6" component="div" textAlign="center">
+            { title }
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Gard är jävligt fet så han är fan tjock. Han vill ha en Calzone nu!
+          <Typography variant="body" color="text.secondary">
+            { description }
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Order Now
-        </Button>
+      <Fab size="small" color="primary" aria-label="add">
+        <AddIcon />
+      </Fab>
       </CardActions>
     </Card>
+    
   );
 }
-*/
