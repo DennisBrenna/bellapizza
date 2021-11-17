@@ -19,9 +19,9 @@ function CatHeader() {
         >
           <Link style={{ textDecoration: 'none', color: 'secondary' }} to="/">Bella Pizza</Link>
         </Typography>
-        <Button component={Link} variant="outlined" to="/addCat" size="small">Home</Button> 
-        <Button component={Link} variant="outlined" to="/catList" size="small">Meny</Button>
-        <Button component={Link} variant="outlined" to="/catList" size="small">Checkout</Button>
+        <Button component={Link} variant="outlined" to="/" size="small">Home</Button> 
+        <Button component={Link} variant="outlined" to="/menu" size="small">Meny</Button>
+        <Button component={Link} variant="outlined" to="/checkout" size="small">Checkout</Button>
       </Toolbar >
     </>
   );

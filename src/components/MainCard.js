@@ -5,6 +5,7 @@ import { styled } from '@mui/material/styles';
 import { Paper } from "@mui/material";
 import Box from '@mui/material/Box';
 
+import Header from '../components/Header'
 import Button from '../components/StandaloneToggleButton';
 import Footer from '../components/FooterCard';
 
@@ -28,6 +29,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function FormRow() {
     return (
+   
       <React.Fragment>
         <Item>
         <Box sx={{width: 1}}>
@@ -98,6 +100,7 @@ function FormRow() {
  function MainCard() {
 
     return (
+        <Header/>,
         <FormRow />  
     )
  }
