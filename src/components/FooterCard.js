@@ -18,41 +18,53 @@ const Item = styled(Paper)(({ theme }) => ({
     color: "white",
     backgroundColor: "black",
     boxShadow: "white",
+    marginTop: "10px",
+    justifyContent: "center",
+    alignContent: "center",
+    fontSize: "30px",
+
 
   }));
 
   function FormRow() {
     return (
-      <Grid container justifyContent="center" alignContent="center" item xs={12}>
-        <Grid container justifyContent="center" alignContent="center" item xs={3}>
-          <Item>
-            <img src={logo} alt="logo" width="321px" height="130,28"/><br/>
+        <Box
+        sx={{
+            display:'grid',
+            gridTemplateColumns: 'repeat(3, 1fr)'
+
+        }}>
+            <Item sx={{
+                gridColumn:1,
+            }}>
+                <img src={logo} alt="logo" width="321px" height="130,28"/><br/>
                 <FacebookOutlinedIcon/>
                 <InstagramIcon/>
                 <TwitterIcon/><br/>
                 <a>Contact us</a><br/>
                 <a>Bella@frontend.com</a><br/>
                 <a>Call Us +47 69 69 69 69</a><br/>
-          </Item>
-        </Grid>
+            </Item>
 
-        <Grid container item xs={3}>
-            <Item>
+            <Item sx={{
+                gridColumn:2,
+                
+            }}> 
                 <a>Opening hours</a><br/>
                 <a>Sunday - Monday:</a><br/>
                 <a>12pm - 10pm</a><br/>
 
                 <a>Friday - Saterday:</a><br/>
                 <a>12pm - 11pm</a>
-          </Item>
-        </Grid>
+            </Item>
 
-        <Grid container item xs={3}>
-            <Item>
+            <Item sx={{
+                gridColumn:3,
+                
+            }}>
                 <img src={store} alt="Inside" width="800px" height="500px"></img>
             </Item>
-        </Grid>
-      </Grid>
+        </Box>      
     );
   }
 
