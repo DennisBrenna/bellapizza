@@ -37,8 +37,8 @@ function CatHeader() {
        marginTop="5px"
       >
         <Item>
-        <Link style={{ textDecoration: 'none', color: 'secondary' }} to="/"> 
-        <img src={Logo} alt="BellaLogo" width="321px" height="116px"></img>
+        <Link to="/"> 
+        <img style={{width: '350px', height:'auto'}} src={Logo} alt="BellaLogo" width="321px" height="116px"></img>
          </Link>
         </Item>
 
