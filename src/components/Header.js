@@ -3,6 +3,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
 import { Link } from 'react-router-dom'
+import Logo from '../images/bellalogo_final.svg'
 
 function CatHeader() {
 
@@ -17,7 +18,7 @@ function CatHeader() {
           noWrap
           sx={{ flex: 1 }}
         >
-          <Link style={{ textDecoration: 'none', color: 'secondary' }} to="/">Bella Pizza</Link>
+          <Link style={{ textDecoration: 'none', color: 'secondary' }} to="/"> <img src={Logo} alt="BellaLogo" width="321px" height="116px"></img> </Link>
         </Typography>
         <Button component={Link} variant="outlined" to="/" size="small">Home</Button> 
         <Button component={Link} variant="outlined" to="/menu" size="small">Meny</Button>
