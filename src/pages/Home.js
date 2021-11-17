@@ -1,12 +1,15 @@
 import * as React from "react";
 
-
 import MainCard from '../components/MainCard';
+import Header from '../components/Header';
 
 function Home() {
 
     return(
-        <MainCard/>
+        <>
+        <Header/>
+        <MainCard />
+        </>
     )
 }
 
