@@ -24,7 +24,7 @@ function Menu() {
                 <ProductCard title="Calzone" description="Inbakad med skinka"/>
             </Grid>
             <Grid item xs={4}>
-                <ProductCard title="Jason Special" description="Tomatosauce, Cheese, Salami, Mushrooms, Tomatoes, Olives "/>
+                <ProductCard title="Jason Special" description="Cheese, Salami, Mushrooms, Tomatoes, Olives"/>
             </Grid>
             <Grid item xs={4}>
                 <ProductCard title="Calzone" description="Inbakad med skinka"/>
