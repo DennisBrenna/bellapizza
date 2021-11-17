@@ -22,10 +22,14 @@ function App() {
   
   
   return (
-    <div className="App">
-      <Home/>
-      <Menu/>
-      </div>
+  
+  
+    <Routes>
+      <Route exact path='/' element={ <Home/>} />
+      <Route path='/checkout' element={ <Checkout/>} />
+      <Route path='/menu' element={ <Menu/>} />
+      <Route path='/error' element={ <Error/>} />
+    </Routes> 
   );
 }
 

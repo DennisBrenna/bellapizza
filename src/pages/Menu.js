@@ -1,4 +1,5 @@
 import React from "react";
+import Header from '../components/Header'
 import ProductCard from '../components/ProductCard';
 import Grid from '@mui/material/Grid';
 import Footer from '../components/FooterCard';
@@ -6,8 +7,9 @@ import Footer from '../components/FooterCard';
 function Menu() {
 
     return(
-
+     
         <>
+        <Header/>
         <Grid container spacing={4} maxWidth={ 600 } margin="auto">
             <Grid item xs={4}>
                 <ProductCard title="Vesuvio" description="Chesse, Ham"/>
