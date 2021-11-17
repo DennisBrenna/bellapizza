@@ -6,9 +6,9 @@ import './App.css';
 import Footer from './components/FooterCard';
 
 import Home from './pages/Home';
-import ProductCard from './components/ProductCard';
+import Menu from './pages/Menu';
 
-import Menu from './pages/Menu'
+
 
 //import { createTheme } from '@mui/material'
 //import { amber, teal } from '@mui/material/colors';
@@ -22,6 +22,7 @@ function App() {
     <div className="App">
 
       <Home/>
+      <Menu/>
       </div>
       
   );

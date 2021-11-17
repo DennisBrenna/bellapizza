@@ -12,7 +12,7 @@ import AddIcon from '@mui/icons-material/Add';
 export default function ProductCard({ title, description }) {
   return (
     
-    <Card sx={{ maxWidth: 335, maxHeight: 300, border: 2, borderRadius: '20px'}}>
+    <Card sx={{ maxWidth: 335, maxHeight: 400, border: 2, borderRadius: '20px'}}>
       <CardActionArea>
         <CardMedia
           component="img"

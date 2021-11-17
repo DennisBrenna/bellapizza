@@ -8,35 +8,33 @@ function Menu() {
     return(
 
         <>
-        <Grid container spacing={4} maxWidth={ 600 } margin="auto" style={{
-        textAlign:'center' // this does the magic
-    }}>
+        <Grid container spacing={4} maxWidth={ 600 } margin="auto">
             <Grid item xs={4}>
-                <ProductCard title="Calzone" description="Inbakad med skinka"/>
+                <ProductCard title="Calzone" description="(Folded) Cheese, Ham"/>
             </Grid>
             <Grid item xs={4}>
-                <ProductCard title="Calzone" description="Inbakad med skinka"/>
+                <ProductCard title="Vesuvio" description="Cheese, Ham"/>
             </Grid>
             <Grid item xs={4}>
-                <ProductCard title="Calzone" description="Inbakad med skinka"/>
+                <ProductCard title="Capricciosa" description="Cheese, Ham, Mushroom"/>
             </Grid>
             <Grid item xs={4}>
-                <ProductCard title="Calzone" description="Inbakad med skinka"/>
+                <ProductCard title="Mexicana" description="Cheese, Meat Sauce, Onion, Pepper, Chili"/>
             </Grid>
             <Grid item xs={4}>
-                <ProductCard title="Calzone" description="Inbakad med skinka"/>
+                <ProductCard title="Kebab Pizza" description="Cheese, Kebab Meat, Onion, Kebab Sauce"/>
             </Grid>
             <Grid item xs={4}>
-                <ProductCard title="Jason Special" description="Cheese, Salami, Mushrooms, Tomatoes, Olives"/>
+                <ProductCard title="Jason Special" description="Cheese, Salami, Mushroom, Tomato, Olive"/>
             </Grid>
             <Grid item xs={4}>
-                <ProductCard title="Calzone" description="Inbakad med skinka"/>
+                <ProductCard title="Pasta Carbonara" description="Spaghetti, Bacon, Cream, Parmesan Black Pepper"/>
             </Grid>
             <Grid item xs={4}>
-                <ProductCard title="Calzone" description="Inbakad med skinka"/>
+                <ProductCard title="Spicy Pasta Seafood" description="Speghetti, Squid, Mushroom, Cream, Spinach, Basil, Chili"/>
             </Grid>
             <Grid item xs={4}>
-                <ProductCard title="Calzone" description="Inbakad med skinka"/>
+                <ProductCard title="Pasta Meatballs" description="Pasta, Swedish Meatballs, Tomato Sauce"/>
             </Grid>
         </Grid>
         <Footer/>
