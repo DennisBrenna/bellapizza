@@ -16,13 +16,15 @@ const Item = styled(Paper)(({ theme }) => ({
     textAlign: 'center',
     alignItems: "flex-end",
     color: "white",
-    backgroundColor: "black"
+    backgroundColor: "black",
+    boxShadow: "white",
+
   }));
 
   function FormRow() {
     return (
-      <React.Fragment>
-        <Grid item xs={3}>
+      <Grid container justifyContent="center" alignContent="center" item xs={12}>
+        <Grid container justifyContent="center" alignContent="center" item xs={3}>
           <Item>
             <img src={logo} alt="logo" width="321px" height="130,28"/><br/>
                 <FacebookOutlinedIcon/>
@@ -30,11 +32,11 @@ const Item = styled(Paper)(({ theme }) => ({
                 <TwitterIcon/><br/>
                 <a>Contact us</a><br/>
                 <a>Bella@frontend.com</a><br/>
-                <a>Call Us +47 69696969</a><br/>
+                <a>Call Us +47 69 69 69 69</a><br/>
           </Item>
         </Grid>
 
-        <Grid item xs={3}>
+        <Grid container item xs={3}>
             <Item>
                 <a>Opening hours</a><br/>
                 <a>Sunday - Monday:</a><br/>
@@ -44,21 +46,21 @@ const Item = styled(Paper)(({ theme }) => ({
                 <a>12pm - 11pm</a>
           </Item>
         </Grid>
-        <Grid item xs={6}>
+
+        <Grid container item xs={3}>
             <Item>
                 <img src={store} alt="Inside" width="800px" height="500px"></img>
             </Item>
         </Grid>
-      </React.Fragment>
+      </Grid>
     );
   }
 
 function Footer() {
 
     return (
-
         <Box>
-            <Grid container item spacing={3} alignItems="flex-end">
+            <Grid container item spacing={3} alignItems="center">
                 <FormRow />
             </Grid>
         </Box>
