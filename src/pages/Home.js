@@ -5,8 +5,8 @@ import React from 'react';
 //import Footer from '../components/FooterCard';
 import MainCard from '../components/MainCard';
 
-// export default function Home() {
-//     <Container maxWidth="md">
-//         <MainCard/>
-//     </Container>
-// }
+ export default function Home() {
+     <Container maxWidth="md">
+         <MainCard/>
+     </Container>
+ }
