@@ -21,7 +21,6 @@ function App() {
     
     <div className="App">
       <Menu/>
-      <Footer/>
       </div>
       
   );

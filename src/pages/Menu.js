@@ -1,6 +1,7 @@
 import React from "react";
 import ProductCard from '../components/ProductCard';
 import Grid from '@mui/material/Grid';
+import Footer from '../components/FooterCard';
 
 function Menu() {
 
@@ -36,8 +37,9 @@ function Menu() {
                 <ProductCard title="Calzone" description="Inbakad med skinka"/>
             </Grid>
         </Grid>
+        <Footer/>
         </>
-
+        
     );
 
 }
