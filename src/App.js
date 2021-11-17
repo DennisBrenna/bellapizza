@@ -1,10 +1,7 @@
 import React from 'react';
-import logo from'./images/bellalogo_final.svg';
-//import mainimage from './images/main.jpeg';
-//import warmpizza from './images/warmpizza.jpeg';
 import './App.css';
-import Footer from './components/FooterCard';
 
+import Footer from './components/FooterCard';
 import Home from './pages/Home';
 import Menu from './pages/Menu';
 
@@ -15,12 +12,12 @@ import Menu from './pages/Menu';
 //import { ThemeProvider } from '@mui/system';
 //import { useEffect, useState } from 'react';
 //import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import ProductCard from './components/ProductCard';
+import Menu from './pages/Menu';
 
 function App() {
   return (
-    
     <div className="App">
-
       <Home/>
       <Menu/>
       </div>
