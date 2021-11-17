@@ -26,7 +26,7 @@ function CatHeader() {
   return (
 
      
-      <Toolbar style={{color: 'main'}} sx={{ mb:2, borderBottom: 1, borderColor: 'divider' }}>
+      <Toolbar >
 
       <Grid 
        container
@@ -34,18 +34,20 @@ function CatHeader() {
        direction="column"
        alignItems="center"
        justifyContent="center"
-       marginTop="20px"
+       marginTop="5px"
       >
         <Item>
         <Link style={{ textDecoration: 'none', color: 'secondary' }} to="/"> 
         <img src={Logo} alt="BellaLogo" width="321px" height="116px"></img>
          </Link>
         </Item>
-        <Item>
 
-        <Button component={Link} variant="outlined" to="/" size="small">Home</Button> 
-        <Button component={Link} variant="outlined" to="/menu" size="small">Meny</Button>
-        <Button component={Link} variant="outlined" to="/checkout" size="small">Checkout</Button>
+        <Item>
+        
+        <Link class="linksHeader" component={Link} variant="outlined" to="/" size="small">Home</Link> 
+        <Link  class="linksHeader"component={Link} variant="outlined" to="/menu" size="small">Meny</Link>
+        <Link  class="linksHeader"component={Link} variant="outlined" to="/checkout" size="small">Checkout</Link>
+
         </Item>
         
         </Grid>
