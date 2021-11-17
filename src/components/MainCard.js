@@ -4,13 +4,16 @@ import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
 import { Paper } from "@mui/material";
 import Box from '@mui/material/Box';
+import Divider from '@mui/material/Divider';
+
 
 import Header from '../components/Header'
 import Button from '../components/StandaloneToggleButton';
 import Footer from '../components/FooterCard';
 
-import mainImg from '../images/main.jpeg'
+import mainImg from '../images/main.png'
 import warmpizza from '../images/warmpizza.jpeg'
+import { height } from "@mui/system";
 
 const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body1,
@@ -38,7 +41,7 @@ function FormRow() {
                 display:"grid",
                 gridTemplateColumns:"repeat(2, 1fr)",
                 gridTemplateRows:"repeat(1, 1fr)",
-                gap:1
+                gap:1,
                 }}>
 
                 <Box gridColumn="Span 12">
@@ -50,12 +53,22 @@ function FormRow() {
                 <Box sx={{
                     gridRow: 2,
                     gridColumn: 1,
+                    height:'1305px',
+                    marginTop:"0px",
+
                     }}>
                
-                    
+                    <Grid
+                    container
+                    direction="column"
+                    alignItems="center"
+                    justifyContent="center"
+                    marginLeft="-160px"
+                    >
                         <Item>
-                                <img src={warmpizza} width="738px" height="580px"/>
+                                <img src={warmpizza} width="140%" height="1105px"/>
                         </Item>
+                    </Grid>
                 </Box>
 
                 <Box sx={{
@@ -65,28 +78,67 @@ function FormRow() {
                 
                
                         <Item>
+                        <Grid
+                    container
+                    direction="column"
+                    alignItems="center"
+                    justifyContent="center"
+                    fontSize="60px"
+                    marginTop="40px"
+                    >
 
-                                    <a>Real Italian</a><br/>
+                                    <a>Real Italian</a>
+                                <Grid 
+                                container
+                                direction="row"
+                                alignContent="center"
+                                justifyContent="center"
+                                fontSize="60px"
+                                >
                                     <a style={{color: "green"}}>Pizza</a>
                                     <a> & </a>
-                                    <a style={{color: "red"}}>Pasta</a><br/>
+                                    <a style={{color: "red"}}>Pasta</a>
+                                    
+                                </Grid>
+                                
+                            </Grid>
+                            <Grid
+                    container
+                    direction="column"
+                    alignItems="center"
+                    justifyContent="center"
+                    fontSize="60px"
+                    marginTop="15%"
+                    >
+                        <Divider orientation="horizontal" color="white" flexItem></Divider>
+                        </Grid>
                         </Item>
-                                    </Box>
+                   </Box>
 
                 <Box sx={{
-                    gridRow: 3,
+                    gridRow: 2,
                     gridColumn:2,
+                    marginTop:"50%",
+                    size: "large"
                 }}>
                     <Item>
+                    <Grid
+                    container
+                    direction="column"
+                    alignItems="center"
+                    justifyContent="center"
+                    backgroundColor="black"
+                    >
                     <Button/>
+                    </Grid>
                     </Item>
                 </Box>
                         
            
 
 
-
                 <Box gridColumn="span 12">
+                
                     <Item>
                         <Footer/>
                     </Item>
