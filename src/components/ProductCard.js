@@ -14,7 +14,7 @@ import Divider from '@mui/material/Divider';
 export default function ProductCard({ title, description }) {
   return (
     
-    <Card sx={{ maxWidth: 400, height: 350, border: 2, borderRadius: '20px', backgroundColor: 'black', borderColor: "white", color: "white"}}>
+    <Card sx={{ maxWidth: 200, height: 250, border: 2, borderRadius: '20px', backgroundColor: 'black', borderColor: "white", color: "white"}}>
       <CardActionArea>
         <CardMedia
           style={{ height: "100%" }}
