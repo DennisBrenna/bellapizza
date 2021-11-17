@@ -6,7 +6,6 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea, CardActions } from '@mui/material';
 import pizza1 from '../images/pizza1.jpeg';
-import pizza2 from '../images/pizza2.jpeg';
 import Fab from '@mui/material/Fab';
 import AddIcon from '@mui/icons-material/Add';
 
@@ -17,7 +16,7 @@ export default function ProductCard({ title, description }) {
       <CardActionArea>
         <CardMedia
           component="img"
-          image={ pizza1, pizza2 } alt="Inside" width="82px" height="140px"/>
+          image={ pizza1 } alt="Pizza" width="82px" height="140px"/>
         <CardContent>
           <Typography gutterBottom variant="h6" component="div" textAlign="center">
             { title }
@@ -27,8 +26,8 @@ export default function ProductCard({ title, description }) {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
-      <Fab size="small" color="primary" aria-label="add">
+      <CardActions style={{justifyContent: 'center'}}>
+      <Fab size="small" color="inherit" aria-label="add">
         <AddIcon />
       </Fab>
       </CardActions>
