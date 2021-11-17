@@ -2,17 +2,20 @@ body {
   background-color: black;
 }
 
+/********HEADER********/
 .linksHeader{
-
-  text-decoration: none;
-
+text-decoration: none;
  color: #ffffff;
  padding: 15px;
 
 }
 .linksHeader:hover{
-
   text-decoration: underline;
-  
+}
 
+
+/********CHECKOUT*********/
+.checkoutCard{
+  background-color: tomato;
+  color: white;
 }
