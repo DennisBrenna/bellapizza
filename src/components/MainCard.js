@@ -14,51 +14,85 @@ import warmpizza from '../images/warmpizza.jpeg'
 const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body1,
     padding: theme.spacing(1),
-    backgroundColor: "black",
+    backgroundColor: "pink",
     color: "white",
     boxShadow: "white",
-    
+    textAlign: "center",
+    size: 56,
+
   }));
 
 
 function FormRow() {
     return (
       <React.Fragment>
-          <Grid container item xs={12} container direction="column">
-            <Grid item xs={1}>
-            <Item>
-                <img src={mainImg} width="100%" height="804px"/>
-            </Item>
-            </Grid>
+          
+        <Box sx={{width: 1}}>
+            <Box sx={{
+                display:"grid",
+                gridTemplateColumns:"repeat(2, 1fr)",
+                gridTemplateRows:"repeat(1, 1fr)",
+                gap:2
+                }}>
 
-            <Grid item xs={4}>
-            <Item>
-                <Grid container direction="row"> 
-                    <Grid>
-                        <img src={warmpizza} width="738px" height="580px"/>
-                    </Grid>
+                <Box gridColumn="Span 12">
+                    <Item>
+                        <img src={mainImg} width="100%" height="804px"/>
+                    </Item>
+                </Box>
 
-                    <Grid>
-                        <a>Real Italian</a><br/>
-                        <a style={{color: "green"}}>Pizza</a>
-                        <a> & </a>
-                        <a style={{color: "red"}}>Pasta</a>
-                    </Grid>
+                <Box sx={{
+                    gridRow: 2,
+                    gridColumn: 1,
+                    }}>
+               
 
-                    <Grid>
-                        <Button/>
-                    </Grid>
-                </Grid>
-            </Item>
+                        <Item>
+                                <img src={warmpizza} width="738px" height="580px"/>
+                        </Item>
+                </Box>
 
-            </Grid>
-            
-            <Grid item xs={4}>
-            <Item>
-                <Footer/>
-            </Item>
-            </Grid>
-        </Grid>
+                <Box sx={{
+                    gridRow: 2,
+                    gridColumn:2,
+                    gridTemplateRows:"repeat(2, 1fr)",
+                    gridTemplateColumns:"repeat(1, 1fr)"
+                }}>
+                
+                <Box sx={{
+                    gridTemplateRows:"repeat(2, 1fr)",
+                    gridTemplateColumns:"repeat(1, 1fr)"
+                }}>
+                        <Item>
+                        <Box sx={{
+                        gridRow: 1,
+                        gridColumns: 1,
+                        }}>
+                                    <a>Real Italian</a><br/>
+                                    <a style={{color: "green"}}>Pizza</a>
+                                    <a> & </a>
+                                    <a style={{color: "red"}}>Pasta</a><br/>
+                        </Box>
+
+                        <Box sx={{
+                        gridRow: 2,
+                        gridColumns: 2,
+                        }}>
+                            <Button/>
+                        </Box>
+                        </Item>
+                </Box>
+                </Box>
+
+
+
+                <Box gridColumn="span 12">
+                    <Item>
+                        <Footer/>
+                    </Item>
+                </Box>
+            </Box>
+        </Box>
       </React.Fragment>
     );
   }
@@ -66,11 +100,7 @@ function FormRow() {
  function MainCard() {
 
     return (
-        <Box>
-            <Grid container direction="column" justifyContent="center" alignContent="center">
-                <FormRow />
-            </Grid>
-        </Box>
+        <FormRow />  
     )
  }
 
