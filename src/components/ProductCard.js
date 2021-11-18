@@ -5,22 +5,23 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea, CardActions } from '@mui/material';
-import pizza1 from '../images/pizza1.png';
+import pizza from '../images/pizza1.png';
 import Fab from '@mui/material/Fab';
+import pasta from '../images/warmpizza.jpeg';
 import AddIcon from '@mui/icons-material/Add';
 import Divider from '@mui/material/Divider';
 
 
-export default function ProductCard({ title, description }) {
+export default function ProductCard({ title, description, dish }) {
   return (
     
     <Card sx={{ maxWidth: 200, height: 250, border: 2, borderRadius: '20px', backgroundColor: 'black', borderColor: "white", color: "white"}}>
-      <CardActionArea>
+      <CardActionArea style={{height: "75%"}}>
         <CardMedia
-          style={{ height: "100%" }}
+          style={{ height: "50%"}}
           component="img"
-          image={ pizza1 } alt="Pizza" width="82px" height="140px"/>
-        <CardContent>
+          image={ dish === 'pizza' ? pizza : pasta } alt={dish} width="82px" height="100px"/>
+        <CardContent style={{height: "50%", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
           <Typography gutterBottom variant="h7" component="div" textAlign="center">
             { title }
           </Typography>
