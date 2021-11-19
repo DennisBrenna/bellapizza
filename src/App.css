@@ -18,7 +18,7 @@ body {
 }
 
 .linksInHeader:hover {
-  color: silver;
+  color: grey;
 }
 
 .linksInHeader::before {
@@ -53,7 +53,7 @@ body {
 }
 
 .linksInMenu:hover {
-  color: silver;
+  color: grey;
 }
 
 .linksInMenu::before {
@@ -73,7 +73,21 @@ body {
   transform: scaleX(1);
 }
 
+.addButton {
+  color: black;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.addButton:hover {
+  color: black;
+  background-color: grey;
+}
+
 /*********Main************/
+
 #mainOrdernowBtn{
   background-color: black;
   width: auto;
@@ -103,17 +117,3 @@ body {
 .One{
  
 }
-
-.addButton {
-  color: black;
-  height: 25px;
-  width: 25px;
-  background-color: white;
-  border-radius: 50%;
-}
-
-.addButton:hover {
-  color: black;
-  background-color: silver;
-}
-
