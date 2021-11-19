@@ -47,7 +47,7 @@ const Item = styled(Paper)(({ theme }) => ({
                     justifyContent="center"
                     >
                 
-                <img src={logo} alt="logo" width="321px" height="130,28"/><br/>
+                <img src={logo} alt="logo" width="321px" height="100"/><br/>
                 <Grid 
                     container 
                     direction="row"

@@ -9,7 +9,7 @@ import { backdropClasses, Paper } from "@mui/material";
 import Box from '@mui/material/Box';
 import { Grid } from '@mui/material';
 
-function CatHeader() {
+function Header() {
 
   const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body1,
@@ -38,13 +38,13 @@ function CatHeader() {
       >
         <Item>
         <Link to="/"> 
-        <img style={{width: '350px', height:'auto'}} src={Logo} alt="BellaLogo" width="321px" height="116px"></img>
+        <img style={{width: '321px', height:'100px'}} src={Logo} alt="BellaLogo"></img>
          </Link>
         </Item>
 
         <Item>
         
-        <Link class="linksHeader" component={Link} variant="outlined" to="/" size="small">Home</Link> 
+        <Link class="linksHeader" component={Link} variant="outlined" to="/" size="large">Home</Link> 
         <Link  class="linksHeader"component={Link} variant="outlined" to="/menu" size="small">Meny</Link>
         <Link  class="linksHeader"component={Link} variant="outlined" to="/checkout" size="small">Checkout</Link>
 
@@ -56,4 +56,4 @@ function CatHeader() {
   );
 }
 
-export default CatHeader;
+export default Header;
