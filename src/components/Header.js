@@ -10,7 +10,9 @@ import Box from '@mui/material/Box';
 import { Grid } from '@mui/material';
 import { spacing } from '@mui/system';
 
-function Header() {
+function Header(props) {
+
+  const {countCartItems} = props;
 
   const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body1,
@@ -53,7 +55,14 @@ function Header() {
         <Link  class="linksInHeader"component={Link} variant="outlined" to="/checkout" size="small">Checkout</Link>
         
         </Item>
-        
+        <div class="linksInHeader">
+        <a>Cart{' '}
+        {countCartItems?  (
+          <button>{countCartItems}</button>):(''
+        )}
+        </a>
+        </div>
+
         </Grid>
       </Toolbar>
    
