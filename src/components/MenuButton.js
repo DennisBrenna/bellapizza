@@ -24,7 +24,6 @@ function MenuButton() {
     alignContent: "center",
   }));
 
-
     return (
 
       <Toolbar >
@@ -36,7 +35,7 @@ function MenuButton() {
        alignItems="center"
        justifyContent="center"
        marginTop="15px"
-       marginBottom="-20px"
+       marginBottom="10px"
       >
         
         <Item class="allLinks">
