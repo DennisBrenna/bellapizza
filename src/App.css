@@ -39,7 +39,7 @@ padding: 10px;
 }
 
 /*********Main************/
-button{
+#mainOrdernowBtn{
   background-color: black;
   width: auto;
   color: white;
@@ -50,7 +50,7 @@ button{
   border-radius: 30px;
 }
 
-button:hover{
+#mainOrdernowBtn:hover{
   background-color: #30C318;
   color: white;
   cursor: pointer;

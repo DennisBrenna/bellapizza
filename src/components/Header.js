@@ -36,7 +36,7 @@ function Header() {
         direction="columns"
         alignItems="center"
         justifyContent="center"
-        marginLeft="40px"
+        marginLeft="125px"
 
       >
         <Item>     
