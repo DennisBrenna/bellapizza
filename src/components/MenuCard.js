@@ -2,14 +2,11 @@ import React from "react";
 import Header from '../components/Header'
 import ProductCard from '../components/ProductCard';
 import Grid from '@mui/material/Grid';
-import Footer from '../components/FooterCard';
-
 function MenuCard() {
 
     return(
-<>
-        <Header/>
-        <Grid container spacing={4} maxWidth={ 600 } margin="auto">
+        <>
+        <Grid container spacing={4} maxWidth={ 600 } margin="auto" marginBottom="50px">
             <Grid item xs={4}>
                 <ProductCard title="Vesuvio" description="Chesse, Ham" dish="pizza"/>
             </Grid>
@@ -38,7 +35,6 @@ function MenuCard() {
                 <ProductCard title="Pasta Meatballs" description="Pasta, Swedish Meatballs, Tomato Sauce" dish="pasta"/>
             </Grid>
         </Grid>
-        <Footer/>
         </>
     );
 }
