@@ -5,6 +5,7 @@ import { styled } from '@mui/material/styles';
 import { Paper } from "@mui/material";
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
+import { Link } from 'react-router-dom';
 
 
 import Header from '../components/Header'
@@ -48,13 +49,25 @@ function FormRow() {
                     <Item>
                         <img src={mainImg} width="100%" height="804px"/>
                     </Item>
+                    <Grid
+                    container
+                    direction="column"
+                    alignItems="center"
+                    justifyContent="center"
+                    marginTop="30px"
+                    marginBottom="-5px"
+                    >
+                    <Divider orientation="horizontal" color="white" flexItem></Divider>
+                    </Grid>
                 </Box>
 
+                
                 <Box sx={{
                     gridRow: 2,
                     gridColumn: 1,
-                    height:'1305px',
-                    marginTop:"0px",
+                    height:'1000px',
+                    marginTop:"50px",
+                    marginBottom:"-200px",
 
                     }}>
                
@@ -63,10 +76,12 @@ function FormRow() {
                     direction="column"
                     alignItems="center"
                     justifyContent="center"
-                    marginLeft="-160px"
+                    marginLeft="-10px"
+                    
                     >
                         <Item>
-                                <img src={warmpizza} width="140%" height="1105px"/>
+                                <img src={warmpizza} width="700" height="700" borderRadius= "30px"
+                                id="warmpizzaMain"/>
                         </Item>
                     </Grid>
                 </Box>
@@ -108,7 +123,7 @@ function FormRow() {
                     alignItems="center"
                     justifyContent="center"
                     fontSize="60px"
-                    marginTop="15%"
+                    marginTop="13%"
                     >
                         <Divider orientation="horizontal" color="white" flexItem></Divider>
                         </Grid>
@@ -119,7 +134,7 @@ function FormRow() {
                     gridRow: 2,
                     gridColumn:2,
                     marginTop:"50%",
-                    size: "large"
+                    size: "large",
                 }}>
                     <Item>
                     <Grid
@@ -129,7 +144,9 @@ function FormRow() {
                     justifyContent="center"
                     backgroundColor="black"
                     >
-                    <Button/>
+                    <Link to="/Menu">
+                    <button type="button" id="mainOrdernowBtn">ORDER NOW</button>
+                    </Link>
                     </Grid>
                     </Item>
                 </Box>
@@ -139,9 +156,6 @@ function FormRow() {
 
                 <Box gridColumn="span 12">
                 
-                    <Item>
-                        <Footer/>
-                    </Item>
                 </Box>
             </Box>
         </Box>
