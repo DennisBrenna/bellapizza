@@ -1,8 +1,11 @@
 import React from 'react'
 import Grid from '@mui/material/Grid';
+import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import { backdropClasses, Paper } from "@mui/material";
+import ProductCard from '../components/ProductCard';
 import Header from '../components/Header'
+import pizza from '../images/pizza1.png'
 
 export default function Checkout() {
 
@@ -31,7 +34,7 @@ export default function Checkout() {
     return (
         <>
             <Header/>
-            <div>
+            
             <Grid container>
                 <Grid>
                 <Title md={6}><h1>Items</h1></Title>
@@ -50,7 +53,7 @@ export default function Checkout() {
                 <Title xs={2}> hei</Title>
                 </Grid>
                 <Grid>
-                <Item md={2}> hei</Item>
+                <img src={pizza}></img>
                 </Grid>
                 <Grid>
                 <Item md={2}> hei</Item>
@@ -61,7 +64,30 @@ export default function Checkout() {
            
            
             </Grid>
-            </div>
+            <Grid container>
+                <Grid>
+                <Title md={6}><h1>Want something else?</h1></Title>
+                
+                </Grid>
+                
+            <Grid item xs={4}>
+                <ProductCard title="Vesuvio" description="Chesse, Ham"/>
+            </Grid>
+            <Grid item xs={4}>
+                <ProductCard title="Hawaii" description="Cheese, Ham, Pineapple"/>
+            </Grid>
+            <Grid item xs={4}>
+                <ProductCard title="Capricciosa" description="Cheese, Ham, Mushroom"/>
+            </Grid>
+            <Grid item xs={4}>
+                <ProductCard title="Mexicana" description="Cheese, Meat Sauce, Onion, Pepper"/>
+            </Grid>
+            </Grid>
+
+            <Grid>
+                <Button>Checkout</Button>
+            </Grid>
+
 
      
 
