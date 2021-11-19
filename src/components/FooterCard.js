@@ -98,7 +98,7 @@ const Item = styled(Paper)(({ theme }) => ({
                 <img src={store} alt="Inside" width="auto" height="350px"></img>
                 </Grid>
             </Item>
-        </Box>      
+        </Box>   
     );
   }
 
@@ -107,7 +107,7 @@ function Footer() {
     return (
         <Box>
             <Grid container item spacing={3} alignItems="center">
-                <FormRow />
+                <FormRow/>
             </Grid>
         </Box>
     )

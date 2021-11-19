@@ -5,7 +5,7 @@ import { styled } from '@mui/material/styles';
 import { Paper } from "@mui/material";
 import ProductCard from '../components/ProductCard';
 import Header from '../components/Header'
-import pizza from '../images/pizza1.png'
+import pizza from '../images/Pizza.png'
 
 export default function Checkout() {
 
