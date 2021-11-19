@@ -83,6 +83,10 @@ padding: 10px;
   cursor: pointer;
 
 }
+
+#warmpizzaMain{
+  border-radius: 20%;
+}
 /********CHECKOUT*********/
 .checkoutCard{
 
