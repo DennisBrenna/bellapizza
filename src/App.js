@@ -17,16 +17,22 @@ import Menu from './pages/Menu';
 //import { useEffect, useState } from 'react';
 import { Route, Routes, Router } from 'react-router-dom';
 import ProductCard from './components/ProductCard';
+import data from './data';
 
 function App() {
   
-  
+  const {products} = data;
+ 
+
+
+
+
   return (
   
   
     <Routes>
       <Route exact path='/' element={ <Home/>} />
-      <Route path='/checkout' element={ <Checkout/>} />
+      <Route  path='/checkout' element={ <Checkout products = {products}/>} />
       <Route path='/menu' element={ <Menu/>} />
       <Route path='/error' element={ <Error/>} />
     </Routes> 

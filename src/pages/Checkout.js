@@ -1,13 +1,17 @@
-import React from 'react'
+import React from 'react';
+import {useState} from 'react';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import { Paper } from "@mui/material";
 import ProductCard from '../components/ProductCard';
-import Header from '../components/Header'
-import pizza from '../images/Pizza.png'
+import Header from '../components/Header';
+import pizza from '../images/Pizza.png';
+import Product from '../components/Product';
+import ShoppingCart from '../components/ShoppingCart';
 
-export default function Checkout() {
+
+export default function Checkout(props) {
 
     const Item = styled(Paper)(({ theme }) => ({
         ...theme.typography.body1,
@@ -29,11 +33,33 @@ export default function Checkout() {
         boxShadow: "white",
       }));
 
+      const {products} = props;
+      const [cartItems, setCartItems] = useState([]);
+      const onAdd = (product) => {
+          const exists = cartItems.find(x => x.id === product.id);
+          if(exists){
+              setCartItems(cartItems.map(x => x.id === product.id ?{...exists, qty: exists.qty+1}:x
+                ));
+          }
+          else{
+              setCartItems([...cartItems, {...product, qty: 1}])
+          }
+      }
+      const onRemove = (product) => {
+        const exists = cartItems.find(x => x.id === product.id);
+        if(exists.qty === 1){
+            setCartItems(cartItems.filter((x) => x.id !== product.id));
+        } else {
+            setCartItems(cartItems.map(x => x.id === product.id ?{...exists, qty: exists.qty-1}:x
+                ));
+        }
 
+      }
 
     return (
         <>
-            <Header/>
+            <Header countCartItems={cartItems.length}/>
+            <ShoppingCart onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}/>
             
             <Grid container>
                 <Grid>
@@ -67,21 +93,15 @@ export default function Checkout() {
             <Grid container>
                 <Grid>
                 <Title md={6}><h1>Want something else?</h1></Title>
-                
                 </Grid>
-                
-            <Grid item xs={4}>
-                <ProductCard title="Vesuvio" description="Chesse, Ham"/>
             </Grid>
-            <Grid item xs={4}>
-                <ProductCard title="Hawaii" description="Cheese, Ham, Pineapple"/>
-            </Grid>
-            <Grid item xs={4}>
-                <ProductCard title="Capricciosa" description="Cheese, Ham, Mushroom"/>
-            </Grid>
-            <Grid item xs={4}>
-                <ProductCard title="Mexicana" description="Cheese, Meat Sauce, Onion, Pepper"/>
-            </Grid>
+
+            <Grid container>
+                <Grid md={4}>
+                {products.map((product) => (
+                    <Product key={product.id} product={product} onAdd={onAdd} onRemove={onRemove}></Product>
+                ))}
+                </Grid>
             </Grid>
 
             <Grid>
