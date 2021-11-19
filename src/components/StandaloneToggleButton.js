@@ -7,7 +7,7 @@ export default function StandaloneToggleButton() {
 
   return (
     <ToggleButton
-
+    
       color="success"
       size="large"
       value="check"

@@ -103,3 +103,17 @@ body {
 .One{
  
 }
+
+.addButton {
+  color: black;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.addButton:hover {
+  color: black;
+  background-color: silver;
+}
+
