@@ -15,8 +15,8 @@ import Divider from '@mui/material/Divider';
 export default function ProductCard({ title, description, dish }) {
   return (
     
-    <Card sx={{ maxWidth: 200, height: 250, border: 2, borderRadius: '20px', backgroundColor: 'black', borderColor: "white", color: "white"}}>
-      <CardActionArea style={{height: "75%"}}>
+    <Card sx={{ maxWidth: 200, height: 250, border: 2, borderRadius: '20px', backgroundColor: 'black', borderColor: "white", color: "white", alignContent: "center", }}>
+      <CardActionArea style={{height: "75%", justifyContent:"center", alignContent:"center"}}>
         <CardMedia
           style={{ height: "50%"}}
           component="img"
@@ -32,7 +32,7 @@ export default function ProductCard({ title, description, dish }) {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions style={{justifyContent: "center", height: "50px"}}>
+      <CardActions style={{justifyContent: "center", alignContent: "center", marginTop: "4px", height: "50px"}}>
       <Fab size="small" aria-label="add" href="http://www.nhl.com">
         <AddIcon />
       </Fab>
