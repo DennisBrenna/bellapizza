@@ -43,7 +43,7 @@ function Header(props) {
       >
         <Item>     
         <Link class="linksInHeader" component={Link} variant="outlined" to="/" size="small">Home</Link> 
-        <Link  class="linksInHeader"component={Link} variant="outlined" to="/menu" size="small">Meny</Link>
+        <Link class="linksInHeader"component={Link} variant="outlined" to="/menu" size="small">Meny</Link>
         </Item>
         <Item>
         <Link to="/"> 
@@ -51,8 +51,8 @@ function Header(props) {
         </Link>   
         </Item>
         <Item>
-        <Link  class="linksInHeader"component={Link} variant="outlined" to="/locations" size="small">Locations</Link>
-        <Link  class="linksInHeader"component={Link} variant="outlined" to="/checkout" size="small">Checkout</Link>
+        <Link class="linksInHeader"component={Link} variant="outlined" to="/locations" size="small">Locations</Link>
+        <Link class="linksInHeader"component={Link} variant="outlined" to="/checkout" size="small">Checkout</Link>
         
         </Item>
         <div class="linksInHeader">
