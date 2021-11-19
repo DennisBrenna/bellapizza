@@ -38,15 +38,15 @@ function Header() {
       >
         <Item>
         <Link to="/"> 
-        <img style={{width: '321px', height:'100px'}} src={Logo} alt="BellaLogo"></img>
+        <img style={{width: '250px', height:'auto'}} src={Logo} alt="BellaLogo"></img>
          </Link>
         </Item>
 
-        <Item>
+        <Item class="allLinks">
         
-        <Link class="linksHeader" component={Link} variant="outlined" to="/" size="large">Home</Link> 
-        <Link  class="linksHeader"component={Link} variant="outlined" to="/menu" size="small">Meny</Link>
-        <Link  class="linksHeader"component={Link} variant="outlined" to="/checkout" size="small">Checkout</Link>
+        <Link class="linksInHeader" component={Link} variant="outlined" to="/" size="large">Home</Link> 
+        <Link  class="linksInHeader"component={Link} variant="outlined" to="/menu" size="small">Meny</Link>
+        <Link  class="linksInHeader"component={Link} variant="outlined" to="/checkout" size="small">Checkout</Link>
 
         </Item>
         
