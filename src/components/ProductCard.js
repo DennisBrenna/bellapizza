@@ -29,7 +29,7 @@ export default function ProductCard({ title, description, dish }) {
   return (
     
     <Card sx={{ maxWidth: 200, height: "75%", border: 2, borderRadius: '20px', backgroundColor: 'black', borderColor: "white", color: "white", alignContent: "center", }}>
-      <CardActionArea style={{height: "70%", justifyContent:"center", alignContent:"center"}}>
+      <CardMedia style={{height: "70%", justifyContent:"center", alignContent:"center"}}>
         <CardMedia
           style={{ height: "100px", width: "auto", marginLeft: "20%", marginBottom: "-15px", marginRight: "5px"}}
           component="img"
@@ -46,7 +46,7 @@ export default function ProductCard({ title, description, dish }) {
           </Typography>
         </CardContent>
         </Item>
-      </CardActionArea>
+      </CardMedia>
       <CardActions style={{justifyContent: "center", alignContent: "center", marginTop: "40px", height: "50px"}}>
       <Fab size="small" aria-label="add" href="http://www.nhl.com">
         <AddIcon />
