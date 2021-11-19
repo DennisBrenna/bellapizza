@@ -54,14 +54,14 @@ function Header(props) {
         <Link  class="linksInHeader"component={Link} variant="outlined" to="/locations" size="small">Locations</Link>
         <Link  class="linksInHeader"component={Link} variant="outlined" to="/checkout" size="small">Checkout</Link>
         
-        </Item>
-        <div class="linksInHeader">
         <a>Cart{' '}
         {countCartItems?  (
           <button>{countCartItems}</button>):(''
         )}
         </a>
-        </div>
+        
+        </Item>
+        
 
         </Grid>
       </Toolbar>
