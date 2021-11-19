@@ -18,7 +18,7 @@ body {
 }
 
 .linksInHeader:hover {
-  color: grey;
+  color: gray;
 }
 
 .linksInHeader::before {
@@ -29,7 +29,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: white;
+  background-color: gray;
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -53,7 +53,7 @@ body {
 }
 
 .linksInMenu:hover {
-  color: grey;
+  color: gray;
 }
 
 .linksInMenu::before {
@@ -64,7 +64,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: white;
+  background-color: gray;
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -83,7 +83,7 @@ body {
 
 .addButton:hover {
   color: black;
-  background-color: grey;
+  background-color: gray;
 }
 
 /*********Main************/
