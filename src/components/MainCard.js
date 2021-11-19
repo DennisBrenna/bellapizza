@@ -80,7 +80,8 @@ function FormRow() {
                     
                     >
                         <Item>
-                                <img src={warmpizza} width="700" height="700" borderRadius= "30px"/>
+                                <img src={warmpizza} width="700" height="700" borderRadius= "30px"
+                                id="warmpizzaMain"/>
                         </Item>
                     </Grid>
                 </Box>
