@@ -47,7 +47,7 @@ export default function ProductCard({ title, description, dish }) {
         </CardContent>
         </Item>
       </CardMedia>
-      <CardActions style={{justifyContent: "center", alignContent: "center", marginTop: "40px", height: "50px"}}>
+      <CardActions style={{justifyContent: "center", alignContent: "center", marginTop: "30px", height: "50px"}}>
       <Fab class="addButton" size="small" color="primary" aria-label="add" href="http://www.nhl.com">
         <AddIcon />
       </Fab>
