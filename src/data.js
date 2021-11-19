@@ -1,16 +1,24 @@
+
+import pizza from '../src/images/Pizza.png';
+
+
+
 const data = {
+
+    
+    
     products: [
     {
     id: '1',
     name: 'Margeherita',
     price: 199,
-    image: ''
+    image:''
     },
     {
     id: '2',
     name: 'Pepperoni',
     price: 199,
-    image: ''
+    image:''
     },
     {
     id: '3',

@@ -100,7 +100,7 @@ export default function Checkout(props) {
                 <Grid md={4}>
             
                 {products.map((product) => (
-                    <Product key={product.id} product={product} onAdd={onAdd} onRemove={onRemove}></Product>
+                    <Product key={product.id} product={product} onAdd={onAdd} onRemove={onRemove} dish="pizza"></Product>
                 ))}
                
                 </Grid>
