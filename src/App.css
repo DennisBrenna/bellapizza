@@ -10,18 +10,35 @@ body {
 
 
 .linksInHeader{
-text-decoration: none;
-font-size: 20px;
- color: #ffffff;
- padding: 50px;
-
+  text-decoration: none;
+  font-size: 30px;
+  color: #ffffff;
+  padding-right: 60px;
+  padding-left: 60px;
 }
 
 .linksInHeader:hover{
   text-decoration: underline;
 }
 
+/*********Main************/
+button{
+  background-color: black;
+  width: auto;
+  color: white;
+  border: 1px solid white;
+  font-size: 80px;
+  padding: 14px 28px;
+  margin-top: 20%;
+  border-radius: 30px;
+}
 
+button:hover{
+  background-color: #30C318;
+  color: white;
+  cursor: pointer;
+
+}
 /********CHECKOUT*********/
 .checkoutCard{
 

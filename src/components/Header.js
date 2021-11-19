@@ -8,6 +8,7 @@ import { styled } from '@mui/material/styles';
 import { backdropClasses, Paper } from "@mui/material";
 import Box from '@mui/material/Box';
 import { Grid } from '@mui/material';
+import { spacing } from '@mui/system';
 
 function Header() {
 
@@ -21,6 +22,7 @@ function Header() {
     boxShadow: "white",
     justifyContent: "center",
     alignContent: "center",
+    size: "48",
   }));
 
   return (
@@ -28,26 +30,28 @@ function Header() {
      
       <Toolbar >
 
-      <Grid 
-       container
-       spacing={0}
-       direction="column"
-       alignItems="center"
-       justifyContent="center"
-       marginTop="5px"
+      <Grid
+        container
+        spacing={0}
+        direction="columns"
+        alignItems="center"
+        justifyContent="center"
+        marginLeft="40px"
+
       >
+        <Item>     
+        <Link class="linksInHeader" component={Link} variant="outlined" to="/" size="small">Home</Link> 
+        <Link  class="linksInHeader"component={Link} variant="outlined" to="/menu" size="small">Meny</Link>
+        </Item>
         <Item>
         <Link to="/"> 
         <img style={{width: '250px', height:'auto'}} src={Logo} alt="BellaLogo"></img>
-         </Link>
+        </Link>   
         </Item>
-
-        <Item class="allLinks">
-        
-        <Link class="linksInHeader" component={Link} variant="outlined" to="/" size="large">Home</Link> 
-        <Link  class="linksInHeader"component={Link} variant="outlined" to="/menu" size="small">Meny</Link>
+        <Item>
+        <Link  class="linksInHeader"component={Link} variant="outlined" to="/checkout" size="small">Locations</Link>
         <Link  class="linksInHeader"component={Link} variant="outlined" to="/checkout" size="small">Checkout</Link>
-
+        
         </Item>
         
         </Grid>
