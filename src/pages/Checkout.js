@@ -2,7 +2,7 @@ import React from 'react'
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
-import { backdropClasses, Paper } from "@mui/material";
+import { Paper } from "@mui/material";
 import ProductCard from '../components/ProductCard';
 import Header from '../components/Header'
 import pizza from '../images/pizza1.png'
