@@ -9,7 +9,6 @@ function MenuCard() {
 
     return(
 <>
-        <Header/>
         <Grid container spacing={4} maxWidth={ 600 } margin="auto" marginBottom="50px">
             <Grid item xs={4}>
                 <ProductCard title="Vesuvio" description="Chesse, Ham" dish="pizza"/>

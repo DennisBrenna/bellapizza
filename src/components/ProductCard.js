@@ -33,6 +33,7 @@ export default function ProductCard({ title, description, dish }) {
           style={{ height: "100px", width: "auto", marginLeft: "20%", marginBottom: "-15px", marginRight: "5px"}}
           component="img"
           image={ dish === 'pizza' ? pizza : pasta } alt={dish}/>
+        <Item>
         <CardContent style={{height: "50%", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
           <Typography gutterBottom variant="h7" component="div" textAlign="center">
             { title }
