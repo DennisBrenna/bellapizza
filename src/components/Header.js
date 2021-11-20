@@ -9,7 +9,11 @@ import { backdropClasses, Paper } from "@mui/material";
 import Box from '@mui/material/Box';
 import { Grid } from '@mui/material';
 import { spacing } from '@mui/system';
-import SearchIcon from '@mui/icons-material/Search';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { grey } from '@mui/material/colors';
+
+
+
 
 function Header(props) {
 
@@ -31,7 +35,7 @@ function Header(props) {
   return (
 
      
-      <Toolbar >
+      <Toolbar class="header">
 
       <Grid
         container
@@ -53,10 +57,12 @@ function Header(props) {
         </Item>
         <Item>
         <Link  class="linksInHeader"component={Link} variant="outlined" to="/locations" size="small">Locations</Link>
-        <Link  class="linksInHeader"component={Link} variant="outlined" to="/checkout" size="small">Checkout</Link>
-        <SearchIcon/>
-        
+        <Link  class="linksInHeader"component={Link} variant="outlined" to="/checkout" size="small">Checkout {countCartItems ? (<button>{countCartItems}</button>):('')}</Link>
+      
         </Item>
+
+        
+
         
 
         </Grid>

@@ -22,8 +22,6 @@ import data from './data';
 function App() {
   
   const {products} = data;
- 
-
 
 
 

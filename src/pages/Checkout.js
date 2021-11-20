@@ -43,11 +43,8 @@ export default function Checkout() {
         ...theme.typography.body1,
         padding: theme.spacing(1),
         textAlign: 'right',
-        alignItems: "flex-end",
         backgroundColor: 'black',
         color: 'white'
-        
-        
       }));
 
     
@@ -88,7 +85,7 @@ export default function Checkout() {
         <>
             <Header countCartItems={cartItems.length}/>
            
-            
+           <div class="checkOutContainer">
             <Grid container>
                 <Grid md={6}>
                 <Title ><h1>Items</h1></Title>
@@ -100,8 +97,9 @@ export default function Checkout() {
 
 
             <Grid container class="One">
-               
-            <ShoppingCart onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}/>
+            
+           
+            <ShoppingCart onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} setCartItems={setCartItems}/>
            
             </Grid>
             <Grid container>
@@ -109,17 +107,6 @@ export default function Checkout() {
                 <Title md={6}><h1>Want something else?</h1></Title>
                 </Grid>
             </Grid>
-
-            <Grid container>
-                <Grid md={4}>
-            
-                {products.map((product) => (
-                    <Product key={product.id} product={product} onAdd={onAdd} onRemove={onRemove} dish="pizza"></Product>
-                ))}
-               
-                </Grid>
-                </Grid>
-
 
             <Grid container rowSpacing={1} columnSpacing={4} width={ 900 } margin="auto" marginBottom="50px">
             { products.map(product => {
@@ -130,15 +117,13 @@ export default function Checkout() {
 
             </Grid>
         
-
-            <Grid>
-                <Button>Checkout</Button>
-            </Grid>
-
-
-     
-
-            
+            <Grid container justifyContent="center" >
+                <Grid >
+                <Button variant="outlined" size="large" >Checkout</Button>
+                </Grid>
+               
+            </Grid>  
+            </div>
             
         </>
     )

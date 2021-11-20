@@ -4,6 +4,13 @@ body {
 
 /********HEADER********/
 
+.header{
+  position: sticky;
+  top: 0;
+  background-color: black;
+
+}
+
 .allLinks{
   padding-left: 25px;
 }
@@ -116,13 +123,16 @@ body {
 /********CHECKOUT*********/
 .shoppingCartName{
   color: white;
+  font-size: 25px;
 }
 
-.shoppingCartButton{
-  padding-left: 775px
-}
+
 
 .shoppingCartPrice{
   color: white;
-  padding-left: 1350px
+}
+
+.checkOutContainer{
+  padding-right: 100px;
+  padding-left: 100px;
 }

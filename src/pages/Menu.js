@@ -30,11 +30,24 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function Menu() {
 
+    
+
     const [filteredProducts, setFilteredProducts] = useState([])
 
     const [products, setProducts] = useState([])
 
     const [showFiltered, setShowFiltered] = useState(false)
+
+    const onAdd = (product) => {
+        const exists = cartItems.find(x => x.id === product.id);
+        if(exists){
+          setCartItems(cartItems.map(x => x.id === product.id ?{...exists, qty: exists.qty+1}:x
+              ));
+        }
+        else{
+          setCartItems([...cartItems, {...product, qty: 1}])
+        }
+    }
 
     useEffect(() => {
         let response = getProducts()
@@ -56,10 +69,13 @@ function Menu() {
         setShowFiltered((prevState) => boolean) 
     }
 
+    //Shoppingcart
+    const [cartItems, setCartItems] = useState([]);
+
     return(
      
         <>
-        <Header/>
+        <Header countCartItems={cartItems.length}/>
         <Item class="allLinks">
         <button className="linksInMenu" onClick={ (e) => handleFilteredProducts(e.target.innerText) }>Pizza</button>
         <button className="linksInMenu" onClick={ (e) => handleFilteredProducts(e.target.innerText) }>Pasta</button>
@@ -68,18 +84,17 @@ function Menu() {
         <Grid container rowSpacing={1} columnSpacing={4} width={ 900 } margin="auto" marginBottom="50px">
             { showFiltered? filteredProducts.map(product => {
                 return( <Grid item key={ product.id } xs={3}>
-                <ProductCard product={product}/>
+                <ProductCard onAdd={onAdd} product={product}/>
             </Grid> ) 
             }) :  products.map(product => {
                 return( <Grid item key={ product.id } xs={3}>
-                <ProductCard product={product}/>
+                <ProductCard onAdd={onAdd} product={product}/>
             </Grid> ) 
             }) }
         </Grid>
         <DividerHorizontal/><br/><br/>
         <Footer/>
-        </>
-        
+        </> 
     );
 
 }
