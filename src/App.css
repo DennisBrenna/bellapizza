@@ -4,11 +4,11 @@ body {
 
 /********HEADER********/
 
-.header{
+.header {
   position: sticky;
   top: 0;
   background-color: black;
-
+  justify-content: center;
 }
 
 .allLinks{
@@ -16,6 +16,8 @@ body {
 }
 
 .linksInHeader{
+  position: sticky;
+  top: 0;
   position: relative;
   text-decoration: none;
   font-size: 30px;
@@ -86,8 +88,8 @@ body {
 
 .addButton {
   color: black;
-  height: 25px;
-  width: 25px;
+  height: 50px;
+  width: 50px;
   background-color: white;
   border-radius: 50%;
 }
