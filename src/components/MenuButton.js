@@ -9,7 +9,8 @@ import { backdropClasses, Paper } from "@mui/material";
 import Box from '@mui/material/Box';
 import { Grid } from '@mui/material';
 
-function MenuButton() {
+function MenuButton(props) {
+    const { products, setFilteredProducts } = props
 
     const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body1,
@@ -23,6 +24,16 @@ function MenuButton() {
     justifyContent: "center",
     alignContent: "center",
   }));
+
+    const filterProducts = (dish) => {
+        console.log(dish)
+        const filteredProducts = products.filter(product => { 
+            if( dish === product.dish) {
+                return product
+            }
+         })
+         setFilteredProducts(filteredProducts)
+    }
 
     return (
 
@@ -40,9 +51,12 @@ function MenuButton() {
         
         <Item class="allLinks">
         
-        <Link class="linksInMenu" component={Link} variant="outlined" to="/" size="small">Pizza</Link> 
-        <Link class="linksInMenu" component={Link} variant="outlined" to="/menu" size="small">Pasta</Link>
-        <Link class="linksInMenu" component={Link} variant="outlined" to="/checkout" size="small">Drinks</Link>
+        <button className="linksInMenu" onClick={ (e) => filterProducts(e.target.innerText) }>Pizza</button>
+        <button onClick={ (e) => filterProducts(e.target.innerText) }>Pasta</button>
+        <button onClick={ (e) => filterProducts(e.target.innerText) }>Drinks</button>
+        {/*<Link class="linksInMenu" component={Link} variant="outlined" size="small">Pizza</Link> 
+        <Link class="linksInMenu" component={Link} variant="outlined" size="small">Pasta</Link>
+        <Link class="linksInMenu" component={Link} variant="outlined" size="small">Drinks</Link>*/}
 
         </Item>
         

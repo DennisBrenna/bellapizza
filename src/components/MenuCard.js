@@ -3,13 +3,20 @@ import Header from '../components/Header'
 import ProductCard from '../components/ProductCard';
 import Grid from '@mui/material/Grid';
 
-
-function MenuCard() {
+function MenuCard({ products }) {
 
     return(
     <>
         <Grid container rowSpacing={1} columnSpacing={4} width={ 900 } margin="auto" marginBottom="50px">
-            <Grid item xs={3}>
+            { products.map(product => {
+                return( <Grid item key={ product.id } xs={3}>
+                <ProductCard title={ product.title } description={ product.description } dish={ product.dish } image={ product.image }/>
+            </Grid> ) 
+            }) }
+
+
+
+            {/*<Grid item xs={3}>
                 <ProductCard title="Vesuvio" description="Chesse, Ham" dish="pizza"/>
             </Grid>
             <Grid item xs={3}>
@@ -62,7 +69,7 @@ function MenuCard() {
             </Grid>
             <Grid item xs={3}>
                 <ProductCard title="Pasta Meatballs" description="Pasta, Swedish Meatballs, Tomato Sauce" dish="pasta"/>
-            </Grid>
+            </Grid>*/}
         </Grid>
         </>
     );
