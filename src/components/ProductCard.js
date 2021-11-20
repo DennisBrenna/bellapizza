@@ -22,7 +22,8 @@ const Item = styled(Paper)(({ theme }) => ({
   boxShadow: "white",
 }));
 
-export default function ProductCard({product}) {
+export default function ProductCard(props) {
+  const {product, onAdd} = props;
   return (
     
     <Card sx={{ maxWidth: 200, height: "75%", border: 2, borderRadius: '20px', backgroundColor: 'black', borderColor: "white", color: "white", alignContent: "center", }}>
@@ -35,6 +36,8 @@ export default function ProductCard({product}) {
         <CardContent style={{height: "50%", display: "flex", flexDirection: "column"}}>
           <Typography gutterBottom variant="h7" component="div" textAlign="center">
             { product.title }
+            {" "}
+            { product.price }
           </Typography>
           <Divider orientation="horizontal" style={{ background: 'white', margin: 10 }} flexItem>
           </Divider>
@@ -45,7 +48,7 @@ export default function ProductCard({product}) {
         </Item>
       </CardMedia>
       <CardActions style={{justifyContent: "center", alignContent: "center", marginTop: "30px", height: "50px"}}>
-      <Fab class="addButton" size="small" color="primary" aria-label="add" href="http://www.nhl.com">
+      <Fab onClick={()=>onAdd(product)} class="addButton" size="small" color="primary" aria-label="add">
         <AddIcon />
       </Fab>
       </CardActions>

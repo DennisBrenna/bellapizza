@@ -112,10 +112,15 @@ body {
   border-radius: 20%;
 }
 /********CHECKOUT*********/
-.checkoutCard{
-
-  
+.shoppingCartName{
+  color: white;
 }
-.One{
- 
+
+.shoppingCartButton{
+  padding-left: 775px
+}
+
+.shoppingCartPrice{
+  color: white;
+  padding-left: 1350px
 }
