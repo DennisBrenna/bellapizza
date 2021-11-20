@@ -1,5 +1,5 @@
 import React from 'react';
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
@@ -9,9 +9,14 @@ import Header from '../components/Header';
 import pizza from '../images/Pizza.png';
 import Product from '../components/Product';
 import ShoppingCart from '../components/ShoppingCart';
+import {getProducts} from '../dummyData/menuData';
 
 
-export default function Checkout(props) {
+
+
+
+
+export default function Checkout() {
 
     const Item = styled(Paper)(({ theme }) => ({
         ...theme.typography.body1,
@@ -28,21 +33,35 @@ export default function Checkout(props) {
         padding: theme.spacing(1),
         textAlign: 'left',
         alignItems: "flex-end",
-        color: "white",
-        backgroundColor: "red",
-        boxShadow: "white",
+        backgroundColor: 'black',
+        color: 'white'
+
+       
       }));
 
-      const {products} = props;
+      const Title2 = styled(Paper)(({ theme }) => ({
+        ...theme.typography.body1,
+        padding: theme.spacing(1),
+        textAlign: 'right',
+        alignItems: "flex-end",
+        backgroundColor: 'black',
+        color: 'white'
+        
+        
+      }));
+
+    
       const [cartItems, setCartItems] = useState([]);
+
+      
       const onAdd = (product) => {
           const exists = cartItems.find(x => x.id === product.id);
           if(exists){
-              setCartItems(cartItems.map(x => x.id === product.id ?{...exists, qty: exists.qty+1}:x
+            setCartItems(cartItems.map(x => x.id === product.id ?{...exists, qty: exists.qty+1}:x
                 ));
           }
           else{
-              setCartItems([...cartItems, {...product, qty: 1}])
+            setCartItems([...cartItems, {...product, qty: 1}])
           }
       }
       const onRemove = (product) => {
@@ -56,38 +75,33 @@ export default function Checkout(props) {
 
       }
 
+      
+      const [products, setproducts] = useState([])
+      
+      
+        useEffect(() => {
+          let response = getProducts()
+          setproducts(response)
+      }, [])
+
     return (
         <>
             <Header countCartItems={cartItems.length}/>
-            <ShoppingCart onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}/>
+           
             
             <Grid container>
-                <Grid>
-                <Title md={6}><h1>Items</h1></Title>
+                <Grid md={6}>
+                <Title ><h1>Items</h1></Title>
                 </Grid>
-               <Grid>
-               <Title md={6}><h1>Price</h1></Title>
+               <Grid md={6} >
+               <Title2 ><h1>Price</h1></Title2>
                </Grid>
             </Grid>
 
 
             <Grid container class="One">
-                <Grid>
-                <Title xs={6}> hei</Title>
-                </Grid>
-                <Grid>
-                <Title xs={2}> hei</Title>
-                </Grid>
-                <Grid>
-                <img src={pizza}></img>
-                </Grid>
-                <Grid>
-                <Item md={2}> hei</Item>
-                </Grid>
-                <Grid>
-                <Item md={2}> hei</Item>
-                </Grid>
-           
+               
+            <ShoppingCart onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}/>
            
             </Grid>
             <Grid container>
@@ -104,7 +118,18 @@ export default function Checkout(props) {
                 ))}
                
                 </Grid>
+                </Grid>
+
+
+            <Grid container rowSpacing={1} columnSpacing={4} width={ 900 } margin="auto" marginBottom="50px">
+            { products.map(product => {
+                return( <Grid item key={ product.id } xs={3}>
+                <ProductCard key={product.id} onRemove={onRemove} onAdd={onAdd} product={product}/>
+            </Grid> ) 
+            }) }
+
             </Grid>
+        
 
             <Grid>
                 <Button>Checkout</Button>

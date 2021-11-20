@@ -6,7 +6,7 @@ export const products = [
         description: "Cheese, Ham",
         image: "static/media/Pizza.de92fa9b.png",
         dish: "Pizza",
-        price: "$10"
+        price: 10
         },
     
         { 
@@ -15,7 +15,7 @@ export const products = [
         description: "Cheese, Ham, Mushroom",
         image: "static/media/Pizza.de92fa9b.png",
         dish: "Pizza",
-        price: "$10"
+        price: 10
         },
     
         { 
@@ -24,7 +24,7 @@ export const products = [
         description: "Cheese, Ham, Pineapple",
         image: "static/media/Pizza.de92fa9b.png",
         dish: "Pizza",
-        price: "$10"
+        price: 10
         },
     
         { 
@@ -33,7 +33,7 @@ export const products = [
         description: "Cheese, Meat Sauce, Onion, Jalapenios",
         image: "static/media/Pizza.de92fa9b.png",
         dish: "Pizza",
-        price: "$12"
+        price: 12
         },
     
         { 
@@ -42,7 +42,7 @@ export const products = [
         description: "Cheese, Kebab, Kebab Suace, Onion",
         image: "static/media/Pizza.de92fa9b.png",
         dish: "Pizza",
-        price: "$13"
+        price: 13
         },
     
         { 
@@ -51,7 +51,7 @@ export const products = [
         description: "Cheese, Ham, Salami, Ruccola",
         image: "static/media/Pizza.de92fa9b.png",
         dish: "Pizza",
-        price: "$13"
+        price: 13
         },
     
         { 
@@ -60,7 +60,7 @@ export const products = [
         description: "Cheese, Ham, Outer File, Onion, Bearneise Sauce",
         image: "static/media/Pizza.de92fa9b.png",
         dish: "Pizza",
-        price: "$15"
+        price: 15
         },
     
         { 
@@ -69,7 +69,7 @@ export const products = [
         description: "Cheese, Spicy Salami, Mushroom, Chili",
         image: "static/media/Pizza.de92fa9b.png",
         dish: "Pizza",
-        price: "$15"
+        price: 15
         },
     
         { 
@@ -78,7 +78,7 @@ export const products = [
         description: "Spaghetti, Cream, Bacon, Black Pepper",
         image: "static/media/Pasta.3f8e4321.png",
         dish: "Pasta",
-        price: "$8"
+        price: 8
         },
     
         { 
@@ -87,7 +87,7 @@ export const products = [
         description: "Spaghetti, Tuna, Tomato Sauce",
         image: "static/media/Pasta.3f8e4321.png",
         dish: "Pasta",
-        price: "$8"
+        price: 8
         },
     
         { 
@@ -96,7 +96,7 @@ export const products = [
         description: "Pasta, Swedish Meatballs, Tomato Sauce",
         image: "static/media/Pasta.3f8e4321.png",
         dish: "Pasta",
-        price: "$10"
+        price: 10
         },
     { 
         id: 12,
@@ -104,7 +104,7 @@ export const products = [
         description: "Spaghetti, Meat Sauce",
         image: "static/media/Pasta.3f8e4321.png",
         dish: "Pasta",
-        price: "$10"
+        price: 10
         },
     
         { 
@@ -113,7 +113,7 @@ export const products = [
         description: "Spaghetti, Shrimp, Garlic, Chili, Lemon Sauce",
         image: "static/media/Pasta.3f8e4321.png",
         dish: "Pasta",
-        price: "$12"
+        price: 12
         },
     
         { 
@@ -122,7 +122,7 @@ export const products = [
         description: "Pasta, Cream, Outer File, Onion, Mushroom",
         image: "static/media/Pasta.3f8e4321.png",
         dish: "Pasta",
-        price: "$13"
+        price: 13
         },
     
         { 
@@ -131,7 +131,7 @@ export const products = [
         description: "Spaghetti, Outer File, Chorizo, Ham, Garlic, Tomato Sauce",
         image: "static/media/Pasta.3f8e4321.png",
         dish: "Pasta",
-        price: "$15"
+        price: 15
         },
     
         { 
@@ -140,7 +140,7 @@ export const products = [
         description: "Pasta, Lobster, Garlic, Lime Sauce, Mushroom",
         image: "static/media/Pasta.3f8e4321.png",
         dish: "Pasta",
-        price: "$17"
+        price: 17
         },
     
         { 
@@ -149,7 +149,7 @@ export const products = [
         description: "Soda",
         image: "static/media/Soda.7261b8be.png",
         dish: "Drink",
-        price: "$2"
+        price: 2
         },
     
         { 
@@ -158,7 +158,7 @@ export const products = [
         description: "Soda",
         image: "static/media/Soda.7261b8be.png",
         dish: "Drink",
-        price: "$2"
+        price: 2
         },
         {
         id: 19,
@@ -166,10 +166,12 @@ export const products = [
         description: "Soda",
         image: "static/media/Soda.7261b8be.png",
         dish: "Drink",
-        price: "$2"
+        price: 2
         },
         
 ];
+
+
 
 export const getProducts = () => {
     return products;
