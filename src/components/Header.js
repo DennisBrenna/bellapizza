@@ -44,7 +44,7 @@ function Header(props) {
       >
         <Item>     
         <Link class="linksInHeader" component={Link} variant="outlined" to="/" size="small">Home</Link> 
-        <Link class="linksInHeader"component={Link} variant="outlined" to="/menu" size="small">Meny</Link>
+        <Link class="linksInHeader" component={Link} variant="outlined" to="/menu" size="small">Menu</Link>
         </Item>
         <Item>
         <Link to="/"> 

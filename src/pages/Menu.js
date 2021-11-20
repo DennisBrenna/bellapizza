@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Footer from "../components/FooterCard";
 import MenuCard from "../components/MenuCard";
 import MenuButton from "../components/MenuButton";
@@ -7,195 +7,75 @@ import DividerHorizontal from "../components/DividerHorizontal";
 import pizza from '../images/Pizza.png';
 import soda from '../images/Soda.png';
 import pasta from '../images/Pasta.png';
+import {getProducts} from '../dummyData/menuData';
+import { styled } from '@mui/material/styles';
+import { backdropClasses, Paper } from "@mui/material";
+import { Grid } from "@mui/material";
+import ProductCard from "../components/ProductCard";
 
 
-const products = [
-    
-    { 
-    id: 1,
-    title: "Vesuvio",
-    description: "Cheese, Ham",
-    image: pizza,
-    dish: "Pizza",
-    price: "$10"
-    },
-
-    { 
-    id: 2,
-    title: "Capricciosa",
-    description: "Cheese, Ham, Mushroom",
-    image: pizza,
-    dish: "Pizza",
-    price: "$10"
-    },
-
-    { 
-    id: 3,
-    title: "Hawaii",
-    description: "Cheese, Ham, Pineapple",
-    image: pizza,
-    dish: "Pizza",
-    price: "$10"
-    },
-    
-    { 
-    id: 4,
-    title: "Mexican",
-    description: "Cheese, Meat Sauce, Onion, Jalapenios",
-    image: pizza,
-    dish: "Pizza",
-    price: "$12"
-    },
-
-    { 
-    id: 5,
-    title: "Kebab Pizza",
-    description: "Cheese, Kebab, Kebab Suace, Onion",
-    image: pizza,
-    dish: "Pizza",
-    price: "$13"
-    },
-
-    { 
-    id: 6,
-    title: "Jason Special",
-    description: "Cheese, Ham, Salami, Ruccola",
-    image: pizza,
-    dish: "Pizza",
-    price: "$13"
-    },
-
-    { 
-    id: 7,
-    title: "Dallas Star",
-    description: "Cheese, Ham, Outer File, Onion, Bearneise Sauce",
-    image: pizza,
-    dish: "Pizza",
-    price: "$15"
-    },
-
-    { 
-    id: 8,
-    title: "New York Ranger",
-    description: "Cheese, Spicy Salami, Mushroom, Chili",
-    image: pizza,
-    dish: "Pizza",
-    price: "$15"
-    },
-
-    { 
-    id: 9,
-    title: "Carbonara",
-    description: "Spaghetti, Cream, Bacon, Black Pepper",
-    image: pasta,
-    dish: "Pasta",
-    price: "$8"
-    },
-
-    { 
-    id: 10,
-    title: "Tuna Tomato",
-    description: "Spaghetti, Tuna, Tomato Sauce",
-    image: pasta,
-    dish: "Pasta",
-    price: "$8"
-    },
-
-    { 
-    id: 11,
-    title: "Swedish Meatballs",
-    description: "Pasta, Swedish Meatballs, Tomato Sauce",
-    image: pasta,
-    dish: "Pasta",
-    price: "$10"
-    },
-
-    { 
-    id: 12,
-    title: "Bolognese",
-    description: "Spaghetti, Meat Sauce",
-    image: pasta,
-    dish: "Pasta",
-    price: "$10"
-    },
-
-    { 
-    id: 13,
-    title: "Spice Seafood",
-    description: "Spaghetti, Shrimp, Garlic, Chili, Lemon Sauce",
-    image: pasta,
-    dish: "Pasta",
-    price: "$12"
-    },
-
-    { 
-    id: 14,
-    title: "Kongsvinger Special",
-    description: "Pasta, Cream, Outer File, Onion, Mushroom",
-    image: pasta,
-    dish: "Pasta",
-    price: "$13"
-    },
-
-    { 
-    id: 15,
-    title: "Meat Lovers",
-    description: "Spaghetti, Outer File, Chorizo, Ham, Garlic, Tomato Sauce",
-    image: pasta,
-    dish: "Pasta",
-    price: "$15"
-    },
-
-    { 
-    id: 16,
-    title: "Lobster",
-    description: "Pasta, Lobster, Garlic, Lime Sauce, Mushroom",
-    image: pasta,
-    dish: "Pasta",
-    price: "$17"
-    },
-
-    { 
-    id: 17,
-    title: "Coca Cola",
-    description: "Soda",
-    image: soda,
-    dish: "Drink",
-    price: "$2"
-    },
-
-    { 
-    id: 18,
-    title: "Fanta",
-    description: "Soda",
-    image: soda,
-    dish: "Drink",
-    price: "$2"
-    },
-
-    { 
-    id: 19,
-    title: "Sprite",
-    description: "Soda",
-    image: soda,
-    dish: "Drink",
-    price: "$2"
-    },
-
-
-];
+const Item = styled(Paper)(({ theme }) => ({
+    ...theme.typography.body1,
+    padding: theme.spacing(100),
+    textAlign: 'center',
+    alignItems: "flex-end",
+    fontSize: "10px",
+    color: "white",
+    backgroundColor: "black",
+    boxShadow: "white",
+    justifyContent: "center",
+    alignContent: "center",
+  }));
 
 
 function Menu() {
 
-    const [filteredProducts, setFilteredProducts] = useState(products)
+    const [filteredProducts, setFilteredProducts] = useState([])
+
+    const [products, setProducts] = useState([])
+
+    const [showFiltered, setShowFiltered] = useState(false)
+
+    useEffect(() => {
+        let response = getProducts()
+        setProducts(response)
+    }, [filteredProducts])
+
+    const handleFilteredProducts = (dish) => {
+        console.log(dish)
+        const result = products.filter(product => { 
+            if( dish === product.dish) {
+                return product
+            }
+         })
+         setFilteredProducts(result)
+         handleShowFiltered(true)
+    }
+
+    const handleShowFiltered = ( boolean ) => {
+        setShowFiltered((prevState) => boolean) 
+    }
 
     return(
      
         <>
         <Header/>
-        <MenuButton products={ products } setFilteredProducts={ setFilteredProducts }/>
-        <MenuCard products={ filteredProducts }/>
+        <Item class="allLinks">
+        <button className="linksInMenu" onClick={ (e) => handleFilteredProducts(e.target.innerText) }>Pizza</button>
+        <button className="linksInMenu" onClick={ (e) => handleFilteredProducts(e.target.innerText) }>Pasta</button>
+        <button className="linksInMenu" onClick={ (e) => handleFilteredProducts(e.target.innerText) }>Drink</button>
+        </Item>
+        <Grid container rowSpacing={1} columnSpacing={4} width={ 900 } margin="auto" marginBottom="50px">
+            { showFiltered? filteredProducts.map(product => {
+                return( <Grid item key={ product.id } xs={3}>
+                <ProductCard product={product}/>
+            </Grid> ) 
+            }) :  products.map(product => {
+                return( <Grid item key={ product.id } xs={3}>
+                <ProductCard product={product}/>
+            </Grid> ) 
+            }) }
+        </Grid>
         <DividerHorizontal/><br/><br/>
         <Footer/>
         </>

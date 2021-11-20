@@ -52,6 +52,8 @@ body {
   text-decoration: none;
   font-size: 25px;
   padding: 10px;
+  justify-content: center;
+  align-content: center;
 }
 
 .linksInMenu:hover {
