@@ -9,6 +9,7 @@ import { backdropClasses, Paper } from "@mui/material";
 import Box from '@mui/material/Box';
 import { Grid } from '@mui/material';
 import { spacing } from '@mui/system';
+import SearchIcon from '@mui/icons-material/Search';
 
 function Header(props) {
 
@@ -43,7 +44,7 @@ function Header(props) {
       >
         <Item>     
         <Link class="linksInHeader" component={Link} variant="outlined" to="/" size="small">Home</Link> 
-        <Link class="linksInHeader"component={Link} variant="outlined" to="/menu" size="small">Meny</Link>
+        <Link class="linksInHeader" component={Link} variant="outlined" to="/menu" size="small">Menu</Link>
         </Item>
         <Item>
         <Link to="/"> 
@@ -51,14 +52,9 @@ function Header(props) {
         </Link>   
         </Item>
         <Item>
-        <Link class="linksInHeader"component={Link} variant="outlined" to="/locations" size="small">Locations</Link>
-        <Link class="linksInHeader"component={Link} variant="outlined" to="/checkout" size="small">Checkout</Link>
-        
-        <a>Cart{' '}
-        {countCartItems?  (
-          <button>{countCartItems}</button>):(''
-        )}
-        </a>
+        <Link  class="linksInHeader"component={Link} variant="outlined" to="/locations" size="small">Locations</Link>
+        <Link  class="linksInHeader"component={Link} variant="outlined" to="/checkout" size="small">Checkout</Link>
+        <SearchIcon/>
         
         </Item>
         

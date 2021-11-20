@@ -22,7 +22,9 @@ const Item = styled(Paper)(({ theme }) => ({
   boxShadow: "white",
 }));
 
-export default function ProductCard({ title, description, dish, image, price }) {
+
+export default function ProductCard(props) {
+  const {product, onAdd} = props;
   return (
     
     <Card sx={{ maxWidth: 200, height: "75%", border: 2, borderRadius: '20px', backgroundColor: 'black', borderColor: "white", color: "white", alignContent: "center", }}>
@@ -30,26 +32,31 @@ export default function ProductCard({ title, description, dish, image, price }) 
         <CardMedia
           style={{ height: "100px", width: "auto", marginLeft: "20%", marginBottom: "-15px", marginRight: "5px"}}
           component="img"
-          image={ image } alt={dish}/>
+          image={product.image} alt={product.dish}/>
         <Item>
         <CardContent style={{height: "50%", display: "flex", flexDirection: "column"}}>
           <Typography gutterBottom variant="h7" component="div" textAlign="center">
-            { title }
+            { product.title }
+            {" "}
+            { product.price }
           </Typography>
           <Divider orientation="horizontal" style={{ background: 'white', margin: 10 }} flexItem>
           </Divider>
           <Typography variant="body" componet="div">
-            { description }
+            { product.description }
           </Typography>
         </CardContent>
         </Item>
       </CardMedia>
       <CardActions style={{justifyContent: "center", alignContent: "center", marginTop: "30px", height: "50px"}}>
       <Typography gutterBottom variant="h7" component="div" textAlign="center">
-            { price }
+            { product.price }
           </Typography>
       <Fab class="addButton" size="small" color="primary" aria-label="add" href="http://www.nhl.com">
+      <Fab onClick={()=>onAdd(product)} class="addButton" size="small" color="primary" aria-label="add">
+
         <AddIcon />
+      </Fab>
       </Fab>
       </CardActions>
     </Card>

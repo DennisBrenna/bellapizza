@@ -8,19 +8,18 @@ export default function ShoppingCart(props) {
     const totalPrice = itemsPrice+taxPrice+shippingPrice;
 
     return (
-        <aside>
-        <h2 style={{color:'white'}}> Cart Items:</h2>
+        <div>
         <div>
             {cartItems.length === 0 && <div style={{color:'white'}}>Cart is empty</div>}
         </div>
         {cartItems.map((item)=>(
             <div key={item.id}>
-                <div style={{color:'white'}}>{item.name}</div>
-                <div>
+                <div className="shoppingCartName" >{item.name}</div>
+                <div className="shoppingCartButton">
                     <button onClick={()=>onAdd(item)}>+</button>
                     <button onClick={()=>onRemove(item)}>-</button>
                 </div>
-                <div style={{color:'white'}}>
+                <div className="shoppingCartPrice">
                     {item.qty} x ${item.price.toFixed(2)}
                 </div>
             </div>
@@ -28,19 +27,19 @@ export default function ShoppingCart(props) {
             {cartItems.length !== 0 && (
                 <>
                 <hr></hr>
-                <div style={{color:'white'}}>
+                <div className="shoppingCartPrice">
                     <div>Items Price</div>
                     <div>${itemsPrice.toFixed(2)}</div>
                 </div>
-                <div style={{color:'white'}}>
+                <div className="shoppingCartPrice">
                     <div>Tax</div>
                     <div>${taxPrice.toFixed(2)}</div>
                 </div>
-                <div style={{color:'white'}}>
+                <div className="shoppingCartPrice">
                     <div>Shipping</div>
                     <div>${shippingPrice.toFixed(2)}</div>
                 </div>
-                <div style={{color:'white'}}>
+                <div className="shoppingCartPrice">
                     <div>Total Price</div>
                     <div>${totalPrice.toFixed(2)}</div>
                 </div>
@@ -52,6 +51,6 @@ export default function ShoppingCart(props) {
                 </div>
                 </>
             )}
-        </aside>
+        </div>
     );
 }
