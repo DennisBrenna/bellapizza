@@ -140,7 +140,7 @@ const products = [
     { 
     id: 15,
     title: "Meat Lovers",
-    description: "Spaghetti, Outer File, Chorizo, Ham, Garlic, Tomato Sauce",
+    description: "Spaghetti, Outer File, Chorizo, Ham, Garlic, Tomato",
     image: pasta,
     dish: "Pasta",
     price: "$15"

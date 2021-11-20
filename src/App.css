@@ -4,11 +4,20 @@ body {
 
 /********HEADER********/
 
+.header {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  margin-right: 70px;
+}
+
 .allLinks{
   padding-left: 25px;
 }
 
 .linksInHeader{
+  position: sticky;
+  top: 0;
   position: relative;
   text-decoration: none;
   font-size: 30px;

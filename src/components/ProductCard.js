@@ -22,7 +22,7 @@ const Item = styled(Paper)(({ theme }) => ({
   boxShadow: "white",
 }));
 
-export default function ProductCard({ title, description, dish, image }) {
+export default function ProductCard({ title, description, dish, image, price }) {
   return (
     
     <Card sx={{ maxWidth: 200, height: "75%", border: 2, borderRadius: '20px', backgroundColor: 'black', borderColor: "white", color: "white", alignContent: "center", }}>
@@ -45,6 +45,9 @@ export default function ProductCard({ title, description, dish, image }) {
         </Item>
       </CardMedia>
       <CardActions style={{justifyContent: "center", alignContent: "center", marginTop: "30px", height: "50px"}}>
+      <Typography gutterBottom variant="h7" component="div" textAlign="center">
+            { price }
+          </Typography>
       <Fab class="addButton" size="small" color="primary" aria-label="add" href="http://www.nhl.com">
         <AddIcon />
       </Fab>

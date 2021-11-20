@@ -30,7 +30,7 @@ function Header(props) {
   return (
 
      
-      <Toolbar >
+      <Toolbar class="header">
 
       <Grid
         container
