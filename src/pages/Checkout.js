@@ -11,6 +11,9 @@ import Product from '../components/Product';
 import ShoppingCart from '../components/ShoppingCart';
 
 
+
+
+
 export default function Checkout(props) {
 
     const Item = styled(Paper)(({ theme }) => ({
