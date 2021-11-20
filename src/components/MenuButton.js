@@ -52,12 +52,9 @@ function MenuButton(props) {
         <Item class="allLinks">
         
         <button className="linksInMenu" onClick={ (e) => filterProducts(e.target.innerText) }>Pizza</button>
-        <button onClick={ (e) => filterProducts(e.target.innerText) }>Pasta</button>
-        <button onClick={ (e) => filterProducts(e.target.innerText) }>Drinks</button>
-        {/*<Link class="linksInMenu" component={Link} variant="outlined" size="small">Pizza</Link> 
-        <Link class="linksInMenu" component={Link} variant="outlined" size="small">Pasta</Link>
-        <Link class="linksInMenu" component={Link} variant="outlined" size="small">Drinks</Link>*/}
-
+        <button className="linksInMenu" onClick={ (e) => filterProducts(e.target.innerText) }>Pasta</button>
+        <button className="linksInMenu" onClick={ (e) => filterProducts(e.target.innerText) }>Drink</button>
+    
         </Item>
         
         </Grid>

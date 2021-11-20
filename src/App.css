@@ -45,6 +45,8 @@ body {
 }
 
 .linksInMenu {
+  border-color: black;
+  background-color: black;
   position: relative;
   color: white;
   text-decoration: none;

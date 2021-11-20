@@ -6,7 +6,6 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea, CardActions } from '@mui/material';
 import Fab from '@mui/material/Fab';
-import soda from '../images/Soda.png';
 import AddIcon from '@mui/icons-material/Add';
 import Divider from '@mui/material/Divider';
 import { styled } from '@mui/material/styles';
