@@ -1,16 +1,22 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Header from '../components/Header'
 import ProductCard from '../components/ProductCard';
 import Grid from '@mui/material/Grid';
+import {getProducts} from '../dummyData/menuData';
 
-function MenuCard({ products }) {
 
+function MenuCard() {
+    const [products, setproducts] = useState([])
+    useEffect(() => {
+        let response = getProducts()
+        setproducts(response)
+    }, [])
     return(
     <>
         <Grid container rowSpacing={1} columnSpacing={4} width={ 900 } margin="auto" marginBottom="50px">
             { products.map(product => {
                 return( <Grid item key={ product.id } xs={3}>
-                <ProductCard title={ product.title } description={ product.description } dish={ product.dish } image={ product.image }/>
+                <ProductCard product={product}/>
             </Grid> ) 
             }) }
 
