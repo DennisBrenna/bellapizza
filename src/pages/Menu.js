@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Footer from "../components/FooterCard";
 import MenuCard from "../components/MenuCard";
-import MenuButton from "../components/MenuButton";
 import Header from "../components/Header";
 import DividerHorizontal from "../components/DividerHorizontal";
 import pizza from '../images/Pizza.png';
@@ -17,7 +16,6 @@ import ProductCard from "../components/ProductCard";
 function Menu() {
 
     
-
     const [filteredProducts, setFilteredProducts] = useState([])
 
     const [products, setProducts] = useState([])
