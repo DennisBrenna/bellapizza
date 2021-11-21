@@ -76,7 +76,7 @@ export const products = [
         id: 9,
         title: "Carbonara",
         description: "Spaghetti, Cream, Bacon, Black Pepper",
-        image: "static/media/Pasta.3f8e4321.png",
+        image: "/static/media/Pasta.b35d013e.png",
         dish: "Pasta",
         price: 8
         },
@@ -85,7 +85,7 @@ export const products = [
         id: 10,
         title: "Tuna Tomato",
         description: "Spaghetti, Tuna, Tomato Sauce",
-        image: "static/media/Pasta.3f8e4321.png",
+        image: "/static/media/Pasta.b35d013e.png",
         dish: "Pasta",
         price: 8
         },
@@ -94,7 +94,7 @@ export const products = [
         id: 11,
         title: "Swedish Meatballs",
         description: "Pasta, Swedish Meatballs, Tomato Sauce",
-        image: "static/media/Pasta.3f8e4321.png",
+        image: "/static/media/Pasta.b35d013e.png",
         dish: "Pasta",
         price: 10
         },
@@ -102,7 +102,7 @@ export const products = [
         id: 12,
         title: "Bolognese",
         description: "Spaghetti, Meat Sauce",
-        image: "static/media/Pasta.3f8e4321.png",
+        image: "/static/media/Pasta.b35d013e.png",
         dish: "Pasta",
         price: 10
         },
@@ -111,7 +111,7 @@ export const products = [
         id: 13,
         title: "Spice Seafood",
         description: "Spaghetti, Shrimp, Garlic, Chili, Lemon Sauce",
-        image: "static/media/Pasta.3f8e4321.png",
+        image: "/static/media/Pasta.b35d013e.png",
         dish: "Pasta",
         price: 12
         },
@@ -120,7 +120,7 @@ export const products = [
         id: 14,
         title: "Kongsvinger Special",
         description: "Pasta, Cream, Outer File, Onion, Mushroom",
-        image: "static/media/Pasta.3f8e4321.png",
+        image: "/static/media/Pasta.b35d013e.png",
         dish: "Pasta",
         price: 13
         },
@@ -129,7 +129,7 @@ export const products = [
         id: 15,
         title: "Meat Lovers",
         description: "Spaghetti, Outer File, Chorizo, Ham, Garlic, Tomato Sauce",
-        image: "static/media/Pasta.3f8e4321.png",
+        image: "/static/media/Pasta.b35d013e.png",
         dish: "Pasta",
         price: 15
         },
@@ -138,7 +138,7 @@ export const products = [
         id: 16,
         title: "Lobster",
         description: "Pasta, Lobster, Garlic, Lime Sauce, Mushroom",
-        image: "static/media/Pasta.3f8e4321.png",
+        image: "/static/media/Pasta.b35d013e.png",
         dish: "Pasta",
         price: 17
         },
