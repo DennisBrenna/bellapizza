@@ -8,7 +8,7 @@ body {
   position: sticky;
   top: 0;
   background-color: black;
-  justify-content: center;
+  
 }
 
 .allLinks{
@@ -44,25 +44,19 @@ body {
 }
 
 .linksInHeader:hover::before {
-  transform: scaleX(1);
+  transform: scaleX(0.5);
 }
 
 /********MENU********/
 
-.allLinks{
-  padding-left: 25px;
-}
-
 .linksInMenu {
   border-color: black;
-  background-color: black;
+  background-color: pink;
   position: relative;
   color: white;
   text-decoration: none;
   font-size: 25px;
-  padding: 10px;
-  justify-content: center;
-  align-content: center;
+  padding: 20px;
 }
 
 .linksInMenu:hover {
