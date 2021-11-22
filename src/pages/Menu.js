@@ -57,7 +57,7 @@ function Menu(props) {
         <button className="linksInMenu" onClick={ (e) => handleFilteredProducts(e.target.innerText) }>Pasta</button>
         <button className="linksInMenu" onClick={ (e) => handleFilteredProducts(e.target.innerText) }>Drink</button>
         </div>
-        <Grid container rowSpacing={1} columnSpacing={4} width={ 900 } margin="auto" marginBottom="50px">
+        <Grid  container rowSpacing={1} columnSpacing={4} width={ 900 } margin="auto" marginBottom="50px">
             { showFiltered? filteredProducts.map(product => {
                 return( <Grid item key={ product.id } xs={3}>
                 <ProductCard onAdd={onAdd} product={product}/>
