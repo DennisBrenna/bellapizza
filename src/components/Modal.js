@@ -41,9 +41,9 @@ export default function Modal() {
   return (
     <div>
       <button type="button" class="checkoutButton" onClick={handleOpen}>
-      Proceed to Payment Information
+      Proceed to Personal Information
       </button>
-      <StyledModal sx={ style }
+      <StyledModal 
       
         aria-labelledby="unstyled-modal-title"
         aria-describedby="unstyled-modal-description"

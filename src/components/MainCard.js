@@ -36,7 +36,6 @@ function FormRow(props) {
                 gridTemplateColumns:"repeat(2, 1fr)",
                 gridTemplateRows:"repeat(1, 1fr)",
                 gap:1,
-                width:"100%"
                 }}>
 
                 <Box gridColumn="Span 12" height={"100vh"}>

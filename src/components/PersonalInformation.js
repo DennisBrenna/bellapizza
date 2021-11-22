@@ -30,10 +30,9 @@ import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
     <Grid  container>
     <Grid md={6}>
     <label>Adress</label>
-    
-    
     <input type="text" id="txtField" placeholder="Adress.."/>
     </Grid>
+    
     <Grid md={6}>
     <label>Telephone</label>
     <input type="text" id="txtField" placeholder="Telephone.."/><br />
