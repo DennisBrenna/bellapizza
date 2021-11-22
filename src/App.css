@@ -229,3 +229,10 @@ body {
   color: white;
   
 }
+
+#close-icon-btn {
+  color: white;
+  position: fixed;
+  display: flex;
+  left: 75%;
+}
