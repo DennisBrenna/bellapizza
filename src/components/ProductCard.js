@@ -48,7 +48,7 @@ export default function ProductCard(props) {
         </Item>
       </CardMedia>
       <CardActions style={{justifyContent: "center", alignContent: "center", marginTop: "30px", height: "50px"}}>
-      <Fab onClick={()=>onAdd(product)} class="addButton" size="small" color="primary" aria-label="add">
+      <Fab onClick={()=>onAdd(product)}  class={product.dish + "addButton"} size="small" color="primary" aria-label="add">
 
         <AddIcon />
     

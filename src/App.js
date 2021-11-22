@@ -4,7 +4,8 @@ import Checkout from './pages/Checkout';
 import Error from './pages/Error';
 import Home from './pages/Home';
 import Menu from './pages/Menu';
-
+import  useMediaQuery  from '@material-ui/core/useMediaQuery'
+import { useTheme } from "@material-ui/core/styles";
 
 
 //import { createTheme } from '@mui/material'
@@ -14,10 +15,24 @@ import Menu from './pages/Menu';
 import ProductCard from './components/ProductCard';
 import { Route, Routes} from 'react-router-dom';
 import data from './data';
+import { Grid } from "@mui/material";
+import {makeStyles} from "@material-ui/core";
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: "100%",
+    height: "100%"
+  },
+}));
 
 function App() {
-  
+  const classes = useStyles();
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down('xs'));
+  console.log(matches);
+
+
+
   const {products} = data;
   const [cartItems, setCartItems] = useState([]);
 
@@ -43,14 +58,19 @@ const onRemove = (product) => {
 
 }
  
-  return (  
-  
+  return (
+    <Grid
+    className={classes.root}
+    containerjustify="center"
+    alignItems="center"
+  >
     <Routes>
       <Route exact path='/' element={ <Home cartItems={cartItems}/>} />
       <Route  path='/checkout' element={ <Checkout products = {products} onAdd={onAdd} cartItems={cartItems} onRemove={onRemove}/>} />
       <Route path='/menu' element={ <Menu onAdd={onAdd} cartItems={cartItems}/>} />
       <Route path='/error' element={ <Error/>} />
     </Routes> 
+    </Grid>
   );
 }
 

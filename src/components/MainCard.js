@@ -18,13 +18,7 @@ const Item = styled(Paper)(({ theme }) => ({
     padding: theme.spacing(1),
     backgroundColor: "black",
     color: "white",
-    boxShadow: "white",
-    textAlign: "center",
-    fontsize: "30px",
-    size:"30px",
-    justifyContent: "center",
-    alignContent: "center",
-    boxShadow: "none",
+
 
   }));
 
@@ -32,8 +26,7 @@ const Item = styled(Paper)(({ theme }) => ({
 function FormRow() {
     
     return (
-   
-      <React.Fragment>
+
         <Item>
         <Box sx={{width: 1}}>
             <Box sx={{
@@ -158,7 +151,6 @@ function FormRow() {
             </Box>
         </Box>
         </Item>
-      </React.Fragment>
     );
   }
 
