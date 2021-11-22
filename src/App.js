@@ -8,7 +8,8 @@ import Home from './pages/Home';
 import { createTheme } from '@mui/material'
 import { ThemeProvider } from '@mui/system';
 import Menu from './pages/Menu';
-import Locations from "./pages/Locations"
+import Locations from "./pages/Locations";
+import PersonInformation from "./pages/PersonInformation";
 
 
 
@@ -33,7 +34,8 @@ function App() {
       <Route exact path='/' element={ <Home/>} />
       <Route  path='/checkout' element={ <Checkout products = {products}/>} />
       <Route path='/menu' element={ <Menu/>} />
-      <Route path="/locations" element={<Locations/>} />
+    <Route path="/locations" element={<Locations/>} />
+       <Route path="/personinformation" element={<PersonInformation/>} />
       <Route path='/error' element={ <Error/>} />
     </Routes> 
   );

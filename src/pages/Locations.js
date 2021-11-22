@@ -23,12 +23,12 @@ const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: "black",
   boxShadow: "white",
 }));
-
+/* 
 useEffect(() => {
     let response = getLocations()
 })
 
-/*       <CardMedia style={{height: "70%", justifyContent:"center", alignContent:"center"}}>
+      <CardMedia style={{height: "70%", justifyContent:"center", alignContent:"center"}}>
         <CardMedia
           style={{ height: "100px", width: "auto", marginLeft: "20%", marginBottom: "-15px", marginRight: "5px"}}
           component="img"
