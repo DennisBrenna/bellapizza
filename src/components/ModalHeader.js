@@ -3,6 +3,10 @@ import { styled, Box } from '@mui/system';
 import ModalUnstyled from '@mui/core/ModalUnstyled';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Button } from '@mui/material';
+import ShoppingCart from './ShoppingCart';
+import CartDropDown from './CartDropDown';
+import Checkout from '../pages/Checkout'
+import Error from '../pages/Error';
 
 const StyledModal = styled(ModalUnstyled)`
   position: fixed;
@@ -19,6 +23,7 @@ const StyledModal = styled(ModalUnstyled)`
 const Backdrop = styled('div')`
   z-index: -1;
   position: fixed;
+  width:10px;
   right: 0;
   bottom: 0;
   top: 0;
@@ -27,14 +32,7 @@ const Backdrop = styled('div')`
   -webkit-tap-highlight-color: transparent;
 `;
 
-const style = {
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
-  p: 2,
-  px: 4,
-  pb: 3,
-};
+
 
 export default function ModalUnstyledDemo() {
   const [open, setOpen] = React.useState(false);
@@ -43,7 +41,8 @@ export default function ModalUnstyledDemo() {
 
   return (
     <div>
-        <Button color="primary" onClick={() => { handleOpen(); }}>
+        <Button color="primary" onMouseEnter={() => { handleOpen(); }} onMouseLeave={() => { handleClose(); }}>
+        
         <ShoppingCartIcon/>
         </Button>
       <StyledModal
@@ -53,10 +52,7 @@ export default function ModalUnstyledDemo() {
         onClose={handleClose}
         BackdropComponent={Backdrop}
       >
-        <Box sx={style}>
-          <h2 id="unstyled-modal-title">Text in a modal</h2>
-          <p id="unstyled-modal-description">Aliquid amet deserunt earum!</p>
-        </Box>
+        <Error/>
       </StyledModal>
     </div>
   );

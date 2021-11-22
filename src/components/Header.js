@@ -41,7 +41,7 @@ function Header(props) {
           <Item> 
           <Link  class="linksInHeader"component={Link} variant="outlined" to="/checkout" size="small">Checkout {countCartItems ? (<button>{countCartItems}</button>):('')}</Link>
           </Item>
-          <ModalHeader/>
+          <ModalHeader />
         </Grid>
       </Toolbar>
    
