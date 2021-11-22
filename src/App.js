@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import './App.css';
 import Checkout from './pages/Checkout';
 import Error from './pages/Error';
 import Home from './pages/Home';
 import Menu from './pages/Menu';
-<<<<<<< HEAD
 
 
 
@@ -12,25 +11,33 @@ import Menu from './pages/Menu';
 //import { amber, teal } from '@mui/material/colors';
 //import { ThemeProvider } from '@mui/system';
 //import { useEffect, useState } from 'react';
-import { Route, Routes} from 'react-router-dom';
 import ProductCard from './components/ProductCard';
-=======
 import { Route, Routes} from 'react-router-dom';
->>>>>>> 5faa27c74d3737946c3ee0e45c197ab6fe9f9663
 import data from './data';
 import PersonInformation from './pages/PersonInformation'
 
 function App() {
   
   const {products} = data;
+  const [cartItems, setCartItems] = useState([]);
 
+  const onAdd = (product) => {
+    const exists = cartItems.find(x => x.id === product.id);
+    if(exists){
+      setCartItems(cartItems.map(x => x.id === product.id ?{...exists, qty: exists.qty+1}:x
+          ));
+    }
+    else{
+      setCartItems([...cartItems, {...product, qty: 1}])
+    }
+}
  
   return (  
   
     <Routes>
       <Route exact path='/' element={ <Home/>} />
-      <Route  path='/checkout' element={ <Checkout products = {products}/>} />
-      <Route path='/menu' element={ <Menu/>} />
+      <Route  path='/checkout' element={ <Checkout products = {products} onAdd={onAdd} cartItems={cartItems}/>} />
+      <Route path='/menu' element={ <Menu onAdd={onAdd} cartItems={cartItems}/>} />
       <Route path="/personinformation" element={<PersonInformation/>} />
       <Route path='/error' element={ <Error/>} />
     </Routes> 
