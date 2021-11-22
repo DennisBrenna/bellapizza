@@ -44,7 +44,7 @@ export default function Modal() {
       Checkout
       </button>
       <StyledModal sx={ style }
-
+      
         aria-labelledby="unstyled-modal-title"
         aria-describedby="unstyled-modal-description"
         open={open}
@@ -52,9 +52,7 @@ export default function Modal() {
         onClose={handleClose}
         BackdropComponent={Backdrop}
       >
-
           <PersonalInformation /> 
-
       </StyledModal>
     </div>
   );

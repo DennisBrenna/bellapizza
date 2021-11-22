@@ -5,8 +5,8 @@ import Logo from '../images/logo.png'
 import { styled } from '@mui/material/styles';
 import { Paper } from "@mui/material";
 import { Grid } from '@mui/material';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-//import ModalHeader from 'ModalHeader'
+
+import ModalHeader from '../components/ModalHeader'
 
 function Header(props) {
 
@@ -38,11 +38,10 @@ function Header(props) {
             <img style={{width: '250px', height:'auto'}} src={Logo} alt="BellaLogo"></img>
           </Link>   
           </Item>
-        <Item>
-          
+          <Item> 
           <Link  class="linksInHeader"component={Link} variant="outlined" to="/checkout" size="small">Checkout {countCartItems ? (<button>{countCartItems}</button>):('')}</Link>
-          
-        </Item>
+          </Item>
+          <ModalHeader/>
         </Grid>
       </Toolbar>
    

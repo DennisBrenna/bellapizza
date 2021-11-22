@@ -1,17 +1,13 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
 import Grid from '@mui/material/Grid';
-import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import { Paper } from "@mui/material";
 import ProductCard from '../components/ProductCard';
 import Header from '../components/Header';
-import pizza from '../images/Pizza.png';
-import Product from '../components/Product';
 import ShoppingCart from '../components/ShoppingCart';
 import {getProducts} from '../dummyData/menuData';
 import Modal from '../components/Modal';
-import { Link } from 'react-router-dom';
 
 export default function Checkout(props) {
 

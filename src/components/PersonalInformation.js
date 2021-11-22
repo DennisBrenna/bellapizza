@@ -6,7 +6,6 @@ import Grid from '@mui/material/Grid';
     return (
 
     <>
-    
 
 <Grid container class="informationContainer">
     <h2>Personal Information</h2>
@@ -71,8 +70,6 @@ import Grid from '@mui/material/Grid';
     <input onClick="submit()" id="submit" value="Place Your Order"/>
 
 </Grid>
-
-
 
 
 
