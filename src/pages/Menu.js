@@ -12,7 +12,9 @@ import { Grid } from "@mui/material";
 import ProductCard from "../components/ProductCard";
 
 
-function Menu() {
+function Menu(props) {
+
+    const {cartItems, onAdd,} = props;
 
     
     const [filteredProducts, setFilteredProducts] = useState([])
@@ -21,16 +23,7 @@ function Menu() {
 
     const [showFiltered, setShowFiltered] = useState(false)
 
-    const onAdd = (product) => {
-        const exists = cartItems.find(x => x.id === product.id);
-        if(exists){
-          setCartItems(cartItems.map(x => x.id === product.id ?{...exists, qty: exists.qty+1}:x
-              ));
-        }
-        else{
-          setCartItems([...cartItems, {...product, qty: 1}])
-        }
-    }
+    
 
     useEffect(() => {
         let response = getProducts()
@@ -53,8 +46,8 @@ function Menu() {
     }
 
     //Shoppingcart
-    const [cartItems, setCartItems] = useState([]);
-
+    
+    console.log(cartItems);
     return(
      
         <>

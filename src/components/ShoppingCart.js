@@ -2,6 +2,12 @@ import React from 'react'
 import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
 import { Paper } from "@mui/material";
+import Button from '@mui/material/Button';
+import Divider from '@mui/material/Divider';
+import { createTheme } from '@mui/material'
+import { amber, teal } from '@mui/material/colors';
+import { ThemeProvider } from '@mui/system';
+
 
 export default function ShoppingCart(props) {
     const {cartItems, setCartItems, onAdd, onRemove} = props;
@@ -18,6 +24,19 @@ export default function ShoppingCart(props) {
         color: 'white'
       }));
 
+      const theme = createTheme({
+        palette: {
+          primary: teal,
+          secondary: amber,
+        },
+      })
+
+
+      const Buttons = styled(Paper)(({ theme }) => ({
+        ...theme,
+        
+        
+      }));
     //Hvorfor funker ikke justifyContent: flex-end??? finn alternativ
     return (
         <>
@@ -26,18 +45,20 @@ export default function ShoppingCart(props) {
             {cartItems.length === 0 && <div style={{color:'white'}}>Cart is empty</div>}
         </div>
         {cartItems.map((item)=>(
-            <Grid container key={item.id}>
+            
+            <Grid container margin="15px"key={item.id}>
                 <Grid md={6}><div className="shoppingCartName" >{item.title}</div></Grid>
               
               <Grid md={6}>
                   
                <Grid container>
-                <Grid md={6}>
-                <div >
-                    <button onClick={()=>onAdd(item)}>+</button>
-                    <button onClick={()=>onRemove(item)}>-</button>
-                </div>
+                <Grid   md={6}>
+                    <Button class="addButton" variant="outlined" onClick={()=>onAdd(item)}>+</Button>
+                    <Button class="addButton" variant="outlined" onClick={()=>onRemove(item)}>-</Button>
+
                 </Grid>
+              
+                
                 
                 <Grid md={6}>
                     
@@ -50,11 +71,11 @@ export default function ShoppingCart(props) {
                
                 </Grid>
                 </Grid>
+                
+                </Grid>
                
                 </Grid>
-                </Grid>
-                
-              
+               
                 
            
             ))}
