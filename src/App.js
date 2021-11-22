@@ -31,12 +31,23 @@ function App() {
       setCartItems([...cartItems, {...product, qty: 1}])
     }
 }
+
+const onRemove = (product) => {
+  const exists = cartItems.find(x => x.id === product.id);
+  if(exists.qty === 1){
+      setCartItems(cartItems.filter((x) => x.id !== product.id));
+  } else {
+      setCartItems(cartItems.map(x => x.id === product.id ?{...exists, qty: exists.qty-1}:x
+          ));
+  }
+
+}
  
   return (  
   
     <Routes>
       <Route exact path='/' element={ <Home/>} />
-      <Route  path='/checkout' element={ <Checkout products = {products} onAdd={onAdd} cartItems={cartItems}/>} />
+      <Route  path='/checkout' element={ <Checkout products = {products} onAdd={onAdd} cartItems={cartItems} onRemove={onRemove}/>} />
       <Route path='/menu' element={ <Menu onAdd={onAdd} cartItems={cartItems}/>} />
       <Route path="/personinformation" element={<PersonInformation/>} />
       <Route path='/error' element={ <Error/>} />

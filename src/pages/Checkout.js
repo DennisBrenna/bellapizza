@@ -18,7 +18,7 @@ import {getProducts} from '../dummyData/menuData';
 
 export default function Checkout(props) {
 
-  const {cartItems, onAdd,} = props;
+  const {cartItems, onAdd, onRemove} = props;
     const Item = styled(Paper)(({ theme }) => ({
         ...theme.typography.body1,
         padding: theme.spacing(1),
@@ -48,21 +48,9 @@ export default function Checkout(props) {
         color: 'white'
       }));
 
-    
-      const [cartItems, setCartItems] = useState([]);
 
-      
 
-      const onRemove = (product) => {
-        const exists = cartItems.find(x => x.id === product.id);
-        if(exists.qty === 1){
-            setCartItems(cartItems.filter((x) => x.id !== product.id));
-        } else {
-            setCartItems(cartItems.map(x => x.id === product.id ?{...exists, qty: exists.qty-1}:x
-                ));
-        }
-
-      }
+   
 
       
       const [products, setproducts] = useState([])
@@ -91,7 +79,7 @@ export default function Checkout(props) {
             <Grid container class="One">
             
            
-            <ShoppingCart onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} setCartItems={setCartItems}/>
+            <ShoppingCart onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} />
            
             </Grid>
             <Grid container>

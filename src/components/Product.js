@@ -2,9 +2,7 @@ import React from 'react'
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import { styled } from '@mui/material/styles';
-
-import pasta from '../images/Pasta.png';
-import { backdropClasses, Paper } from "@mui/material";
+import { Paper } from "@mui/material";
 
 
 function Product(props, dish) {
