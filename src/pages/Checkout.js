@@ -11,7 +11,7 @@ import Product from '../components/Product';
 import ShoppingCart from '../components/ShoppingCart';
 import {getProducts} from '../dummyData/menuData';
 import Modal from '../components/Modal';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 export default function Checkout(props) {
 
@@ -89,8 +89,8 @@ export default function Checkout(props) {
         
             <Grid container justifyContent="center" marginBottom="100px" >
                 <Grid >
-                <Modal class="checkoutButton" data-dismiss="modal" varitant="outlined" size="large"/>  
-                </Grid>
+                <Modal class="checkoutButton" varitant="outlined" size="large"/>  
+              </Grid>
                
             </Grid>  
             </div>

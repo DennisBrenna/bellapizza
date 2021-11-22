@@ -7,7 +7,11 @@ import React from 'react';
     <>
 
 <div class="informationContainer">
+<div class="modal-content">
+    <button><span class="close">&times;</span></button>
+  </div>
     <h2>Personal Information</h2>
+    
     <label>First Name</label>
     <input type="text" id="firstName" placeholder="First name.."/>
 
