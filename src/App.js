@@ -15,7 +15,7 @@ import Menu from './pages/Menu';
 //import { amber, teal } from '@mui/material/colors';
 //import { ThemeProvider } from '@mui/system';
 //import { useEffect, useState } from 'react';
-import { Route, Routes, Router } from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
 import ProductCard from './components/ProductCard';
 import data from './data';
 
@@ -23,10 +23,8 @@ function App() {
   
   const {products} = data;
 
-
-
-  return (
-  
+ 
+  return (  
   
     <Routes>
       <Route exact path='/' element={ <Home/>} />
