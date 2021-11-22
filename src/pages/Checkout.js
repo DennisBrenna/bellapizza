@@ -10,16 +10,8 @@ import pizza from '../images/Pizza.png';
 import Product from '../components/Product';
 import ShoppingCart from '../components/ShoppingCart';
 import {getProducts} from '../dummyData/menuData';
-<<<<<<< HEAD
 import Modal from '../components/Modal';
-=======
 import { Link } from 'react-router-dom'
->>>>>>> 4da84eb668b11aaf86fb8d83aea6738587e1df34
-
-
-
-
-
 
 export default function Checkout(props) {
 
@@ -97,14 +89,7 @@ export default function Checkout(props) {
         
             <Grid container justifyContent="center" marginBottom="100px" >
                 <Grid >
-<<<<<<< HEAD
-                <Button variant="outlined" size="large" >Checkout</Button>
-                <Modal varitant="outlined" size="large"/>
-=======
-                  <Link to="/personinformation">
-                <Button class="checkoutButton" >Checkout</Button>
-               </Link>
->>>>>>> 4da84eb668b11aaf86fb8d83aea6738587e1df34
+                <Modal class="checkoutButton" data-dismiss="modal" varitant="outlined" size="large"/>  
                 </Grid>
                
             </Grid>  
