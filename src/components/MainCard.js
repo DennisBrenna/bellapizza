@@ -83,7 +83,11 @@ function FormRow(props) {
                     
                     >
                         <Item>
-                                <img src={warmpizza} width="700" height="700" borderRadius= "30px"
+                                <img src={warmpizza} style={{
+                                width:"300px",
+                                height:"700",
+                                borderRadius:"10%"
+                            }}
                                 id="warmpizzaMain"/>
                         </Item>
                     </Grid>
