@@ -1,7 +1,11 @@
 import React from 'react';
 
 
-export default function PersonInformation() {
+    export default function PersonInformation() {
+
+    
+   
+
     return (
 
     <>
@@ -26,10 +30,10 @@ export default function PersonInformation() {
     <label>Postal Code</label>
     <input type="text" id="txtField" placeholder="Postal Code.."/><br />
 
-    <input type="radio" />
-    <label>Visa</label>
-    <input type="radio" />
-    <label>Mastercard</label><br />
+    <input type="radio" id="visa" name="card_type" value="Visa" />
+    <label for="visa">Visa</label>
+    <input type="radio" id="mastercard" name="card_type" value="Mastercard" />
+    <label for="mastercard">Mastercard</label><br />
 
     <label>Card Number</label>
     <input type="text" id="cardNr" placeholder="Card Number.."/><br />
@@ -40,9 +44,11 @@ export default function PersonInformation() {
     <label>Expiration Date</label>
     <input type="text" id="txtField" placeholder="Expiration Date.."/><br />
 
-    <input type="submit" id="submit" value="Place Your Order"/>
+    <input type="submit" onClick="form" id="submit" value="Place Your Order"/>
 
+<form> <a>dsa</a> </form>
 </div>
+
 
 </>
     )
