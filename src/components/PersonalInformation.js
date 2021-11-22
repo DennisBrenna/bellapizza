@@ -1,15 +1,21 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
+import { IconButton, CloseIcon } from '@mui/material';
+import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 
-    export default function PersonalInformation() {
+    export default function PersonalInformation(props) {
+    
+    const {onClose} = props
 
     return (
 
     <>
 
 <Grid container class="informationContainer">
-    <h2>Personal Information</h2>
-   
+   <IconButton id="close-icon-btn" onClick={onClose}>
+              <CloseOutlinedIcon />
+            </IconButton>
+            <h2>Personal Information</h2>
         <Grid container>
             <Grid  md={6}>
     <label>First Name</label>
@@ -67,7 +73,7 @@ import Grid from '@mui/material/Grid';
     <input type="text" id="txtField" placeholder="Expiration Date.."/><br />
     </Grid>
     </Grid>
-    <input onClick="submit()" id="submit" value="Place Your Order"/>
+    <input onClick="submit" id="submit" value="Place Your Order"/>
 
 </Grid>
 

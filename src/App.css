@@ -153,8 +153,6 @@ body {
   font-size: 25px;
 }
 
-
-
 .shoppingCartPrice{
   color: white;
 }
@@ -168,6 +166,7 @@ body {
   position: absolutt;
   border: 2px solid white;
   background-color: black;
+  border-radius: 10px;
   color: white;
   padding: 14px 28px;
   font-size: 16px;

@@ -79,8 +79,6 @@ export default function Checkout(props) {
             <Grid container rowSpacing={1} columnSpacing={4} width={ 900 } margin="auto" marginBottom="50px">
             { products.filter(product => product.id > 16).map(product => ( <Grid item key={ product.id } md={4} xs={4}>
                 <ProductCard onAdd={onAdd} product={product}/> </Grid> ))}
-            
-
             </Grid>
         
             <Grid container justifyContent="center" marginBottom="100px" >
