@@ -30,6 +30,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 
 function FormRow() {
+    
     return (
    
       <React.Fragment>
@@ -161,10 +162,10 @@ function FormRow() {
     );
   }
 
- function MainCard() {
-
+ function MainCard(props) {
+   
     return (
-        <Header/>,
+        <Header />,
         <FormRow />  
     )
  }

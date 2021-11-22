@@ -47,7 +47,6 @@ function Menu(props) {
 
     //Shoppingcart
     
-    console.log(cartItems);
     return(
      
         <>

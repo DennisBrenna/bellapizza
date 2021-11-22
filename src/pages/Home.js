@@ -5,11 +5,11 @@ import Header from '../components/Header';
 import DividerHorizontal from '../components/DividerHorizontal'
 import Footer from "../components/FooterCard";
 
-function Home() {
-
+function Home(props) {
+    const {cartItems} = props;
     return(
         <>
-        <Header/>
+        <Header countCartItems={cartItems.length}/>
         <MainCard/>
         <DividerHorizontal/><br/><br/>
         <Footer/>

@@ -7,14 +7,17 @@ import Divider from '@mui/material/Divider';
 import { createTheme } from '@mui/material'
 import { amber, teal } from '@mui/material/colors';
 import { ThemeProvider } from '@mui/system';
+import warmpizza from '../images/pizzaman.png'
+import { Link } from 'react-router-dom'
 
 
 export default function ShoppingCart(props) {
-    const {cartItems, setCartItems, onAdd, onRemove} = props;
+    const {cartItems, onAdd, onRemove} = props;
     const itemsPrice = cartItems.reduce((a, c) => a + c.price * c.qty, 0);
-    const taxPrice = itemsPrice * 0.15;
     const shippingPrice = itemsPrice > 50 ? 0 : 10;
-    const totalPrice = itemsPrice+taxPrice+shippingPrice;
+    const totalPrice = itemsPrice+shippingPrice;
+  
+    
 
     const Title2 = styled(Paper)(({ theme }) => ({
         ...theme.typography.body1,
@@ -42,7 +45,7 @@ export default function ShoppingCart(props) {
         <>
         
         <div>
-            {cartItems.length === 0 && <div style={{color:'white'}}>Cart is empty</div>}
+            {cartItems.length === 0 && <h1 style={{color:'white'}} >No pizza found. <Link style={{color:'white'}}to="/menu">Click here!</Link> </h1>}
         </div>
         {cartItems.map((item)=>(
             
@@ -53,6 +56,7 @@ export default function ShoppingCart(props) {
                   
                <Grid container>
                 <Grid   md={6}>
+               
                     <Button class="addButton" variant="outlined" onClick={()=>onAdd(item)}>+</Button>
                     <Button class="addButton" variant="outlined" onClick={()=>onRemove(item)}>-</Button>
 
@@ -89,10 +93,6 @@ export default function ShoppingCart(props) {
                 <div className="shoppingCartPrice">
                     <div>Items Price</div>
                     <div>${itemsPrice.toFixed(2)}</div>
-                </div>
-                <div className="shoppingCartPrice">
-                    <div>Tax</div>
-                    <div>${taxPrice.toFixed(2)}</div>
                 </div>
                 <div className="shoppingCartPrice">
                     <div>Shipping</div>
