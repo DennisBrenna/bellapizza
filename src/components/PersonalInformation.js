@@ -7,20 +7,11 @@ import Grid from '@mui/material/Grid';
 
     <>
 
-<<<<<<< HEAD
-<div class="informationContainer">
-<div class="modal-content">
-    <button><span class="close">&times;</span></button>
-  </div>
-    <h2>Personal Information</h2>
-    
-=======
 <Grid container class="informationContainer">
     <h2>Personal Information</h2>
    
         <Grid container>
             <Grid  md={6}>
->>>>>>> e70e4209da776a04077ffcb5b41a6319da1456ba
     <label>First Name</label>
     <input type="text" id="firstName" placeholder="First name.."/>
     </Grid>

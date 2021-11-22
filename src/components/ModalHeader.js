@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { styled, Box } from '@mui/system';
 import ModalUnstyled from '@mui/core/ModalUnstyled';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Button } from '@mui/material';
 
 const StyledModal = styled(ModalUnstyled)`
   position: fixed;
@@ -41,9 +43,9 @@ export default function ModalUnstyledDemo() {
 
   return (
     <div>
-      <button type="button" onClick={handleOpen}>
-        Open modal
-      </button>
+        <Button color="primary" onClick={() => { handleOpen(); }}>
+        <ShoppingCartIcon/>
+        </Button>
       <StyledModal
         aria-labelledby="unstyled-modal-title"
         aria-describedby="unstyled-modal-description"
