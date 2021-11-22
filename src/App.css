@@ -1,5 +1,8 @@
 body {
   background-color: black;
+  margin: 0;
+  padding: 0;
+
 }
 
 /********HEADER********/
@@ -139,7 +142,7 @@ body {
 }
 
 #mainOrdernowBtn:hover{
-  background-color: #30C318;
+  background-color: #026b02;
   color: white;
   cursor: pointer;
 
@@ -148,6 +151,8 @@ body {
 #warmpizzaMain{
   border-radius: 20%;
 }
+
+
 /********CHECKOUT*********/
 .shoppingCartName{
   color: white;

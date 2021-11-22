@@ -32,6 +32,7 @@ const Item = styled(Paper)(({ theme }) => ({
             justifyContent:"center",
             marginLeft:"10%",
             marginBottom:"10px",
+            height:"100vh",
         }}>
             <Item sx={{
                 gridColumn:1,

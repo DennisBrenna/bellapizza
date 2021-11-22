@@ -58,7 +58,6 @@ const onRemove = (product) => {
 }
  
   const amountOfItems = cartItems.reduce((a, c) => a +  c.qty, 0);
-  console.log(amountOfItems);
   return (
     <Grid
     className={classes.root}

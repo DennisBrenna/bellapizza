@@ -9,8 +9,7 @@ function Home(props) {
     const {amountOfItems} = props;
     return(
         <>
-        <Header amountOfItems={amountOfItems}/>
-        <MainCard/>
+        <MainCard amountOfItems={amountOfItems}/>
         <DividerHorizontal/><br/><br/>
         <Footer/>
         </>
