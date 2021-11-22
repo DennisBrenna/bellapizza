@@ -43,7 +43,8 @@ export default function Modal() {
       <button type="button" class="checkoutButton" onClick={handleOpen}>
       Checkout
       </button>
-      <StyledModal 
+      <StyledModal sx={ style }
+      
         aria-labelledby="unstyled-modal-title"
         aria-describedby="unstyled-modal-description"
         open={open}
@@ -51,7 +52,7 @@ export default function Modal() {
         onClose={handleClose}
         BackdropComponent={Backdrop}
       >
-          <PersonalInformation />
+          <PersonalInformation /> 
       </StyledModal>
     </div>
   );
