@@ -1,17 +1,7 @@
-import React from 'react';
+import LocationCard from "../components/LocationsComp";
 
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea, CardActions } from '@mui/material';
-import Fab from '@mui/material/Fab';
-import AddIcon from '@mui/icons-material/Add';
-import Divider from '@mui/material/Divider';
-import { styled } from '@mui/material/styles';
-import { backdropClasses, Paper } from "@mui/material";
-import {getLocations} from "../dummyData/locationData";
 
+<<<<<<< HEAD
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body1,
@@ -54,12 +44,69 @@ function locations(props) {
     const {locations} = props;
     console.log(locations);
   return (
+=======
+const locations = [
+>>>>>>> 5ea736d9dde58d537ba7c10c8cde9e90a5835b0c
     
-    <Card sx={{ maxWidth: 200, height: "85%", border: 2, borderRadius: '20px', backgroundColor: 'black', borderColor: "white", color: "white", alignContent: "center", }}>
-        <CardMedia component="img"
-        image={locations.image} alt="test"/>
-    </Card>
-  );
-}
-
-export default locations;
+  { 
+      location: "Oslo",
+      adress: "Karl Johan 2",
+      telephone: "123456789",
+      image: "static/media/Pizza.de92fa9b.png",
+      },
+  
+      { 
+      location: "Kongsvinger",
+      adress: "Dennisveien 92",
+      telephone: "123",
+      image: "static/media/Pizza.de92fa9b.png",
+      },
+  
+      { 
+      location: "Linköping",
+      adress: "Vasavägen 31",
+      telephone: "013-151552",
+      image: "static/media/Pizza.de92fa9b.png",
+      },
+  
+      { 
+      location: "Houston",
+      adress: "Queens Street 81",
+      telephone: "83659291",
+      image: "static/media/Pizza.de92fa9b.png",
+      },
+  
+      { 
+      location: "Panama City",
+      adress: "Cheese, Kebab, Kebab Suace, Onion",
+      telephone: "897212",
+      image: "static/media/Pizza.de92fa9b.png",
+      },
+  
+      { 
+      location: "Cape Town",
+      adress: "Boolean Street 21",
+      telephone: "221331",
+      image: "static/media/Pizza.de92fa9b.png",
+      },
+  
+      { 
+      location: "Singapore",
+      adress: "Kings Street 89",
+      telephone: "3522111",
+      image: "static/media/Pizza.de92fa9b.png",
+      },
+  
+      { 
+      location: "Auckland",
+      adress: "Epsom Avenue 54",
+      image: "static/media/Pizza.de92fa9b.png",
+      },
+  
+      { 
+      location: "Ulan Bator",
+      adress: "Polare Road 2",
+      telephone: "928555",
+      image: "/static/media/Pasta.b35d013e.png",
+      }
+];

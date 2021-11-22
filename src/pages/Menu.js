@@ -13,20 +13,6 @@ import { Grid } from "@mui/material";
 import ProductCard from "../components/ProductCard";
 
 
-const Item = styled(Paper)(({ theme }) => ({
-    ...theme.typography.body1,
-    padding: theme.spacing(100),
-    textAlign: 'center',
-    alignItems: "flex-end",
-    fontSize: "10px",
-    color: "white",
-    backgroundColor: "black",
-    boxShadow: "white",
-    justifyContent: "center",
-    alignContent: "center",
-  }));
-
-
 function Menu() {
 
     
@@ -74,11 +60,12 @@ function Menu() {
      
         <>
         <Header countCartItems={cartItems.length}/>
-        <Item class="allLinks">
+        <div class="allLinks">
+        <button className="linksInMenu" onClick={ (e) => handleShowFiltered(false) }>All</button>
         <button className="linksInMenu" onClick={ (e) => handleFilteredProducts(e.target.innerText) }>Pizza</button>
         <button className="linksInMenu" onClick={ (e) => handleFilteredProducts(e.target.innerText) }>Pasta</button>
         <button className="linksInMenu" onClick={ (e) => handleFilteredProducts(e.target.innerText) }>Drink</button>
-        </Item>
+        </div>
         <Grid container rowSpacing={1} columnSpacing={4} width={ 900 } margin="auto" marginBottom="50px">
             { showFiltered? filteredProducts.map(product => {
                 return( <Grid item key={ product.id } xs={3}>
