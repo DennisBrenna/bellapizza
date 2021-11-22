@@ -11,7 +11,7 @@ import Modal from '../components/Modal';
 
 export default function Checkout(props) {
 
-  const {cartItems, onAdd, onRemove} = props;
+  const {cartItems, onAdd, onRemove, amountOfItems} = props;
     const Item = styled(Paper)(({ theme }) => ({
         ...theme.typography.body1,
         padding: theme.spacing(1),
@@ -51,7 +51,7 @@ export default function Checkout(props) {
 
     return (
         <>
-            <Header countCartItems={cartItems.length}/>
+            <Header amountOfItems={amountOfItems}/>
            
            <div class="checkOutContainer">
             <Grid container>

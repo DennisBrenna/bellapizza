@@ -14,7 +14,7 @@ import ProductCard from "../components/ProductCard";
 
 function Menu(props) {
 
-    const {cartItems, onAdd,} = props;
+    const {amountOfItems, onAdd,} = props;
 
     
     const [filteredProducts, setFilteredProducts] = useState([])
@@ -45,12 +45,11 @@ function Menu(props) {
         setShowFiltered((prevState) => boolean) 
     }
 
-    //Shoppingcart
-    
+
     return(
      
         <>
-        <Header countCartItems={cartItems.length}/>
+        <Header amountOfItems={amountOfItems}/>
         <div class="allLinks">
         <button className="linksInMenu" onClick={ (e) => handleShowFiltered(false) }>All</button>
         <button className="linksInMenu" onClick={ (e) => handleFilteredProducts(e.target.innerText) }>Pizza</button>

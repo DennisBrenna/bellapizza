@@ -16,7 +16,7 @@ export default function ShoppingCart(props) {
     const itemsPrice = cartItems.reduce((a, c) => a + c.price * c.qty, 0);
     const shippingPrice = itemsPrice > 50 ? 0 : 10;
     const totalPrice = itemsPrice+shippingPrice;
-  
+
     
 
     const Title2 = styled(Paper)(({ theme }) => ({
