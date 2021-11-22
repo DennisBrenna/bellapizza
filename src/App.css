@@ -8,16 +8,15 @@ body {
   position: sticky;
   top: 0;
   background-color: black;
-  
+  margin-left: -90px;
 }
 
 .allLinks{
-  padding-left: 25px;
+  text-align: center;
 }
 
 .linksInHeader{
-  position: sticky;
-  top: 0;
+
   position: relative;
   text-decoration: none;
   font-size: 30px;
@@ -51,7 +50,7 @@ body {
 
 .linksInMenu {
   border-color: black;
-  background-color: pink;
+  background-color: black;
   position: relative;
   color: white;
   text-decoration: none;
@@ -80,12 +79,19 @@ body {
   transform: scaleX(1);
 }
 
+.linksInMenu:focus {
+  color: gray;
+}
+
 .addButton {
+  position: absolutt;
   color: black;
   height: 50px;
   width: 50px;
   background-color: white;
   border-radius: 50%;
+  margin-top: -30px;
+  margin-bottom: 10px;
 }
 
 .addButton:hover {

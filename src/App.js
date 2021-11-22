@@ -1,25 +1,12 @@
 import React from 'react';
 import './App.css';
-
 import Checkout from './pages/Checkout';
 import Error from './pages/Error';
-import Footer from './components/FooterCard';
 import Home from './pages/Home';
-import { createTheme } from '@mui/material'
-import { ThemeProvider } from '@mui/system';
 import Menu from './pages/Menu';
-import Locations from "./pages/Locations";
-import PersonInformation from "./pages/PersonInformation";
-
-
-
-//import { createTheme } from '@mui/material'
-//import { amber, teal } from '@mui/material/colors';
-//import { ThemeProvider } from '@mui/system';
-//import { useEffect, useState } from 'react';
-import { Route, Routes, Router } from 'react-router-dom';
-import ProductCard from './components/ProductCard';
+import { Route, Routes} from 'react-router-dom';
 import data from './data';
+import PersonInformation from './pages/PersonInformation'
 
 function App() {
   
@@ -34,8 +21,7 @@ function App() {
       <Route exact path='/' element={ <Home/>} />
       <Route  path='/checkout' element={ <Checkout products = {products}/>} />
       <Route path='/menu' element={ <Menu/>} />
-    <Route path="/locations" element={<Locations/>} />
-       <Route path="/personinformation" element={<PersonInformation/>} />
+      <Route path="/personinformation" element={<PersonInformation/>} />
       <Route path='/error' element={ <Error/>} />
     </Routes> 
   );

@@ -146,7 +146,6 @@ export const products = [
         { 
         id: 17,
         title: "Coca Cola",
-        description: "Soda",
         image: "static/media/Soda.7261b8be.png",
         dish: "Drink",
         price: 2
@@ -155,7 +154,6 @@ export const products = [
         { 
         id: 18,
         title: "Fanta",
-        description: "Soda",
         image: "static/media/Soda.7261b8be.png",
         dish: "Drink",
         price: 2
@@ -163,7 +161,6 @@ export const products = [
         {
         id: 19,
         title: "Sprite",
-        description: "Soda",
         image: "static/media/Soda.7261b8be.png",
         dish: "Drink",
         price: 2

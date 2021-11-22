@@ -27,8 +27,8 @@ export default function PersonInformation() {
     <input type="text" id="txtField" placeholder="Postal Code.."/><br />
 
     <input type="radio" />
-    <label>Visa</label>
-    <input type="radio" />
+    <label>Visa</label>
+    <input type="radio" />
     <label>Mastercard</label><br />
 
     <label>Card Number</label>
@@ -39,8 +39,8 @@ export default function PersonInformation() {
 
     <label>Expiration Date</label>
     <input type="text" id="txtField" placeholder="Expiration Date.."/><br />
-  
-    <input type="submit" id="submit" value="Place Your Order"/>   
+
+    <input type="submit" id="submit" value="Place Your Order"/>
 
 </div>
 

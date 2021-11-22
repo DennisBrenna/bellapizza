@@ -28,8 +28,8 @@ function Header(props) {
         justifyContent="center"
       >
         <Item>
-          <Link class="linksInHeader" component={Link} variant="outlined" to="/" size="small">Home</Link> 
-          <Link  class="linksInHeader"component={Link} variant="outlined" to="/locations" size="small">Locations</Link>
+          <Link class="linksInHeader" component={Link} variant="outlined" to="/" size="small">Home</Link>
+          <Link to="/menu" class="linksInHeader" variant="outlined"  size="small">Menu</Link>
         </Item>
         <Item>
           <Link to="/"> 
@@ -37,7 +37,7 @@ function Header(props) {
           </Link>   
           </Item>
         <Item>
-          <Link to="/menu" onClick={() => window.location.reload()}  class="linksInHeader" variant="outlined"  size="small">Menu</Link>
+          
           <Link  class="linksInHeader"component={Link} variant="outlined" to="/checkout" size="small">Checkout {countCartItems ? (<button>{countCartItems}</button>):('')}</Link>
         </Item>
         </Grid>
