@@ -16,8 +16,9 @@ import {getProducts} from '../dummyData/menuData';
 
 
 
-export default function Checkout() {
+export default function Checkout(props) {
 
+  const {cartItems, onAdd,} = props;
     const Item = styled(Paper)(({ theme }) => ({
         ...theme.typography.body1,
         padding: theme.spacing(1),
@@ -51,16 +52,7 @@ export default function Checkout() {
       const [cartItems, setCartItems] = useState([]);
 
       
-      const onAdd = (product) => {
-          const exists = cartItems.find(x => x.id === product.id);
-          if(exists){
-            setCartItems(cartItems.map(x => x.id === product.id ?{...exists, qty: exists.qty+1}:x
-                ));
-          }
-          else{
-            setCartItems([...cartItems, {...product, qty: 1}])
-          }
-      }
+
       const onRemove = (product) => {
         const exists = cartItems.find(x => x.id === product.id);
         if(exists.qty === 1){
