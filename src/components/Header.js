@@ -10,7 +10,7 @@ import ModalHeader from '../components/ModalHeader'
 
 function Header(props) {
 
-  const {countCartItems} = props;
+  const {amountOfItems} = props;
 
   const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body1,
@@ -39,12 +39,11 @@ function Header(props) {
           </Link>   
           </Item>
           <Item> 
-          <Link  class="linksInHeader"component={Link} variant="outlined" to="/checkout" size="small">Checkout {countCartItems ? (<button>{countCartItems}</button>):('')}</Link>
+          <Link  class="linksInHeader"component={Link} variant="outlined" to="/checkout" size="small">Checkout</Link>
           </Item>
-          <ModalHeader />
+          <ModalHeader />{amountOfItems ? (<button>{amountOfItems}</button>):('')}
         </Grid>
       </Toolbar>
-   
   );
 }
 

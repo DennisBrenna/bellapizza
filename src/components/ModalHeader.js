@@ -13,23 +13,25 @@ const StyledModal = styled(ModalUnstyled)`
   z-index: 1300;
   right: 0;
   bottom: 0;
-  top: 0;
-  left: 0;
+  top: -70%;
+  left: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 200px;
+  color: red;
 `;
 
 const Backdrop = styled('div')`
   z-index: -1;
   position: fixed;
-  width:10px;
   right: 0;
   bottom: 0;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-tap-highlight-color: transparent;
+  
 `;
 
 
@@ -41,8 +43,7 @@ export default function ModalUnstyledDemo() {
 
   return (
     <div>
-        <Button color="primary" onMouseEnter={() => { handleOpen(); }} onMouseLeave={() => { handleClose(); }}>
-        
+        <Button color="primary" onClick={() => { handleOpen(); }}> 
         <ShoppingCartIcon/>
         </Button>
       <StyledModal
