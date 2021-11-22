@@ -6,11 +6,10 @@ import DividerHorizontal from '../components/DividerHorizontal'
 import Footer from "../components/FooterCard";
 
 function Home(props) {
-    const {cartItems} = props;
+    const {amountOfItems} = props;
     return(
         <>
-        <Header countCartItems={cartItems.length}/>
-        <MainCard/>
+        <MainCard amountOfItems={amountOfItems}/>
         <DividerHorizontal/><br/><br/>
         <Footer/>
         </>

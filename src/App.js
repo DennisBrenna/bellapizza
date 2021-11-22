@@ -18,6 +18,7 @@ import { Route, Routes} from 'react-router-dom';
 import data from './data';
 import { Grid } from "@mui/material";
 import {makeStyles} from "@material-ui/core";
+import CartDropDown from "./components/CartDropDown";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,8 +32,6 @@ function App() {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down('xs'));
   console.log(matches);
-
-
 
   const {products} = data;
   const [cartItems, setCartItems] = useState([]);
@@ -59,6 +58,7 @@ const onRemove = (product) => {
 
 }
  
+  const amountOfItems = cartItems.reduce((a, c) => a +  c.qty, 0);
   return (
     <Grid
     className={classes.root}
@@ -66,9 +66,9 @@ const onRemove = (product) => {
     alignItems="center"
   >
     <Routes>
-      <Route exact path='/' element={ <Home cartItems={cartItems}/>} />
-      <Route  path='/checkout' element={ <Checkout products = {products} onAdd={onAdd} cartItems={cartItems} onRemove={onRemove}/>} />
-      <Route path='/menu' element={ <Menu onAdd={onAdd} cartItems={cartItems}/>} />
+      <Route exact path='/' element={ <Home amountOfItems={amountOfItems}/>} />
+      <Route  path='/checkout' element={ <Checkout products = {products} onAdd={onAdd} amountOfItems={amountOfItems}  cartItems={cartItems} onRemove={onRemove}/>} />
+      <Route path='/menu' element={ <Menu onAdd={onAdd} amountOfItems={amountOfItems}/>} />
       <Route path='/error' element={ <Error/>} />
     
     </Routes> 

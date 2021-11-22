@@ -1,16 +1,21 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
-import placeOrderModal from '../components/Modal'
+import { IconButton, CloseIcon } from '@mui/material';
+import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 
-    export default function PersonalInformation() {
+    export default function PersonalInformation(props) {
+    
+    const {onClose} = props
 
     return (
 
     <>
 
 <Grid container class="informationContainer">
-    <h2>Personal Information</h2>
-   
+   <IconButton id="close-icon-btn" onClick={onClose}>
+              <CloseOutlinedIcon />
+            </IconButton>
+            <h2>Personal Information</h2>
         <Grid container>
             <Grid  md={6}>
     <label>First Name</label>
@@ -25,10 +30,9 @@ import placeOrderModal from '../components/Modal'
     <Grid  container>
     <Grid md={6}>
     <label>Adress</label>
-    
-    
     <input type="text" id="txtField" placeholder="Adress.."/>
     </Grid>
+    
     <Grid md={6}>
     <label>Telephone</label>
     <input type="text" id="txtField" placeholder="Telephone.."/><br />
@@ -68,7 +72,11 @@ import placeOrderModal from '../components/Modal'
     <input type="text" id="txtField" placeholder="Expiration Date.."/><br />
     </Grid>
     </Grid>
+<<<<<<< HEAD
   
+=======
+    <input onClick="submit" id="submit" value="Place Your Order"/>
+>>>>>>> b80284a8ea5eff13450700ddea701d66e68f80f3
 
 </Grid>
 

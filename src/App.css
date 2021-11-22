@@ -1,5 +1,8 @@
 body {
   background-color: black;
+  margin: 0;
+  padding: 0;
+
 }
 
 /********HEADER********/
@@ -9,6 +12,7 @@ body {
   top: 0;
   background-color: black;
   margin-left: -40px;
+  z-index: 1;
 }
 
 .allLinks{
@@ -138,7 +142,7 @@ body {
 }
 
 #mainOrdernowBtn:hover{
-  background-color: #30C318;
+  background-color: #026b02;
   color: white;
   cursor: pointer;
 
@@ -147,13 +151,13 @@ body {
 #warmpizzaMain{
   border-radius: 20%;
 }
+
+
 /********CHECKOUT*********/
 .shoppingCartName{
   color: white;
   font-size: 25px;
 }
-
-
 
 .shoppingCartPrice{
   color: white;
@@ -168,6 +172,7 @@ body {
   position: absolutt;
   border: 2px solid white;
   background-color: black;
+  border-radius: 10px;
   color: white;
   padding: 14px 28px;
   font-size: 16px;
@@ -228,4 +233,11 @@ body {
   background-color: #494949;
   color: white;
   
+}
+
+#close-icon-btn {
+  color: white;
+  position: fixed;
+  display: flex;
+  left: 75%;
 }
