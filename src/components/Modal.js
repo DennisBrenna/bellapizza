@@ -3,6 +3,7 @@ import { styled, Box } from '@mui/system';
 import ModalUnstyled from '@mui/core/ModalUnstyled';
 import PersonalInformation from './PersonalInformation';
 
+
 const StyledModal = styled(ModalUnstyled)`
   position: fixed;
   z-index: 1300;
@@ -30,9 +31,6 @@ const style = {
   width: "80%",
   bgcolor: 'background.paper',
   border: '2px solid #000',
-  p: 2,
-  px: 4,
-  pb: 3,
 };
 
 export default function Modal() {
@@ -45,16 +43,14 @@ export default function Modal() {
       <button type="button" class="checkoutButton" onClick={handleOpen}>
       Checkout
       </button>
-      <StyledModal
+      <StyledModal 
         aria-labelledby="unstyled-modal-title"
         aria-describedby="unstyled-modal-description"
         open={open}
         onClose={handleClose}
         BackdropComponent={Backdrop}
       >
-        <Box sx={style}>
           <PersonalInformation />
-        </Box>
       </StyledModal>
     </div>
   );

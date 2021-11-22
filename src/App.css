@@ -198,12 +198,10 @@ body {
 }
 
 .informationContainer {
-  margin-left: 400px;
-  width: 50%;
+  width: 65%;
   border-radius: 20px;
   text-align: center;
   background-color: #494949;
   color: white;
-  padding: 20px;
   
 }
