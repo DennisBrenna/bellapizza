@@ -4,13 +4,10 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import logo from '../images/logo.png'
 import { styled } from '@mui/material/styles';
-import { backdropClasses, Paper } from "@mui/material";
-import { Divider } from "@mui/material";
-
+import { Paper } from "@mui/material";
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import { MarginTwoTone } from "@mui/icons-material";
 
 const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body1,

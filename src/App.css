@@ -8,16 +8,15 @@ body {
   position: sticky;
   top: 0;
   background-color: black;
-  justify-content: center;
+  margin-left: -90px;
 }
 
 .allLinks{
-  padding-left: 25px;
+  text-align: center;
 }
 
 .linksInHeader{
-  position: sticky;
-  top: 0;
+
   position: relative;
   text-decoration: none;
   font-size: 30px;
@@ -44,14 +43,10 @@ body {
 }
 
 .linksInHeader:hover::before {
-  transform: scaleX(1);
+  transform: scaleX(0.5);
 }
 
 /********MENU********/
-
-.allLinks{
-  padding-left: 25px;
-}
 
 .linksInMenu {
   border-color: black;
@@ -60,9 +55,7 @@ body {
   color: white;
   text-decoration: none;
   font-size: 25px;
-  padding: 10px;
-  justify-content: center;
-  align-content: center;
+  padding: 20px;
 }
 
 .linksInMenu:hover {
@@ -86,12 +79,19 @@ body {
   transform: scaleX(1);
 }
 
+.linksInMenu:focus {
+  color: gray;
+}
+
 .addButton {
+  position: absolutt;
   color: black;
   height: 50px;
   width: 50px;
   background-color: white;
   border-radius: 50%;
+  margin-top: -30px;
+  margin-bottom: 10px;
 }
 
 
@@ -139,4 +139,63 @@ body {
 .checkOutContainer{
   padding-right: 100px;
   padding-left: 100px;
+}
+
+/********PersonInformation*********/
+
+#txtField {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+#firstName {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+#cardNr {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+#submit {
+  
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #45a049;
+}
+
+.informationContainer {
+  margin-left: 400px;
+  width: 50%;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #494949;
+  color: white;
+  padding: 20px;
+  
 }

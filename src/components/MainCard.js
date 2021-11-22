@@ -6,12 +6,9 @@ import { Paper } from "@mui/material";
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import { Link } from 'react-router-dom';
-
-
 import Header from '../components/Header'
 import Button from '../components/StandaloneToggleButton';
 import Footer from '../components/FooterCard';
-
 import mainImg from '../images/main.png'
 import warmpizza from '../images/warmpizza.jpeg'
 import { height } from "@mui/system";
