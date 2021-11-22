@@ -1,5 +1,6 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
+import placeOrderModal from '../components/Modal'
 
     export default function PersonalInformation() {
 
@@ -67,7 +68,7 @@ import Grid from '@mui/material/Grid';
     <input type="text" id="txtField" placeholder="Expiration Date.."/><br />
     </Grid>
     </Grid>
-    <input onClick="submit()" id="submit" value="Place Your Order"/>
+  
 
 </Grid>
 

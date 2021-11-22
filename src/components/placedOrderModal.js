@@ -1,13 +1,9 @@
 import * as React from 'react';
 import { styled, Box } from '@mui/system';
 import ModalUnstyled from '@mui/core/ModalUnstyled';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import { Button } from '@mui/material';
-import ShoppingCart from './ShoppingCart';
-import CartDropDown from './CartDropDown';
-import Checkout from '../pages/Checkout'
-import Error from '../pages/Error';
-import { Link } from 'react-router-dom'
+import PersonalInformation from './PersonalInformation';
+import placedOrder from './placedOrder';
+
 
 const StyledModal = styled(ModalUnstyled)`
   position: fixed;
@@ -24,7 +20,6 @@ const StyledModal = styled(ModalUnstyled)`
 const Backdrop = styled('div')`
   z-index: -1;
   position: fixed;
-  width:10px;
   right: 0;
   bottom: 0;
   top: 0;
@@ -33,27 +28,27 @@ const Backdrop = styled('div')`
   -webkit-tap-highlight-color: transparent;
 `;
 
-
-
-export default function ModalUnstyledDemo(props) {
+export default function Modal() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const {cartItems, onAdd, onRemove} = props;
 
   return (
     <div>
-        <Button color="primary" onClick={handleOpen}>
-        <ShoppingCartIcon/>
-        </Button>
+      <button type="button" class="checkoutButton" onClick={handleOpen}>
+      Checkout
+      </button>
       <StyledModal
+      
         aria-labelledby="unstyled-modal-title"
         aria-describedby="unstyled-modal-description"
         open={open}
+        
         onClose={handleClose}
         BackdropComponent={Backdrop}
       >
-           
+          <placedOrder/>
+         
       </StyledModal>
     </div>
   );

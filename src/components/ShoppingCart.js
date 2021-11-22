@@ -83,8 +83,6 @@ export default function ShoppingCart(props) {
                 
            
             ))}
-
-         
             {cartItems.length !== 0 && (
                 <>
                 <hr></hr>

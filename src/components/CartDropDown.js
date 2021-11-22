@@ -15,15 +15,15 @@ import { Link } from 'react-router-dom'
 
 
 
-    export default function CartDropDown() {
+    export default function CartDropDown(props) {
 
-    
+       
 
     return (
 
     <>
            
-        <ShoppingCart/>
+        
 
     </>
     )

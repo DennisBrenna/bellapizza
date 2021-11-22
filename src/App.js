@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Menu from './pages/Menu';
 import  useMediaQuery  from '@material-ui/core/useMediaQuery'
 import { useTheme } from "@material-ui/core/styles";
+import ModalHeader from './components/ModalHeader'
 
 
 //import { createTheme } from '@mui/material'
@@ -69,7 +70,9 @@ const onRemove = (product) => {
       <Route  path='/checkout' element={ <Checkout products = {products} onAdd={onAdd} cartItems={cartItems} onRemove={onRemove}/>} />
       <Route path='/menu' element={ <Menu onAdd={onAdd} cartItems={cartItems}/>} />
       <Route path='/error' element={ <Error/>} />
+    
     </Routes> 
+    <ModalHeader cartItems={cartItems}/>
     </Grid>
   );
 }
