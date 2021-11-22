@@ -10,6 +10,7 @@ import pizza from '../images/Pizza.png';
 import Product from '../components/Product';
 import ShoppingCart from '../components/ShoppingCart';
 import {getProducts} from '../dummyData/menuData';
+import Modal from '../components/Modal';
 
 
 
@@ -100,6 +101,7 @@ export default function Checkout(props) {
             <Grid container justifyContent="center" >
                 <Grid >
                 <Button variant="outlined" size="large" >Checkout</Button>
+                <Modal varitant="outlined" size="large"/>
                 </Grid>
                
             </Grid>  

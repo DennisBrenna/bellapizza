@@ -1,17 +1,13 @@
 import React from 'react';
 
-
-    export default function PersonInformation() {
-
-    
-   
+    export default function PersonalInformation() {
 
     return (
 
     <>
 
 <div class="informationContainer">
-    <h2>Checkout</h2>
+    <h2>Personal Information</h2>
     <label>First Name</label>
     <input type="text" id="firstName" placeholder="First name.."/>
 
@@ -21,7 +17,7 @@ import React from 'react';
     <label>Adress</label>
     <input type="text" id="txtField" placeholder="Adress.."/>
 
-    <label>Telephon</label>
+    <label>Telephone</label>
     <input type="text" id="txtField" placeholder="Telephone.."/><br />
 
     <label>City</label>
@@ -44,11 +40,10 @@ import React from 'react';
     <label>Expiration Date</label>
     <input type="text" id="txtField" placeholder="Expiration Date.."/><br />
 
-    <input type="submit" onClick="form" id="submit" value="Place Your Order"/>
+    <input onClick="submit()" id="submit" value="Place Your Order"/>
 
-<form> <a>dsa</a> </form>
+
 </div>
-
 
 </>
     )

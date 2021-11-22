@@ -14,7 +14,7 @@ import Menu from './pages/Menu';
 import ProductCard from './components/ProductCard';
 import { Route, Routes} from 'react-router-dom';
 import data from './data';
-import PersonInformation from './pages/PersonInformation'
+
 
 function App() {
   
@@ -49,7 +49,6 @@ const onRemove = (product) => {
       <Route exact path='/' element={ <Home/>} />
       <Route  path='/checkout' element={ <Checkout products = {products} onAdd={onAdd} cartItems={cartItems} onRemove={onRemove}/>} />
       <Route path='/menu' element={ <Menu onAdd={onAdd} cartItems={cartItems}/>} />
-      <Route path="/personinformation" element={<PersonInformation/>} />
       <Route path='/error' element={ <Error/>} />
     </Routes> 
   );

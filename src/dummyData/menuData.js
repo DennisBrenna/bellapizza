@@ -57,7 +57,7 @@ export const products = [
         { 
         id: 7,
         title: "Dallas Star",
-        description: "Cheese, Ham, Outer File, Onion, Bearneise Sauce",
+        description: "Cheese, Fillet of Beef, Onion, Bearneise Sauce",
         image: "static/media/Pizza.de92fa9b.png",
         dish: "Pizza",
         price: 15
@@ -119,7 +119,7 @@ export const products = [
         { 
         id: 14,
         title: "Kongsvinger Special",
-        description: "Pasta, Cream, Outer File, Onion, Mushroom",
+        description: "Pasta, Cream, Fillet of Beef, Onion, Mushroom",
         image: "/static/media/Pasta.b35d013e.png",
         dish: "Pasta",
         price: 13
