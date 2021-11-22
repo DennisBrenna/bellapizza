@@ -1,8 +1,6 @@
 import * as React from 'react';
 import { styled, Box } from '@mui/system';
 import ModalUnstyled from '@mui/core/ModalUnstyled';
-import PersonalInformation from './PersonalInformation';
-
 
 const StyledModal = styled(ModalUnstyled)`
   position: fixed;
@@ -28,38 +26,35 @@ const Backdrop = styled('div')`
 `;
 
 const style = {
-  width: "80%",
+  width: 400,
   bgcolor: 'background.paper',
   border: '2px solid #000',
+  p: 2,
+  px: 4,
+  pb: 3,
 };
 
-export default function Modal() {
+export default function ModalUnstyledDemo() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
   return (
     <div>
-      <button type="button" class="checkoutButton" onClick={handleOpen}>
-      Checkout
+      <button type="button" onClick={handleOpen}>
+        Open modal
       </button>
-<<<<<<< HEAD
-      <StyledModal sx={ style }
-=======
-      <StyledModal 
->>>>>>> e70e4209da776a04077ffcb5b41a6319da1456ba
+      <StyledModal
         aria-labelledby="unstyled-modal-title"
         aria-describedby="unstyled-modal-description"
         open={open}
-        
         onClose={handleClose}
         BackdropComponent={Backdrop}
       >
-<<<<<<< HEAD
-          <PersonalInformation /> 
-=======
-          <PersonalInformation />
->>>>>>> e70e4209da776a04077ffcb5b41a6319da1456ba
+        <Box sx={style}>
+          <h2 id="unstyled-modal-title">Text in a modal</h2>
+          <p id="unstyled-modal-description">Aliquid amet deserunt earum!</p>
+        </Box>
       </StyledModal>
     </div>
   );

@@ -57,8 +57,8 @@ export default function ShoppingCart(props) {
                <Grid container>
                 <Grid   md={6}>
                
-                    <Button class="addButton" variant="outlined" onClick={()=>onAdd(item)}>+</Button>
-                    <Button class="addButton" variant="outlined" onClick={()=>onRemove(item)}>-</Button>
+                    <Button class="DrinkaddButton" variant="outlined" onClick={()=>onAdd(item)}>+</Button>
+                    <Button class="DrinkaddButton" variant="outlined" onClick={()=>onRemove(item)}>-</Button>
 
                 </Grid>
               

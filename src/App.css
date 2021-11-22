@@ -8,7 +8,7 @@ body {
   position: sticky;
   top: 0;
   background-color: black;
-  margin-left: -90px;
+  margin-left: -80px;
 }
 
 .allLinks{
@@ -44,6 +44,10 @@ body {
 
 .linksInHeader:hover::before {
   transform: scaleX(0.5);
+}
+
+#shoppingCartIcon:hover{ 
+  background-color: #30C318;
 }
 
 /********MENU********/
@@ -83,7 +87,27 @@ body {
   color: gray;
 }
 
-.addButton {
+.PizzaaddButton {
+  position: absolutt;
+  color: black;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.PastaaddButton {
+  position: absolutt;
+  color: black;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.DrinkaddButton {
   position: absolutt;
   color: black;
   height: 50px;
@@ -198,12 +222,10 @@ body {
 }
 
 .informationContainer {
-  margin-left: 400px;
-  width: 50%;
+  width: 55%;
   border-radius: 20px;
   text-align: center;
   background-color: #494949;
   color: white;
-  padding: 20px;
   
 }
