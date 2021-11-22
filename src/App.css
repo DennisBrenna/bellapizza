@@ -95,7 +95,6 @@ body {
 }
 
 
-
 .addButton:hover {
   color: black;
   background-color: gray;
@@ -139,6 +138,15 @@ body {
 .checkOutContainer{
   padding-right: 100px;
   padding-left: 100px;
+}
+
+.checkoutButton {
+  position: absolutt;
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
 }
 
 /********PersonInformation*********/

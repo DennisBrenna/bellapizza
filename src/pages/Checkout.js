@@ -10,6 +10,7 @@ import pizza from '../images/Pizza.png';
 import Product from '../components/Product';
 import ShoppingCart from '../components/ShoppingCart';
 import {getProducts} from '../dummyData/menuData';
+import { Link } from 'react-router-dom'
 
 
 
@@ -48,11 +49,6 @@ export default function Checkout(props) {
         color: 'white'
       }));
 
-
-
-   
-
-      
       const [products, setproducts] = useState([])
       
       
@@ -84,22 +80,22 @@ export default function Checkout(props) {
             </Grid>
             <Grid container>
                 <Grid>
-                <Title md={6}><h1>Want something else?</h1></Title>
+                <Title md={6}><h1>Thirsty?</h1></Title>
                 </Grid>
             </Grid>
 
             <Grid container rowSpacing={1} columnSpacing={4} width={ 900 } margin="auto" marginBottom="50px">
-            { products.map(product => {
-                return( <Grid item key={ product.id } xs={3}>
-                <ProductCard key={product.id} onRemove={onRemove} onAdd={onAdd} product={product}/>
-            </Grid> ) 
-            }) }
+            { products.filter(product => product.id > 16).map(product => ( <Grid item key={ product.id } md={4} xs={4}>
+                <ProductCard onAdd={onAdd} product={product}/> </Grid> ))}
+            
 
             </Grid>
         
-            <Grid container justifyContent="center" >
+            <Grid container justifyContent="center" marginBottom="100px" >
                 <Grid >
-                <Button variant="outlined" size="large" >Checkout</Button>
+                  <Link to="/personinformation">
+                <Button class="checkoutButton" >Checkout</Button>
+               </Link>
                 </Grid>
                
             </Grid>  
