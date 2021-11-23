@@ -224,9 +224,16 @@ body {
 }
 
 .checkOutContainer{
-  padding-right: 100px;
-  padding-left: 100px;
+  margin-top: 5%;
+  padding-right: 30%;
+  padding-left: 30%;
 }
+
+.checkOutContainer2{
+  padding-right: 30%;
+  padding-left: 30%;
+}
+
 
 .checkoutButton {
   position: absolutt;
