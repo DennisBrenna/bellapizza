@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { styled, Box } from '@mui/system';
 import ModalUnstyled from '@mui/core/ModalUnstyled';
-import PersonalInformation from './PersonalInformation';
+import PersonalInformation from './PaymentInformation';
 
 
 const StyledModal = styled(ModalUnstyled)`

@@ -10,7 +10,7 @@ import { Paper } from "@mui/material";
 import ProductCard from '../components/ProductCard';
 import Header from '../components/Header';
 import ShoppingCart from '../components/ShoppingCart';
-import Modal from '../components/Modal';
+import Modal from '../components/PaymentModal';
 
 //imort dummyData
 import {getProducts} from '../dummyData/menuData';

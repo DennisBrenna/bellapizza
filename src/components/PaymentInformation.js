@@ -2,8 +2,9 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import { IconButton, CloseIcon } from '@mui/material';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
+import ConfModal from './OrderConfModal';
 
-    export default function PersonalInformation(props) {
+    export default function PaymentInformation(props) {
     
     const {onClose} = props
 
@@ -15,7 +16,7 @@ import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
         <IconButton id="close-icon-btn" onClick={onClose}>
             <CloseOutlinedIcon />
         </IconButton>
-            <h2>Personal Information</h2>
+            <h2>Payment Information</h2>
         
     <div>
         <label>First Name</label>
@@ -55,12 +56,12 @@ import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
         <input type="text" id="txtField" placeholder="Expiration Date.."/><br />
     </div>
 
-    <input type="radio" id="visa" name="card_type" value="Visa" />
-    <label for="visa">Visa</label>
-    <input type="radio" id="mastercard" name="card_type" value="Mastercard" />
-    <label for="mastercard">Mastercard</label><br />
+        <input type="radio" id="visa" name="card_type" value="Visa" />
+        <label for="visa">Visa</label>
+        <input type="radio" id="mastercard" name="card_type" value="Mastercard" />
+        <label for="mastercard">Mastercard</label><br />
 
-    <input onClick="submit" id="submit" value="Place Your Order"/>
+        <ConfModal/>
 
 </div>
 
