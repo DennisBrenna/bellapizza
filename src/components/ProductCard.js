@@ -1,15 +1,16 @@
 import * as React from 'react';
 
+//import mui
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea, CardActions } from '@mui/material';
+import { CardActions } from '@mui/material';
 import Fab from '@mui/material/Fab';
 import AddIcon from '@mui/icons-material/Add';
 import Divider from '@mui/material/Divider';
 import { styled } from '@mui/material/styles';
-import { backdropClasses, Paper } from "@mui/material";
+import { Paper } from "@mui/material";
 
 
 const Item = styled(Paper)(({ theme }) => ({

@@ -1,8 +1,12 @@
 import * as React from "react";
+
+//import image
 import store from '../images/store.jpeg';
+import logo from '../images/logo.png';
+
+//import mui
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import logo from '../images/logo.png'
 import { styled } from '@mui/material/styles';
 import { Paper } from "@mui/material";
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
@@ -53,9 +57,9 @@ const Item = styled(Paper)(({ theme }) => ({
                 <InstagramIcon/>
                 <TwitterIcon/>
                 </Grid>
-                <a>Contact us</a>
-                <a>Bella@frontend.com</a>
-                <a>Call Us +47 69 69 69 69</a>
+                <p>Contact us</p>
+                <p>Bella@frontend.com</p>
+                <p>Call Us +47 69 69 69 69</p>
                 </Grid>
             </Item>
 
@@ -70,13 +74,13 @@ const Item = styled(Paper)(({ theme }) => ({
                     alignItems="center"
                     justifyContent="center"
                     >
-                <a>Opening hours</a><br/>
+                <p>Opening hours</p><br/>
 
-                <a>Sunday - Monday:</a>
-                <a>11AM - 12PM</a><br/>
+                <p>Sunday - Monday:</p>
+                <p>11AM - 12PM</p><br/>
 
-                <a>Friday - Saterday:</a>
-                <a>11AM - 11PM</a>
+                <p>Friday - Saterday:</p>
+                <p>11AM - 11PM</p>
                 </Grid>
             </Item>
 

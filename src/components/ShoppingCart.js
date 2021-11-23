@@ -1,14 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+//import mui
 import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
 import { Paper } from "@mui/material";
 import Button from '@mui/material/Button';
-import Divider from '@mui/material/Divider';
-import { createTheme } from '@mui/material'
-import { amber, teal } from '@mui/material/colors';
-import { ThemeProvider } from '@mui/system';
-import warmpizza from '../images/pizzaman.png'
-import { Link } from 'react-router-dom'
+
 
 
 export default function ShoppingCart(props) {
@@ -27,20 +25,7 @@ export default function ShoppingCart(props) {
         color: 'white'
       }));
 
-      const theme = createTheme({
-        palette: {
-          primary: teal,
-          secondary: amber,
-        },
-      })
 
-
-      const Buttons = styled(Paper)(({ theme }) => ({
-        ...theme,
-        
-        
-      }));
-    //Hvorfor funker ikke justifyContent: flex-end??? finn alternativ
     return (
         <>
         

@@ -18,15 +18,7 @@ import {getProducts} from '../dummyData/menuData';
 export default function Checkout(props) {
 
   const {cartItems, onAdd, onRemove, amountOfItems} = props;
-    const Item = styled(Paper)(({ theme }) => ({
-        ...theme.typography.body1,
-        padding: theme.spacing(1),
-        textAlign: 'left',
-        alignItems: "flex-end",
-        color: "white",
-        backgroundColor: "yellow",
-        boxShadow: "white",
-      }));
+  
 
       const Title = styled(Paper)(({ theme }) => ({
         ...theme.typography.body1,
@@ -89,7 +81,7 @@ export default function Checkout(props) {
         
             <Grid container justifyContent="center" marginBottom="100px" >
                 <Grid >
-                <Modal class="checkoutButton" varitant="outlined" size="large"/>  
+                <Modal class="checkoutButton" varitant="outlined" size="large"/>
               </Grid>
                
             </Grid>  

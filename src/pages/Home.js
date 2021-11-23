@@ -11,7 +11,6 @@ function Home(props) {
         <>
         <MainCard amountOfItems={amountOfItems}/>
         <DividerHorizontal/><br/><br/>
-        <Footer/>
         </>
     )
 }

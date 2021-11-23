@@ -33,7 +33,6 @@ function Menu(props) {
     }, [filteredProducts])
 
     const handleFilteredProducts = (dish) => {
-        console.log(dish)
         const result = products.filter(product => { 
             if( dish === product.dish) {
                 return product

@@ -2,7 +2,7 @@ body {
   background-color: black;
   margin: 0;
   padding: 0;
-
+  width: 100vw;
 }
 
 /********HEADER********/
@@ -11,8 +11,8 @@ body {
   position: sticky;
   top: 0;
   background-color: black;
-  margin-left: -40px;
   z-index: 1;
+  width: 100%;
 }
 
 .allLinks{
@@ -20,13 +20,71 @@ body {
 }
 
 .linksInHeader{
-
   position: relative;
   text-decoration: none;
   font-size: 30px;
   color: #ffffff;
   padding-right: 60px;
   padding-left: 60px;
+}
+
+.warmPizza {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  order: 1;
+  padding-top: 30px;
+}
+
+/* MOBILE ----------*/
+@media only screen and (max-width: 480px) {
+  .linksInHeader{
+    font-size: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .warmPizza {
+    flex-direction: column;
+    order: 2;
+  }
+  #mainOrdernowBtn{
+    font-size: 6px;
+    margin-bottom: 30px;
+  }
+  .pizzaText {
+    font-size: 30px;
+    padding-bottom: 15px;
+    order: 1;
+  }
+}
+
+/* TABLET ----------*/
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .linksInHeader{
+    font-size: 30px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .warmPizza {
+    flex-direction: column;
+    order: 2;
+  }
+  #mainOrdernowBtn{
+    font-size: 10px;
+    margin-bottom: 50px;
+  }
+  .pizzaText {
+    font-size: 40px;
+    padding-bottom: 15px;
+    order: 1;
+  }
+}
+
+.pizzaText {
+  font-size: 50px;
+  padding-left: 15px;
+  order: 2;
 }
 
 .linksInHeader:hover {
@@ -122,9 +180,15 @@ body {
   margin-bottom: 10px;
 }
 
+.PizzaaddButton:hover {
+  background-color: gray;
+}
 
-.addButton:hover {
-  color: black;
+.PastaaddButton:hover {
+  background-color: gray;
+}
+
+.DrinkaddButton:hover {
   background-color: gray;
 }
 
@@ -135,7 +199,7 @@ body {
   width: auto;
   color: white;
   border: 1px solid white;
-  font-size: 80px;
+  font-size: 12px;
   padding: 14px 28px;
   margin-top: 20%;
   border-radius: 30px;
@@ -147,9 +211,6 @@ body {
   cursor: pointer;
 
 }
-
-
-
 
 /********CHECKOUT*********/
 .shoppingCartName{
@@ -169,37 +230,34 @@ body {
 .checkoutButton {
   position: absolutt;
   border: 2px solid white;
-  background-color: black;
+  background-color: transparent;
   border-radius: 10px;
   color: white;
   padding: 14px 28px;
   font-size: 16px;
 }
 
+#close-icon-button{
+  color: white;
+  position: fixed;
+  display: flex;
+  left: 75%;
+}
+
 /********PersonInformation*********/
 
-#txtField {
+#txt-field {
   padding: 12px 20px;
   margin: 8px 0;
-  display: inline-block;
+  display: table-cell;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   margin: 10px;
 }
 
-#firstName {
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin: 10px;
-}
-
-#cardNr {
-  width: 50%;
+#card-number {
+  width: 450px;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -210,10 +268,10 @@ body {
 }
 
 #submit {
-  
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
+  text-align: center;
   margin: 8px 0;
   border: none;
   border-radius: 4px;
@@ -225,12 +283,24 @@ body {
 }
 
 .informationContainer {
+  margin-top: 10%;
   width: 55%;
   border-radius: 20px;
   text-align: center;
   background-color: #494949;
   color: white;
   
+}
+
+.informationContainerChild {
+  margin-top: 10%;
+  width: 55%;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #494949;
+  color: white;
+  float: left;
+  justify-content: center;
 }
 
 #close-icon-btn {
