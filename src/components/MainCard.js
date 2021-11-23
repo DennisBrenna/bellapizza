@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import Header from '../components/Header'
 import mainImg from '../images/main.jpg'
 import warmpizza from '../images/warmpizza.jpeg'
+import { height } from "@mui/system";
 
 const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body1,
@@ -31,9 +32,6 @@ function FormRow(props) {
             <Box sx={{
                 width: "100%",
                 }}>
-
-                    
-                  
                         <div style={{
                             backgroundImage: `url(${mainImg})`,
                             ackgroundPosition: "center",
@@ -46,8 +44,27 @@ function FormRow(props) {
                 
              
 
-                <div className="warmPizza">
-                     <div style={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}} className="pizzaText">
+                <div className="mainMiddleCont">
+                    <div className="warmPizzaImgCont">
+                        <img  src={warmpizza} classname="warm-pizza"/>
+                    </div>
+                    <div className="pizzaText">
+                        <a>Real Italian</a>
+                                <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                    <a style={{color: "green", paddingRight:'20px'}}>Pizza</a>
+                                    <a> & </a>
+                                    <a style={{color: "red", paddingLeft:'20px'}}>Pasta</a>
+                                </div> 
+                                 <Link to="/Menu">
+                                    <button type="button" id="mainOrdernowBtn">ORDER NOW</button>
+                                </Link> 
+                    </div>
+                </div>
+
+
+
+               {/*<div className="mainMiddleContrs">
+                     <div className="pizzaText">
                                 <a>Real Italian</a>
                                 <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                                     <a style={{color: "green", paddingRight:'20px'}}>Pizza</a>
@@ -58,21 +75,14 @@ function FormRow(props) {
                                     <button type="button" id="mainOrdernowBtn">ORDER NOW</button>
                                 </Link> 
                  </div> 
-                        
-                            <img src={warmpizza} style={{
-                                width:"300px",
-                                height:"90%",
-                                borderRadius:"10%",
-                                marginTop:"-10px",
-                                objectFit: "contain"
-                            }}
-                                id="warmpizzaMain"/>
-                        
+                <div className="warmPizzaImgCont">
+                            <img  src={warmpizza} classname="warm-pizza"/>
+                </div>        
                     
                
 
                                  
-                </div>
+                        </div>*/}
                         
             </Box>
         </Box>

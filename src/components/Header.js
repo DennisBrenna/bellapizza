@@ -24,7 +24,7 @@ function Header(props) {
       <div style={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", width: "100%"}}>
       <Item>
           <Link to="/"> 
-            <img style={{width: '250px', height:'auto'}} src={Logo} alt="BellaLogo"></img>
+            <img style={{width: '200px', height:'auto'}} src={Logo} alt="BellaLogo"></img>
           </Link>   
       </Item>
       <Item style={{display: "flex", justifyContent: "center", alignItems: "center"}}>

@@ -28,84 +28,48 @@ const Item = styled(Paper)(({ theme }) => ({
 
   function FormRow() {
     return (
-        <Box
-        sx={{
-            display:'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
+        <div className="footer"
+        style={{
             alignItems:"center",
             justifyContent:"center",
-            height:"100vh",
+            width:"100%",
         }}>
-            <Item sx={{
-                gridColumn:1,
-            }}>
+            <Item>
                
-                <Grid
-                    container
-                    direction="column"
-                    alignItems="center"
-                    justifyContent="center"
-                    >
+                <div className="divFooterContainer">
+
+                <div className="divFooter1">
+                    <div>
+                        <img src={logo} alt="logo" className="logoFooter"/>
+                    </div> 
+                    <div>
+                        <FacebookOutlinedIcon/>
+                        <InstagramIcon/>
+                        <TwitterIcon/>
+                        <p>Contact us</p>
+                        <p>Bella@frontend.com</p>
+                        <p>Call Us +47 69 69 69 69</p>
+        
+                    </div>
+        
                 
-                <img src={logo} alt="logo" width="321px" height="100"/><br/>
-                <Grid 
-                    container 
-                    direction="row"
-                    alignItems="center"
-                    justifyContent="center">
-                <FacebookOutlinedIcon/>
-                <InstagramIcon/>
-                <TwitterIcon/>
-                </Grid>
-                <p>Contact us</p>
-                <p>Bella@frontend.com</p>
-                <p>Call Us +47 69 69 69 69</p>
-                </Grid>
+                </div>
+
+                <div className="divFooter2">
+                    <p>Opening hours</p>
+                    <p>Sunday - Monday:</p>
+                    <p>11AM - 12PM</p>
+                    <p>Friday - Saterday:</p>
+                    <p>11AM - 11PM</p>
+                </div>
+                <div className="footerImgDiv">
+                    <img src={store} alt="bar desk" className="footerImg" style={{borderRadius:"10%"}}/>
+                </div>
+
+
+                </div>           
             </Item>
-
-            <Item sx={{
-                gridColumn:2,
-                
-            }}>
-                <Grid
-                    container
-                    spacing={0}
-                    direction="column"
-                    alignItems="center"
-                    justifyContent="center"
-                    >
-                <p>Opening hours</p><br/>
-
-                <p>Sunday - Monday:</p>
-                <p>11AM - 12PM</p><br/>
-
-                <p>Friday - Saterday:</p>
-                <p>11AM - 11PM</p>
-                </Grid>
-            </Item>
-
-            <Item sx={{
-                gridColumn:3,
-                
-            }}>
-                <Grid
-                    container
-                    spacing={0}
-                    direction="column"
-                    alignItems="center"
-                    justifyContent="center"
-                    >
-                <img src={store} alt="bar desk" 
-                style={{
-                    width:"auto",
-                    height:"350px",
-                    borderRadius:"10%",
-                    paddingRight:"10px"
-                }}
-                ></img>
-                </Grid>
-            </Item>
-        </Box>   
+        </div>   
     );
   }
 

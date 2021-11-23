@@ -5,6 +5,7 @@ body {
   width: 100vw;
 }
 
+
 /********HEADER********/
 
 .header {
@@ -28,14 +29,7 @@ body {
   padding-left: 60px;
 }
 
-.warmPizza {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  order: 1;
-  padding-top: 30px;
-}
+
 
 /* MOBILE ----------*/
 @media only screen and (max-width: 480px) {
@@ -44,7 +38,7 @@ body {
     padding-right: 10px;
     padding-left: 10px;
   }
-  .warmPizza {
+  .mainMiddleCont {
     flex-direction: column;
     order: 2;
   }
@@ -56,19 +50,27 @@ body {
     font-size: 30px;
     padding-bottom: 15px;
     order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
   }
 }
 
 /* TABLET ----------*/
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
+@media only screen and (min-width: 481px) and (max-width: 970px) {
+  /* HeaderTablet */
   .linksInHeader{
     font-size: 30px;
     padding-right: 25px;
     padding-left: 25px;
   }
-  .warmPizza {
+
+  /* MainTablet */
+  .mainMiddleCont {
     flex-direction: column;
     order: 2;
+    height: 50%;
   }
   #mainOrdernowBtn{
     font-size: 10px;
@@ -79,6 +81,107 @@ body {
     padding-bottom: 15px;
     order: 1;
   }
+
+  /*FooterTablet*/
+  .footer{
+    height: 700px;
+  }
+
+  .divFooter{
+    font-size: 25px;
+  }
+
+  .logoFooter{
+    width: 200px;
+  }
+
+  .footerImg{
+    visibility:hidden;
+    height: 0px;
+  }
+
+
+
+}
+
+@media only screen and (min-width: 970px) {
+  /*Header*/
+  
+  /*Main*/
+ 
+
+  .mainMiddleCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .warmPizzaImgCont{
+    display: flex;
+    order: 1;
+  }
+
+  .pizzaText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    order: 2;
+  }
+
+  .warm-pizza{
+    height: 100px;
+    width: 10px;
+  }
+  
+  
+
+
+  /*menu*/
+
+  /*checkout*/
+  
+  /* footer */
+ .divFooterContainer{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+ }
+
+ .divFooter1{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 30%;
+  font-size: 50px;
+ }
+ 
+.logoFooter{
+  width: 400px;
+}
+
+ .divFooter2{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 30%;
+   font-size: 50px;
+ }
+
+ .footerImgDiv{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 30%;
+ }
+ .footerImg{
+   width: 100%;
+   height: auto;
+ }
 }
 
 .pizzaText {
@@ -210,6 +313,12 @@ body {
   color: white;
   cursor: pointer;
 
+}
+
+.mainMiddleCont{
+  border-radius: 10%;
+  margin-top: -10px;
+   object-fit: contain;
 }
 
 /********CHECKOUT*********/
