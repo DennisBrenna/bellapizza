@@ -16,9 +16,6 @@ body {
   width: 100%;
 }
 
-.allLinks{
-  text-align: center;
-}
 
 .linksInHeader{
   position: relative;
@@ -217,13 +214,17 @@ body {
 
 /********MENU********/
 
+.menuFilter {
+  text-align: center;
+}
+
 .linksInMenu {
   border-color: black;
   background-color: black;
   position: relative;
   color: white;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   padding: 20px;
 }
 
@@ -332,9 +333,16 @@ body {
 }
 
 .checkOutContainer{
-  padding-right: 100px;
-  padding-left: 100px;
+  margin-top: 5%;
+  padding-right: 30%;
+  padding-left: 30%;
 }
+
+.checkOutContainer2{
+  padding-right: 30%;
+  padding-left: 30%;
+}
+
 
 .checkoutButton {
   position: absolutt;
@@ -402,15 +410,25 @@ body {
   
 }
 
-.informationContainerChild {
-  margin-top: 10%;
-  width: 55%;
-  border-radius: 20px;
-  text-align: center;
-  background-color: #494949;
-  color: white;
-  float: left;
-  justify-content: center;
+#txtField {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+#cardNr {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 10px;
 }
 
 #close-icon-btn {

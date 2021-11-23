@@ -29,7 +29,7 @@ export const products = [
     
         { 
         id: 4,
-        title: "Mexican",
+        title: "Mexicana",
         description: "Cheese, Meat Sauce, Onion, Jalapenios",
         image: "static/media/Pizza.de92fa9b.png",
         dish: "Pizza",
@@ -65,7 +65,7 @@ export const products = [
     
         { 
         id: 8,
-        title: "New York Ranger",
+        title: "New Yorker",
         description: "Cheese, Spicy Salami, Mushroom, Chili",
         image: "static/media/Pizza.de92fa9b.png",
         dish: "Pizza",
@@ -92,7 +92,7 @@ export const products = [
     
         { 
         id: 11,
-        title: "Swedish Meatballs",
+        title: "Swe Meatballs",
         description: "Pasta, Swedish Meatballs, Tomato Sauce",
         image: "/static/media/Pasta.b35d013e.png",
         dish: "Pasta",
@@ -109,7 +109,7 @@ export const products = [
     
         { 
         id: 13,
-        title: "Spice Seafood",
+        title: "Spicy Seafood",
         description: "Spaghetti, Shrimp, Garlic, Chili, Lemon Sauce",
         image: "/static/media/Pasta.b35d013e.png",
         dish: "Pasta",
@@ -118,7 +118,7 @@ export const products = [
     
         { 
         id: 14,
-        title: "Kongsvinger Special",
+        title: "Kongsvinger",
         description: "Pasta, Cream, Fillet of Beef, Onion, Mushroom",
         image: "/static/media/Pasta.b35d013e.png",
         dish: "Pasta",
@@ -128,8 +128,8 @@ export const products = [
         { 
         id: 15,
         title: "Meat Lovers",
-        description: "Spaghetti, Outer File, Chorizo, Ham, Garlic, Tomato Sauce",
-        image: "/static/media/Pasta.b35d013e.png",
+        description: "Spaghetti, Fillet of Beef, Chorizo, Ham, Garlic, Tomato Sauce",
+        image: "static/media/Pasta.b35d013e.png",
         dish: "Pasta",
         price: 15
         },
@@ -161,6 +161,13 @@ export const products = [
         {
         id: 19,
         title: "Sprite",
+        image: "static/media/Soda.7261b8be.png",
+        dish: "Drink",
+        price: 2
+        },
+        {
+        id: 20,
+        title: "Coca Cola Zero",
         image: "static/media/Soda.7261b8be.png",
         dish: "Drink",
         price: 2

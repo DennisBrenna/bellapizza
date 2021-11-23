@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 //import mui
+import AddIcon from '@mui/icons-material/Add';
 import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
 import { Paper } from "@mui/material";
@@ -30,7 +31,7 @@ export default function ShoppingCart(props) {
         <>
         
         <div>
-            {cartItems.length === 0 && <h1 style={{color:'white'}} >No pizza found. <Link style={{color:'white'}}to="/menu">Click here!</Link> </h1>}
+            {cartItems.length === 0 && <h3 style={{color:'white', textAlign: "center"}}>Cart empty: <Link style={{color:'white'}}to="/menu">Add item</Link> </h3>}
         </div>
         {cartItems.map((item)=>(
             
@@ -41,7 +42,7 @@ export default function ShoppingCart(props) {
                   
                <Grid container>
                 <Grid   md={6}>
-               
+                    
                     <Button class="DrinkaddButton" variant="outlined" onClick={()=>onAdd(item)}>+</Button>
                     <Button class="DrinkaddButton" variant="outlined" onClick={()=>onRemove(item)}>-</Button>
 

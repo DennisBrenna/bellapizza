@@ -12,6 +12,11 @@ import Divider from '@mui/material/Divider';
 import { styled } from '@mui/material/styles';
 import { Paper } from "@mui/material";
 
+//note to sensor.. we use static/media... if we delete the import it wont work even tho they are never read.
+import Pizza from "../images/Pizza.png"
+import Pasta from "../images/Pasta.png"
+import Drink from "../images/Soda.png"
+
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body1,
@@ -38,7 +43,7 @@ export default function ProductCard(props) {
         <Item>
         <CardContent style={{height: "50%", display: "flex", flexDirection: "column"}}>
           <Typography gutterBottom variant="h7" component="div" textAlign="center">
-            { product.title }
+            { product.title + " " +  "-"} {"$" + product.price }
           </Typography>
           <Divider orientation="horizontal" style={{ background: 'white', margin: 10 }} flexItem>
           </Divider>
