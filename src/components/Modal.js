@@ -34,7 +34,8 @@ function ChildModal() {
   return (
     <div>
     <React.Fragment>
-      <Button class="checkoutButton"onClick={handleOpen} >Open Child Modal</Button>
+      <Button class="checkoutButton"onClick={handleOpen} >Place order</Button>
+      
       <Modal
       
         open={open}
@@ -53,11 +54,12 @@ function ChildModal() {
           <p id="child-modal-description">
            Your order will be delivered soon
           </p>
-          <Button class="checkoutButton"onClick={handleClose}>Close Child Modal</Button>
+          <Button class="checkoutButton"onClick={handleClose}>Close</Button>
         </Grid>
        
         </Grid>
       </Modal >
+     
     </React.Fragment>
     </div>
   );
@@ -74,7 +76,7 @@ export default function NestedModal() {
 
   return (
     <div>
-      <Button class="checkoutButton"onClick={handleOpen}>Open modal</Button>
+      <Button class="checkoutButton"onClick={handleOpen}>Proceed to payment</Button>
       <Modal
         open={open}
         onClose={handleClose}
