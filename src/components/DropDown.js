@@ -3,11 +3,7 @@ import { styled, Box } from '@mui/system';
 import ModalUnstyled from '@mui/core/ModalUnstyled';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Button } from '@mui/material';
-import ShoppingCart from './ShoppingCart';
-import CartDropDown from './CartDropDown';
-import Checkout from '../pages/Checkout'
-import Error from '../pages/Error';
-import { Link } from 'react-router-dom'
+
 
 const StyledModal = styled(ModalUnstyled)`
   position: fixed;

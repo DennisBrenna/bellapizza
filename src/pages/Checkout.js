@@ -7,7 +7,10 @@ import ProductCard from '../components/ProductCard';
 import Header from '../components/Header';
 import ShoppingCart from '../components/ShoppingCart';
 import {getProducts} from '../dummyData/menuData';
-import Modal from '../components/Modal';
+import Modal1 from '../components/Modal';
+
+
+
 
 export default function Checkout(props) {
 
@@ -83,7 +86,7 @@ export default function Checkout(props) {
         
             <Grid container justifyContent="center" marginBottom="100px" >
                 <Grid >
-                <Modal class="checkoutButton" varitant="outlined" size="large"/>  
+                <Modal1 class="checkoutButton" varitant="outlined" size="large"/>  
               </Grid>
                
             </Grid>  

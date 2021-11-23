@@ -176,6 +176,13 @@ body {
   font-size: 16px;
 }
 
+#close-icon-button{
+  color: white;
+  position: fixed;
+  display: flex;
+  left: 75%;
+}
+
 /********PersonInformation*********/
 
 #txtField {
@@ -225,6 +232,17 @@ body {
 }
 
 .informationContainer {
+  margin-top: 10%;
+  width: 55%;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #494949;
+  color: white;
+  
+}
+
+.informationContainerChild {
+  margin-top: 10%;
   width: 55%;
   border-radius: 20px;
   text-align: center;
