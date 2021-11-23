@@ -30,8 +30,6 @@ const Item = styled(Paper)(({ theme }) => ({
             gridTemplateColumns: 'repeat(3, 1fr)',
             alignItems:"center",
             justifyContent:"center",
-            marginLeft:"10%",
-            marginBottom:"10px",
             height:"100vh",
         }}>
             <Item sx={{
@@ -75,10 +73,10 @@ const Item = styled(Paper)(({ theme }) => ({
                 <a>Opening hours</a><br/>
 
                 <a>Sunday - Monday:</a>
-                <a>12pm - 10pm</a><br/>
+                <a>11AM - 12PM</a><br/>
 
                 <a>Friday - Saterday:</a>
-                <a>12pm - 11pm</a>
+                <a>11AM - 11PM</a>
                 </Grid>
             </Item>
 
@@ -93,7 +91,14 @@ const Item = styled(Paper)(({ theme }) => ({
                     alignItems="center"
                     justifyContent="center"
                     >
-                <img src={store} alt="Inside" width="auto" height="350px"></img>
+                <img src={store} alt="bar desk" 
+                style={{
+                    width:"auto",
+                    height:"350px",
+                    borderRadius:"10%",
+                    paddingRight:"10px"
+                }}
+                ></img>
                 </Grid>
             </Item>
         </Box>   

@@ -72,11 +72,7 @@ import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
     <input type="text" id="txtField" placeholder="Expiration Date.."/><br />
     </Grid>
     </Grid>
-<<<<<<< HEAD
-  
-=======
     <input onClick="submit" id="submit" value="Place Your Order"/>
->>>>>>> b80284a8ea5eff13450700ddea701d66e68f80f3
 
 </Grid>
 

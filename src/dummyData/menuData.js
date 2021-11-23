@@ -4,7 +4,7 @@ export const products = [
         id: 1,
         title: "Vesuvio",
         description: "Cheese, Ham",
-        image: "static/media/Pizza.png",
+        image: "static/media/Pizza.de92fa9b.png",
         dish: "Pizza",
         price: 10
         },

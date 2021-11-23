@@ -84,9 +84,10 @@ function FormRow(props) {
                     >
                         <Item>
                                 <img src={warmpizza} style={{
-                                width:"300px",
-                                height:"700",
-                                borderRadius:"10%"
+                                width:"600px",
+                                height:"600px",
+                                borderRadius:"10%",
+                                marginTop:"-10px"
                             }}
                                 id="warmpizzaMain"/>
                         </Item>
@@ -172,10 +173,9 @@ function FormRow(props) {
   }
 
  function MainCard(props) {
-   
+    const {amountOfItems} = props;
     return (
-        <Header />,
-        <FormRow />  
+        <FormRow amountOfItems={amountOfItems}/>  
     )
  }
 

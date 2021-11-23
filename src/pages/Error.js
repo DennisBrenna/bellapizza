@@ -33,14 +33,9 @@ export default function Error() {
                 marginTop="30px"
                 marginBottom="-5px"
                 >
-                    <p>Items</p>
-                    <Grid>
-                        
+                    <p>Items</p>                
                     </Grid>
 
-
-
-            </Grid>
         </div>
     )
 }
