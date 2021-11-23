@@ -1,7 +1,7 @@
 import * as React from "react";
 
+//import components
 import MainCard from '../components/MainCard';
-import Header from '../components/Header';
 import DividerHorizontal from '../components/DividerHorizontal'
 import Footer from "../components/FooterCard";
 

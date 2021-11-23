@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from "react";
+
+//import components
 import Footer from "../components/FooterCard";
 import Header from "../components/Header";
 import DividerHorizontal from "../components/DividerHorizontal";
-import pizza from '../images/Pizza.png';
-import soda from '../images/Soda.png';
-import pasta from '../images/Pasta.png';
-import {getProducts} from '../dummyData/menuData';
-import { styled } from '@mui/material/styles';
-import { backdropClasses, Paper } from "@mui/material";
-import { Grid } from "@mui/material";
 import ProductCard from "../components/ProductCard";
+
+//import dummydata
+import {getProducts} from '../dummyData/menuData';
+
+//import mui 
+import { Grid } from "@mui/material";
+
 
 
 function Menu(props) {

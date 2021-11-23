@@ -1,13 +1,19 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
+
+//import MUI
 import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
 import { Paper } from "@mui/material";
+
+//import components
 import ProductCard from '../components/ProductCard';
 import Header from '../components/Header';
 import ShoppingCart from '../components/ShoppingCart';
-import {getProducts} from '../dummyData/menuData';
 import Modal from '../components/Modal';
+
+//imort dummyData
+import {getProducts} from '../dummyData/menuData';
 
 export default function Checkout(props) {
 
