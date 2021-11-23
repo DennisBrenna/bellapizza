@@ -6,7 +6,7 @@ import { styled } from '@mui/material/styles';
 import { Paper } from "@mui/material";
 import { Grid } from '@mui/material';
 
-import ModalHeader from '../components/ModalHeader'
+import ModalHeader from './DropDown'
 
 function Header(props) {
 
