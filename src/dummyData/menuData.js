@@ -165,6 +165,13 @@ export const products = [
         dish: "Drink",
         price: 2
         },
+        {
+        id: 20,
+        title: "Coca Cola Zero",
+        image: "static/media/Soda.7261b8be.png",
+        dish: "Drink",
+        price: 2
+        },
         
 ];
 

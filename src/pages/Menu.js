@@ -51,7 +51,7 @@ function Menu(props) {
      
         <>
         <Header amountOfItems={amountOfItems}/>
-        <div class="allLinks">
+        <div class="menuFilter">
         <button className="linksInMenu" onClick={ (e) => handleShowFiltered(false) }>All</button>
         <button className="linksInMenu" onClick={ (e) => handleFilteredProducts(e.target.innerText) }>Pizza</button>
         <button className="linksInMenu" onClick={ (e) => handleFilteredProducts(e.target.innerText) }>Pasta</button>

@@ -30,7 +30,7 @@ export default function ShoppingCart(props) {
         <>
         
         <div>
-            {cartItems.length === 0 && <h1 style={{color:'white'}} >No pizza found. <Link style={{color:'white'}}to="/menu">Click here!</Link> </h1>}
+            {cartItems.length === 0 && <h3 style={{color:'white', textAlign: "center"}}>Cart empty: <Link style={{color:'white'}}to="/menu">Add item</Link> </h3>}
         </div>
         {cartItems.map((item)=>(
             

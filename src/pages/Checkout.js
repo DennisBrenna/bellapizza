@@ -54,10 +54,10 @@ export default function Checkout(props) {
            <div class="checkOutContainer">
             <Grid container>
                 <Grid md={6}>
-                <Title ><h1>Items</h1></Title>
+                <Title ><h2>Items:</h2></Title>
                 </Grid>
                <Grid md={6} >
-               <Title2 ><h1>Price</h1></Title2>
+               <Title2 ><h2>Price:</h2></Title2>
                </Grid>
             </Grid>
 
@@ -70,12 +70,12 @@ export default function Checkout(props) {
             </Grid>
             <Grid container>
                 <Grid>
-                <Title md={6}><h1>Thirsty?</h1></Title>
+                <Title md={6}><h2>Thirsty?</h2></Title>
                 </Grid>
             </Grid>
 
             <Grid container rowSpacing={1} columnSpacing={4} width={ 900 } margin="auto" marginBottom="50px">
-            { products.filter(product => product.id > 16).map(product => ( <Grid item key={ product.id } md={4} xs={4}>
+            { products.filter(product => product.id > 16).map(product => ( <Grid item key={ product.id } md={3} xs={4}>
                 <ProductCard onAdd={onAdd} product={product}/> </Grid> ))}
             </Grid>
         
