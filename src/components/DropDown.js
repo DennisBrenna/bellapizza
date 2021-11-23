@@ -41,8 +41,7 @@ export default function ModalUnstyledDemo(props) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const {cartItems, onAdd, onRemove} = props;
-
+ 
   return (
     <div>
         <Button color="primary" onClick={() => { handleOpen(); }}> 
