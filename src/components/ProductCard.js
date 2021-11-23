@@ -38,7 +38,7 @@ export default function ProductCard(props) {
         <Item>
         <CardContent style={{height: "50%", display: "flex", flexDirection: "column"}}>
           <Typography gutterBottom variant="h7" component="div" textAlign="center">
-            { product.title }
+            { product.title + " " +  "-"} {"$" + product.price}
           </Typography>
           <Divider orientation="horizontal" style={{ background: 'white', margin: 10 }} flexItem>
           </Divider>
