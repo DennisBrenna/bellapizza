@@ -169,12 +169,13 @@ body {
 .checkoutButton {
   position: absolutt;
   border: 2px solid white;
-  background-color: black;
+  background-color: transparent;
   border-radius: 10px;
   color: white;
   padding: 14px 28px;
   font-size: 16px;
 }
+
 
 #close-icon-button{
   color: white;
