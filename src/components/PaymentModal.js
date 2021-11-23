@@ -35,7 +35,7 @@ export default function Modal() {
   return (
     <div>
       <button type="button" class="checkoutButton" onClick={handleOpen}>
-      Proceed to Personal Information
+      Proceed to Payment Information
       </button>
       <StyledModal 
       

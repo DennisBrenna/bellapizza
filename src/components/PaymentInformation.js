@@ -1,6 +1,5 @@
 import React from 'react';
-import Grid from '@mui/material/Grid';
-import { IconButton, CloseIcon } from '@mui/material';
+import { IconButton } from '@mui/material';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import ConfModal from './OrderConfModal';
 
