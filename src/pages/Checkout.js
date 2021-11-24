@@ -81,7 +81,7 @@ export default function Checkout(props) {
              <div class="fixPadding">
             <div className="menuCont">
             { products.filter(product => product.id > 16).map(product => ( 
-            <div className="menuTest" item key={ product.id }>
+            <div className="menuItem" item key={ product.id }>
                 <ProductCard onAdd={onAdd} product={product}/> </div> ))}
             </div>
             </div>
