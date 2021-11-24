@@ -7,7 +7,16 @@ body {
 
 
 
-
+.cardStyling{
+  height: 85%;
+  border: 2;
+  border-radius: 20px;
+  background-color: black;
+  border-color: white;
+  color: white;
+  align-content: center;
+  align-self: center;
+}
 
 /********HEADER********/
 
@@ -33,10 +42,17 @@ body {
 
 /* MOBILE ----------*/
 @media only screen and (max-width: 480px) {
+  .fixPadding{
+    margin-bottom: 5%;
+  }
 
+  .hideOnMobile{
+    visibility: collapse;
+  }
+  
   .menuCont{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -44,7 +60,10 @@ body {
 
   .menuItem{
     flex: 1 0 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
+
 
   .linksInHeader{
     font-size: 20px;
@@ -113,6 +132,14 @@ body {
 
 /*-----   TABLET   -----*/
 @media only screen and (min-width: 481px) and (max-width: 970px) {
+  
+  .fixPadding{
+    padding-left: 10%;
+    padding-right: 5%;
+    margin-bottom: 5%;
+  }
+  
+  
   /* HeaderTablet */
   .bella-logo{
     width: 40%; 
@@ -212,6 +239,15 @@ body {
 /*********LAPTOP************/
 @media only screen and (min-width: 970px) {
   /*Header*/
+
+  /*Checkout*/
+
+  .fixPadding{
+    padding-left: 15%;
+    padding-right: 10%;
+    margin-bottom: 5%;
+  }
+  
   .bella-logo{
     width: 40%;
     height: auto;

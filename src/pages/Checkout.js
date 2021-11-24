@@ -52,22 +52,23 @@ export default function Checkout(props) {
             <Header amountOfItems={amountOfItems}/>
            
            <div class="checkOutContainer">
-            <Grid container>
-                <Grid md={6}>
-                <Title ><h2>Items:</h2></Title>
-                </Grid>
-               <Grid md={6} >
-               <Title2 ><h2>Price:</h2></Title2>
-               </Grid>
-            </Grid>
+            <div className="menuCont">
+                <div className="menuTest"  >
+                <Title><h2  class="hideOnMobile">Items:</h2></Title>
+                </div>
+               <div className="menuTest"  >
+               <Title2><h2 class="hideOnMobile">Price:</h2></Title2>
+               </div>
+            </div>
            
 
-            <Grid container class="One">
+            <div container class="menCont">
             
-           
+           <div class="menuTest">
             <ShoppingCart onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} />
             
-            </Grid>
+            </div>
+            </div>
             </div>
             <div class="checkOutContainer2">
             <Grid container>
@@ -77,10 +78,13 @@ export default function Checkout(props) {
             </Grid>
             
              </div>
-            <Grid container rowSpacing={1} columnSpacing={4} width={ 900 } margin="auto" marginBottom="50px">
-            { products.filter(product => product.id > 16).map(product => ( <Grid item key={ product.id } md={3} xs={4}>
-                <ProductCard onAdd={onAdd} product={product}/> </Grid> ))}
-            </Grid>
+             <div class="fixPadding">
+            <div className="menuCont">
+            { products.filter(product => product.id > 16).map(product => ( 
+            <div className="menuTest" item key={ product.id }>
+                <ProductCard onAdd={onAdd} product={product}/> </div> ))}
+            </div>
+            </div>
         
             <Grid container justifyContent="center" marginBottom="100px" >
                 <Grid >

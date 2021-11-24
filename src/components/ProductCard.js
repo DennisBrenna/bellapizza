@@ -33,7 +33,7 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function ProductCard(props) {
   const {product, onAdd} = props;
   return (
-    <Card sx={{ height: "85%", width:"45%",border: 2, borderRadius: '20px', backgroundColor: 'black', borderColor: "white", color: "white", alignContent: "center", alignSelf: "center" }}>
+    <Card class="cardStyling">
       <CardMedia style={{height: "70%", justifyContent:"center", alignContent:"center"}}>
         <CardMedia
           style={{ height: "100px", width: "auto", marginLeft: "20%", marginBottom: "-15px"}}
