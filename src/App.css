@@ -247,12 +247,6 @@ body {
   /****Footer******/
 
   /*menu*/
-  .menuMainContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-  }
 
   .menuCont{
     display: flex;

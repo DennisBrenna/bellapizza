@@ -58,7 +58,7 @@ function Menu(props) {
         <button className="linksInMenu" onClick={ (e) => handleFilteredProducts(e.target.innerText) }>Drink</button>
         </div>
 
-        <div className="menuMainContainer">
+        
         <div className="menuCont">   
                     { showFiltered? filteredProducts.map(product => {
                         return( <div className="menuItem" item key={ product.id }>
@@ -70,7 +70,6 @@ function Menu(props) {
                     </div> ) 
                     }) }
         </div>
-        </div><br/>
         <DividerHorizontal/><br/><br/>
         <Footer/>
         </>
