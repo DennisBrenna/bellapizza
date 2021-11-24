@@ -35,12 +35,13 @@ body {
     padding-right: 10px;
     padding-left: 10px;
   }
+
   .mainMiddleCont {
     flex-direction: column;
     order: 2;
   }
   #mainOrdernowBtn{
-    font-size: 6px;
+    font-size: 30px;
     margin-bottom: 30px;
   }
   .pizzaText {
@@ -52,9 +53,46 @@ body {
     align-items: center;
     padding-top: 30px;
   }
+
+  .mainMiddleCont {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .warmPizzaImgCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pizzaText{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #warmpizza{
+    height: 50%;
+    width: 50%;
+    
+  }
+
+  .footerImg{
+    visibility:hidden;
+    height: 0px;
+  }
+
+  .logoFooter{
+    width: 200px;
+  }
 }
 
-/* TABLET ----------*/
+
+
+
+/*-----   TABLET   -----*/
 @media only screen and (min-width: 481px) and (max-width: 970px) {
   /* HeaderTablet */
   .linksInHeader{
@@ -65,18 +103,51 @@ body {
 
   /* MainTablet */
   .mainMiddleCont {
-    flex-direction: column;
-    order: 2;
+    flex-direction: row;
     height: 50%;
   }
-  #mainOrdernowBtn{
-    font-size: 10px;
-    margin-bottom: 50px;
+
+    .mainMiddleCont {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
   }
-  .pizzaText {
-    font-size: 40px;
-    padding-bottom: 15px;
-    order: 1;
+
+  .warmPizzaImgCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pizzaText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #mainOrdernowBtn{
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  #warmpizza{
+    height: 50%;
+    width: 100%;
+    
+  }
+
+  .footerImg{
+    visibility:hidden;
+    height: 0px;
+  }
+
+  .logoFooter{
+    width: 200px;
   }
 
   /*FooterTablet*/
@@ -101,21 +172,30 @@ body {
 
 }
 
+
+
+
+
+
+/*********LAPTOP************/
 @media only screen and (min-width: 970px) {
   /*Header*/
   
   /*Main*/
  
-
   .mainMiddleCont {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px
   } 
 
   .warmPizzaImgCont{
     display: flex;
+    justify-content: center;
+    align-items: center;
     order: 1;
+    width: 50%;
   }
 
   .pizzaText{
@@ -124,11 +204,22 @@ body {
     align-items: center;
     flex-direction: column;
     order: 2;
+    width: 50%;
+    font-size: 30px;
+    margin-right: 30px;
   }
 
-  .warm-pizza{
-    height: 100px;
-    width: 10px;
+  #mainOrdernowBtn{
+   height: 100px;
+   width: 250px;
+   font-size: 30px;
+  }
+
+  #warmpizza{
+    margin-top: 30px;
+    height: 80vh;
+    width: 800px;
+    margin-left: 100px;
   }
   
   
@@ -166,7 +257,7 @@ body {
    justify-content: center;
    align-items: center;
    width: 30%;
-   font-size: 50px;
+   font-size: 40px;
  }
 
  .footerImgDiv{
@@ -179,7 +270,17 @@ body {
    width: 100%;
    height: auto;
  }
+
 }
+
+
+
+
+
+
+
+
+
 
 .pizzaText {
   font-size: 50px;
@@ -300,10 +401,8 @@ body {
 
 #mainOrdernowBtn{
   background-color: black;
-  width: auto;
   color: white;
   border: 1px solid white;
-  font-size: 12px;
   padding: 14px 28px;
   margin-top: 20%;
   border-radius: 30px;
@@ -314,6 +413,10 @@ body {
   color: white;
   cursor: pointer;
 
+}
+
+#warmpizza{
+  border-radius: 60px;
 }
 
 .mainMiddleCont{

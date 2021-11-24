@@ -27,7 +27,9 @@ function FormRow(props) {
     return (
         <>
         <Item>
-        <Box sx={{width: "100%", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
+        <Box sx={{
+            width: "100%", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"
+            }}>
         <Header amountOfItems={amountOfItems}/>
             <Box sx={{
                 width: "100%",
@@ -46,15 +48,15 @@ function FormRow(props) {
 
                 <div className="mainMiddleCont">
                     <div className="warmPizzaImgCont">
-                        <img  src={warmpizza} classname="warm-pizza"/>
+                        <img  src={warmpizza} id="warmpizza"/>
                     </div>
                     <div className="pizzaText">
                         <a>Real Italian</a>
-                                <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <a style={{color: "green", paddingRight:'20px'}}>Pizza</a>
-                                    <a> & </a>
-                                    <a style={{color: "red", paddingLeft:'20px'}}>Pasta</a>
-                                </div> 
+                        <div>
+                            <a style={{color: "green", paddingRight:'20px'}}>Pizza</a>
+                            <a> & </a>
+                            <a style={{color: "red", paddingLeft:'20px'}}>Pasta</a>
+                    </div> 
                                  <Link to="/Menu">
                                     <button type="button" id="mainOrdernowBtn">ORDER NOW</button>
                                 </Link> 
