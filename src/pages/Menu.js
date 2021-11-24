@@ -61,11 +61,11 @@ function Menu(props) {
         <div class="fixPadding">
         <div className="menuCont">   
                     { showFiltered? filteredProducts.map(product => {
-                        return( <div className="menuTest" item key={ product.id }>
+                        return( <div className="menuItem" item key={ product.id }>
                         <ProductCard onAdd={onAdd} product={product}/>
                     </div> ) 
                     }) :  products.map(product => {
-                        return( <div className="menuTest" item key={ product.id }>
+                        return( <div className="menuItem" item key={ product.id }>
                         <ProductCard onAdd={onAdd} product={product}/>
                     </div> ) 
                     }) }

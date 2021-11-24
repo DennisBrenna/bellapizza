@@ -20,6 +20,7 @@ body {
 }
 
 
+
 .linksInHeader{
   position: relative;
   text-decoration: none;
@@ -48,7 +49,7 @@ body {
     align-items: center;
   }
 
-  .menuTest{
+  .menuItem{
     flex: 1 0 50%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -56,9 +57,14 @@ body {
 
 
   .linksInHeader{
-    font-size: 25px;
+    font-size: 20px;
     padding-right: 10px;
     padding-left: 10px;
+  }
+
+  .bella-logo{
+    width: 90%;
+    height: auto;
   }
 
   .mainMiddleCont {
@@ -66,11 +72,11 @@ body {
     order: 2;
   }
   #mainOrdernowBtn{
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 30px;
   }
   .pizzaText {
-    font-size: 30px;
+    font-size: 20px;
     padding-bottom: 15px;
     order: 1;
     display: flex;
@@ -103,6 +109,7 @@ body {
     width: 50%;
     
   }
+  
 
   .footerImg{
     visibility:hidden;
@@ -125,6 +132,11 @@ body {
   
   
   /* HeaderTablet */
+  .bella-logo{
+    width: 40%; 
+    height: auto;
+  }
+
   .linksInHeader{
     font-size: 30px;
     padding-right: 25px;
@@ -192,8 +204,8 @@ body {
     align-items: center;
   }
 
-  .menuTest{
-    flex: 1 0 30%;
+  .menuItem{
+    flex: 1 0 26%;
   }
 
   /*FooterTablet*/
@@ -213,9 +225,7 @@ body {
     visibility:hidden;
     height: 0px;
   }
-
 }
-
 
 /*********LAPTOP************/
 @media only screen and (min-width: 970px) {
@@ -229,6 +239,10 @@ body {
     margin-bottom: 5%;
   }
   
+  .bella-logo{
+    width: 40%;
+    height: auto;
+  }
   /*Main*/
  
   .mainMiddleCont {
@@ -273,16 +287,25 @@ body {
   /****Footer******/
 
   /*menu*/
+  .menuMainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
   .menuCont{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    align-self: center;
   }
 
-  .menuTest{
+  .menuItem{
     flex: 1 0 21%;
+    padding: 0;
+    border: 0;
+    margin-left: auto;
   }
 
 
@@ -532,6 +555,7 @@ body {
 }
 
 /********PersonInformation*********/
+
 
 .submit {
   background-color: #4CAF50;
