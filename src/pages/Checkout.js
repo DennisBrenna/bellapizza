@@ -84,7 +84,7 @@ export default function Checkout(props) {
         
             <Grid container justifyContent="center" marginBottom="100px" >
                 <Grid >
-                <Modal class="checkoutButton" varitant="outlined" size="large"/>
+                <Modal class="checkoutButton" varitant="outlined" size="large" cartItems={cartItems}/>
               </Grid>
                
             </Grid>  
