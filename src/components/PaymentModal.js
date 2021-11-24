@@ -1,8 +1,7 @@
-import * as React from 'react';
-import { styled, Box } from '@mui/system';
-import ModalUnstyled from '@mui/core/ModalUnstyled';
-import PersonalInformation from './PaymentInformation';
-
+import * as React from "react";
+import { styled, Box } from "@mui/system";
+import ModalUnstyled from "@mui/core/ModalUnstyled";
+import PersonalInformation from "./PaymentInformation";
 
 const StyledModal = styled(ModalUnstyled)`
   position: fixed;
@@ -16,7 +15,7 @@ const StyledModal = styled(ModalUnstyled)`
   justify-content: center;
 `;
 
-const Backdrop = styled('div')`
+const Backdrop = styled("div")`
   z-index: -1;
   position: fixed;
   right: 0;
@@ -35,18 +34,16 @@ export default function Modal() {
   return (
     <div>
       <button type="button" class="checkoutButton" onClick={handleOpen}>
-      Proceed to Payment Information
+        Proceed to Payment Information
       </button>
-      <StyledModal 
-      
+      <StyledModal
         aria-labelledby="unstyled-modal-title"
         aria-describedby="unstyled-modal-description"
         open={open}
-        
         onClose={handleClose}
         BackdropComponent={Backdrop}
       >
-          <PersonalInformation onClose={handleClose} /> 
+        <PersonalInformation onClose={handleClose} />
       </StyledModal>
     </div>
   );
