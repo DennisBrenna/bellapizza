@@ -20,40 +20,40 @@ import { Link } from 'react-router-dom';
         
     <div>
         <label>First Name</label>
-        <input type="text" id="txtField" placeholder="First name.."/>
+        <input type="text" id="txt-field" placeholder="First name.."/>
     
         <label>Last Name</label>
-        <input type="text" id="txtField" placeholder="Last name.."/><br />
+        <input type="text" id="txt-field" placeholder="Last name.."/><br />
     </div>
     
     <div>
         <label>Adress</label>
-        <input type="text" id="txtField" placeholder="Adress.."/>
+        <input type="text" id="txt-field" placeholder="Adress.."/>
     
         <label>Telephone</label>
-        <input type="text" id="txtField" placeholder="Telephone.."/><br />
+        <input type="text" id="txt-field" placeholder="Telephone.."/><br />
     </div>
     
     <div>
         <label>City</label>
-        <input type="text" id="txtField" placeholder="City.."/>
+        <input type="text" id="txt-field" placeholder="City.."/>
     
         <label>Postal Code</label>
-        <input type="text" id="txtField" placeholder="Postal Code.."/><br />
+        <input type="text" id="txt-field" placeholder="Postal Code.."/><br />
     </div>
 
     <div>
         <label>Card Number</label>
-        <input type="text" id="cardNr" placeholder="Card Number.."/><br />
+        <input type="text" id="card-nr" placeholder="Card Number.."/><br />
 
     </div>
 
     <div>
         <label>CVC</label>
-        <input type="text" id="txtField" placeholder="CVC.."/>
+        <input type="text" id="txt-field" placeholder="CVC.."/>
     
         <label>Expiration Date</label>
-        <input type="text" id="txtField" placeholder="Expiration Date.."/><br />
+        <input type="text" id="txt-field" placeholder="Expiration Date.."/><br />
     </div>
 
         <input type="radio" id="visa" name="card_type" value="Visa" />

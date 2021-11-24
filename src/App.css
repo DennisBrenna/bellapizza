@@ -27,7 +27,6 @@ body {
 }
 
 
-
 /* MOBILE ----------*/
 @media only screen and (max-width: 480px) {
   .linksInHeader{
@@ -88,9 +87,6 @@ body {
     width: 200px;
   }
 }
-
-
-
 
 /*-----   TABLET   -----*/
 @media only screen and (min-width: 481px) and (max-width: 970px) {
@@ -168,13 +164,7 @@ body {
     height: 0px;
   }
 
-
-
 }
-
-
-
-
 
 
 /*********LAPTOP************/
@@ -266,15 +256,6 @@ body {
  }
 
 }
-
-
-
-
-
-
-
-
-
 
 .pizzaText {
   font-size: 50px;
@@ -461,27 +442,6 @@ body {
 
 /********PersonInformation*********/
 
-#txt-field {
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: table-cell;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin: 10px;
-}
-
-#card-number {
-  width: 450px;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin: 10px;
-}
-
 .submit {
   background-color: #4CAF50;
   color: white;
@@ -507,7 +467,7 @@ body {
   
 }
 
-#txtField {
+#txt-field {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -517,7 +477,7 @@ body {
   margin: 10px;
 }
 
-#cardNr {
+#card-nr {
   width: 50%;
   padding: 12px 20px;
   margin: 8px 0;
