@@ -58,7 +58,7 @@ function Menu(props) {
         <button className="linksInMenu" onClick={ (e) => handleFilteredProducts(e.target.innerText) }>Drink</button>
         </div>
 
-
+        <div class="fixPadding">
         <div className="menuCont">   
                     { showFiltered? filteredProducts.map(product => {
                         return( <div className="menuTest" item key={ product.id }>
@@ -69,6 +69,7 @@ function Menu(props) {
                         <ProductCard onAdd={onAdd} product={product}/>
                     </div> ) 
                     }) }
+        </div>
         </div>
         <DividerHorizontal/><br/><br/>
         <Footer/>

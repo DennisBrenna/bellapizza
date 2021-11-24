@@ -32,10 +32,17 @@ body {
 
 /* MOBILE ----------*/
 @media only screen and (max-width: 480px) {
+  .fixPadding{
+    margin-bottom: 5%;
+  }
 
+  .hideOnMobile{
+    visibility: collapse;
+  }
+  
   .menuCont{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -43,7 +50,10 @@ body {
 
   .menuTest{
     flex: 1 0 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
+
 
   .linksInHeader{
     font-size: 25px;
@@ -106,6 +116,14 @@ body {
 
 /*-----   TABLET   -----*/
 @media only screen and (min-width: 481px) and (max-width: 970px) {
+  
+  .fixPadding{
+    padding-left: 10%;
+    padding-right: 5%;
+    margin-bottom: 5%;
+  }
+  
+  
   /* HeaderTablet */
   .linksInHeader{
     font-size: 30px;
@@ -202,6 +220,14 @@ body {
 /*********LAPTOP************/
 @media only screen and (min-width: 970px) {
   /*Header*/
+
+  /*Checkout*/
+
+  .fixPadding{
+    padding-left: 15%;
+    padding-right: 10%;
+    margin-bottom: 5%;
+  }
   
   /*Main*/
  
