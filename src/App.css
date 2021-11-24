@@ -41,7 +41,7 @@ body {
     align-items: center;
   }
 
-  .menuTest{
+  .menuItem{
     flex: 1 0 50%;
   }
 
@@ -174,8 +174,8 @@ body {
     align-items: center;
   }
 
-  .menuTest{
-    flex: 1 0 30%;
+  .menuItem{
+    flex: 1 0 26%;
   }
 
   /*FooterTablet*/
@@ -247,16 +247,25 @@ body {
   /****Footer******/
 
   /*menu*/
+  .menuMainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
   .menuCont{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    align-self: center;
   }
 
-  .menuTest{
+  .menuItem{
     flex: 1 0 21%;
+    padding: 0;
+    border: 0;
+    margin-left: auto;
   }
 
 

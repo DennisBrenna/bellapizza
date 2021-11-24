@@ -33,10 +33,10 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function ProductCard(props) {
   const {product, onAdd} = props;
   return (
-    <Card sx={{ maxWidth: 200, height: "85%", border: 2, borderRadius: '20px', backgroundColor: 'black', borderColor: "white", color: "white", alignContent: "center", }}>
+    <Card sx={{ height: "85%", width:"45%",border: 2, borderRadius: '20px', backgroundColor: 'black', borderColor: "white", color: "white", alignContent: "center", alignSelf: "center" }}>
       <CardMedia style={{height: "70%", justifyContent:"center", alignContent:"center"}}>
         <CardMedia
-          style={{ height: "100px", width: "auto", marginLeft: "20%", marginBottom: "-15px", marginRight: "5px"}}
+          style={{ height: "100px", width: "auto", marginLeft: "20%", marginBottom: "-15px"}}
           component="img"
           image={product.image} alt={product.dish}/>
         <Item>
@@ -44,7 +44,7 @@ export default function ProductCard(props) {
           <Typography gutterBottom variant="h7" component="div" textAlign="center">
             { product.title + " " +  "-"} {"$" + product.price }
           </Typography>
-          <Divider orientation="horizontal" style={{ background: 'white', margin: 10 }} flexItem>
+          <Divider orientation="horizontal" style={{ background: 'white',}} flexItem>
           </Divider>
           <Typography variant="body" componet="div">
             { product.description }

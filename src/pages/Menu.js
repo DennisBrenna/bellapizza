@@ -58,18 +58,19 @@ function Menu(props) {
         <button className="linksInMenu" onClick={ (e) => handleFilteredProducts(e.target.innerText) }>Drink</button>
         </div>
 
-
+        <div className="menuMainContainer">
         <div className="menuCont">   
                     { showFiltered? filteredProducts.map(product => {
-                        return( <div className="menuTest" item key={ product.id }>
+                        return( <div className="menuItem" item key={ product.id }>
                         <ProductCard onAdd={onAdd} product={product}/>
                     </div> ) 
                     }) :  products.map(product => {
-                        return( <div className="menuTest" item key={ product.id }>
+                        return( <div className="menuItem" item key={ product.id }>
                         <ProductCard onAdd={onAdd} product={product}/>
                     </div> ) 
                     }) }
         </div>
+        </div><br/>
         <DividerHorizontal/><br/><br/>
         <Footer/>
         </>
