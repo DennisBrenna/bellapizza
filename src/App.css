@@ -6,6 +6,9 @@ body {
 }
 
 
+
+
+
 /********HEADER********/
 
 .header {
@@ -30,6 +33,19 @@ body {
 
 /* MOBILE ----------*/
 @media only screen and (max-width: 480px) {
+
+  .menuCont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menuItem{
+    flex: 1 0 50%;
+  }
+
   .linksInHeader{
     font-size: 20px;
     padding-right: 10px;
@@ -158,6 +174,22 @@ body {
     width: 200px;
   }
 
+
+
+  /****** Menu ******/
+
+  .menuCont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menuItem{
+    flex: 1 0 26%;
+  }
+
   /*FooterTablet*/
   .footer{
     height: 700px;
@@ -227,6 +259,39 @@ body {
   
   /****Footer******/
 
+  /*menu*/
+  .menuMainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .menuCont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+  }
+
+  .menuItem{
+    flex: 1 0 21%;
+    padding: 0;
+    border: 0;
+    margin-left: auto;
+  }
+
+
+
+/*************** Menu laptop end**********/
+
+
+
+
+
+  /*checkout*/
+  
+  /* footer */
  .divFooterContainer{
    display: flex;
    flex-direction: row;
@@ -305,6 +370,15 @@ body {
 
 .menuFilter {
   text-align: center;
+}
+
+.productCardCont{
+  border: 2;
+  border-radius: 20px;
+  background-color: black; 
+  border-color: white;
+  color: white;
+  align-content: center;
 }
 
 .linksInMenu {
@@ -534,5 +608,3 @@ body {
   width: 40%;
 
 }
-
-
