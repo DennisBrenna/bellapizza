@@ -6,6 +6,9 @@ body {
 }
 
 
+
+
+
 /********HEADER********/
 
 .header {
@@ -30,6 +33,19 @@ body {
 
 /* MOBILE ----------*/
 @media only screen and (max-width: 480px) {
+
+  .menuCont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menuTest{
+    flex: 1 0 50%;
+  }
+
   .linksInHeader{
     font-size: 25px;
     padding-right: 10px;
@@ -150,6 +166,22 @@ body {
     width: 200px;
   }
 
+
+
+  /****** Menu ******/
+
+  .menuCont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menuTest{
+    flex: 1 0 30%;
+  }
+
   /*FooterTablet*/
   .footer{
     height: 700px;
@@ -226,6 +258,25 @@ body {
 
 
   /*menu*/
+  .menuCont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menuTest{
+    flex: 1 0 21%;
+  }
+
+
+
+/*************** Menu laptop end**********/
+
+
+
+
 
   /*checkout*/
   
@@ -317,6 +368,15 @@ body {
 
 .menuFilter {
   text-align: center;
+}
+
+.productCardCont{
+  border: 2;
+  border-radius: 20px;
+  background-color: black; 
+  border-color: white;
+  color: white;
+  align-content: center;
 }
 
 .linksInMenu {

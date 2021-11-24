@@ -48,8 +48,8 @@ function Menu(props) {
 
 
     return(
-     
         <>
+        
         <Header amountOfItems={amountOfItems}/>
         <div class="menuFilter">
         <button className="linksInMenu" onClick={ (e) => handleShowFiltered(false) }>All</button>
@@ -57,20 +57,22 @@ function Menu(props) {
         <button className="linksInMenu" onClick={ (e) => handleFilteredProducts(e.target.innerText) }>Pasta</button>
         <button className="linksInMenu" onClick={ (e) => handleFilteredProducts(e.target.innerText) }>Drink</button>
         </div>
-        <Grid  container rowSpacing={1} columnSpacing={4} width={ 900 } margin="auto" marginBottom="50px">
-            { showFiltered? filteredProducts.map(product => {
-                return( <Grid item key={ product.id } xs={3}>
-                <ProductCard onAdd={onAdd} product={product}/>
-            </Grid> ) 
-            }) :  products.map(product => {
-                return( <Grid item key={ product.id } xs={3}>
-                <ProductCard onAdd={onAdd} product={product}/>
-            </Grid> ) 
-            }) }
-        </Grid>
+
+
+        <div className="menuCont">   
+                    { showFiltered? filteredProducts.map(product => {
+                        return( <div className="menuTest" item key={ product.id }>
+                        <ProductCard onAdd={onAdd} product={product}/>
+                    </div> ) 
+                    }) :  products.map(product => {
+                        return( <div className="menuTest" item key={ product.id }>
+                        <ProductCard onAdd={onAdd} product={product}/>
+                    </div> ) 
+                    }) }
+        </div>
         <DividerHorizontal/><br/><br/>
         <Footer/>
-        </> 
+        </>
     );
 
 }
