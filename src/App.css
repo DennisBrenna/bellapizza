@@ -102,10 +102,6 @@ body {
 }
 
 @media only screen and (min-width: 970px) {
-  /*Header*/
-  
-  /*Main*/
- 
 
   .mainMiddleCont {
     display: flex;
@@ -131,14 +127,8 @@ body {
     width: 10px;
   }
   
-  
+  /****Footer******/
 
-
-  /*menu*/
-
-  /*checkout*/
-  
-  /* footer */
  .divFooterContainer{
    display: flex;
    flex-direction: row;
@@ -313,7 +303,6 @@ body {
   background-color: #026b02;
   color: white;
   cursor: pointer;
-
 }
 
 .mainMiddleCont{
@@ -323,6 +312,7 @@ body {
 }
 
 /********CHECKOUT*********/
+
 .shoppingCartName{
   color: white;
   font-size: 25px;
@@ -385,7 +375,7 @@ body {
   margin: 10px;
 }
 
-#submit {
+.submit {
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -396,13 +386,13 @@ body {
   cursor: pointer;
 }
 
-#submit:hover {
+.submit:hover {
   background-color: #45a049;
 }
 
 .informationContainer {
   margin-top: 10%;
-  width: 55%;
+  width: 45%;
   border-radius: 20px;
   text-align: center;
   background-color: #494949;
@@ -435,5 +425,33 @@ body {
   color: white;
   position: fixed;
   display: flex;
-  left: 75%;
+  left: 70%;
 }
+
+/********OrderDone*********/
+
+.order-done-container {
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.cart-container {
+  background-color: white;
+  color: black;
+  width: 300px;
+  border: 15px solid gray;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+
+}
+
+

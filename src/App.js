@@ -9,6 +9,7 @@ import { useTheme } from "@material-ui/core/styles";
 import { Route, Routes} from 'react-router-dom';
 import { Grid } from "@mui/material";
 import {makeStyles} from "@material-ui/core";
+import OrderDone from "./pages/OrderDone";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -49,6 +50,7 @@ const onRemove = (product) => {
 }
  
   const amountOfItems = cartItems.reduce((a, c) => a +  c.qty, 0);
+  console.log(cartItems);
   return (
     <Grid
     className={classes.root}
@@ -60,6 +62,7 @@ const onRemove = (product) => {
       <Route  path='/checkout' element={ <Checkout onAdd={onAdd} amountOfItems={amountOfItems}  cartItems={cartItems} onRemove={onRemove}/>} />
       <Route path='/menu' element={ <Menu onAdd={onAdd} amountOfItems={amountOfItems}/>} />
       <Route path='/error' element={ <Error/>} />
+      <Route path='/OrderDone' element={<OrderDone  cartItems={cartItems}/>}/> 
     
     </Routes> 
   

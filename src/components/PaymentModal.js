@@ -46,7 +46,7 @@ export default function Modal() {
         onClose={handleClose}
         BackdropComponent={Backdrop}
       >
-          <PersonalInformation onClose={handleClose}/> 
+          <PersonalInformation onClose={handleClose} /> 
       </StyledModal>
     </div>
   );

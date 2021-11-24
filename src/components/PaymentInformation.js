@@ -2,6 +2,7 @@ import React from 'react';
 import { IconButton } from '@mui/material';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import ConfModal from './OrderConfModal';
+import { Link } from 'react-router-dom';
 
     export default function PaymentInformation(props) {
     
@@ -60,7 +61,7 @@ import ConfModal from './OrderConfModal';
         <input type="radio" id="mastercard" name="card_type" value="Mastercard" />
         <label for="mastercard">Mastercard</label><br />
 
-        <ConfModal/>
+        <Link component={Link} variant="outlined" to="/OrderDone" size="small"><button class="submit">Place your order</button></Link>
 
 </div>
 
