@@ -17,6 +17,7 @@ body {
 }
 
 
+
 .linksInHeader{
   position: relative;
   text-decoration: none;
@@ -30,9 +31,14 @@ body {
 /* MOBILE ----------*/
 @media only screen and (max-width: 480px) {
   .linksInHeader{
-    font-size: 25px;
+    font-size: 20px;
     padding-right: 10px;
     padding-left: 10px;
+  }
+
+  .bella-logo{
+    width: 90%;
+    height: auto;
   }
 
   .mainMiddleCont {
@@ -40,11 +46,11 @@ body {
     order: 2;
   }
   #mainOrdernowBtn{
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 30px;
   }
   .pizzaText {
-    font-size: 30px;
+    font-size: 20px;
     padding-bottom: 15px;
     order: 1;
     display: flex;
@@ -77,6 +83,7 @@ body {
     width: 50%;
     
   }
+  
 
   .footerImg{
     visibility:hidden;
@@ -91,6 +98,11 @@ body {
 /*-----   TABLET   -----*/
 @media only screen and (min-width: 481px) and (max-width: 970px) {
   /* HeaderTablet */
+  .bella-logo{
+    width: 40%; 
+    height: auto;
+  }
+
   .linksInHeader{
     font-size: 30px;
     padding-right: 25px;
@@ -163,14 +175,15 @@ body {
     visibility:hidden;
     height: 0px;
   }
-
 }
-
 
 /*********LAPTOP************/
 @media only screen and (min-width: 970px) {
   /*Header*/
-  
+  .bella-logo{
+    width: 40%;
+    height: auto;
+  }
   /*Main*/
  
   .mainMiddleCont {
@@ -441,6 +454,7 @@ body {
 }
 
 /********PersonInformation*********/
+
 
 .submit {
   background-color: #4CAF50;
